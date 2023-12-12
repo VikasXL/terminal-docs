@@ -1,0 +1,45 @@
+---
+title: sessionPut
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"PUT"} /> sessionPut
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `wsoc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | `userLastOnline`  |
+| Scope | global |
+
+
+- **Flags** Log message
+- **Publishes** `userLastOnline` 
+- **Scope** global
+
+
+## Description
+
+Each browser tab creates a unique session which is kept alive through periodic pings. When the session gets
+created the user is "online" and ready to receive publications on the topic she has subscribed. When the
+session closes the user's "last online timestamp" is updated. The session can close because of user logout,
+missed pings, tab refresh, tab close or delete account through some other device.
+
+## Signal format
+
+```json
+{}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=core_session_sessionPut)
+

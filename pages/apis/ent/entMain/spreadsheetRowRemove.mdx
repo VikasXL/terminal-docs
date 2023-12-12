@@ -1,0 +1,53 @@
+---
+title: spreadsheetRowRemove
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"DELETE"} /> spreadsheetRowRemove
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc` `wsoc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | `formResult`  |
+| Scope | ent |
+
+
+- **Flags** Log message
+- **Publishes** `formResult` 
+- **Scope** ent
+
+
+## Description
+
+Remove a form message
+
+## Message format
+
+```json
+{
+  "formId": "MetaIdForm",
+  "spreadsheetId": "MetaIdSpreadsheet",
+  "rowId": "RowId",
+  "transactionId?": "string"
+}
+```
+
+## Signal format
+
+```json
+{}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=ent_entMain_spreadsheetRowRemove)
+

@@ -1,0 +1,14 @@
+{
+ "agent": {
+ "title": "Agent"
+},
+ "entAside": {
+ "title": "EntAside"
+},
+ "entDrawer": {
+ "title": "EntDrawer"
+},
+ "entMain": {
+ "title": "EntMain"
+}
+}

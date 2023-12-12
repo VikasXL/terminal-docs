@@ -1,0 +1,326 @@
+---
+title: Deeplink
+---
+
+# deeplink
+
+import { Callout } from 'nextra/components'
+
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## ensure
+
+This command accepts the following arguments:
+
+### kind
+**type:** report | spreadsheetEditor | spreadsheetInsert | spreadsheetRow
+
+---write the arg description---
+
+
+## remove
+
+This command doesn't require any additional arguments.
+
+
+## print
+
+This command doesn't require any additional arguments.
+
+
+## update
+
+This command accepts the following arguments:
+
+### report
+#### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+#### name
+**type:** null | Symbol
+
+---write the arg description---
+
+#### description
+**type:** null | @null | @empty | paragraph
+
+---write the arg description---
+
+#### visibilityConstraint
+**type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
+
+---write the arg description---
+
+#### creationRoles
+**type:** null | @empty | Role1, Role2, $AllAssistants,$AllManagers,$Assistants,$GrandManager,$Manager,$Public,$Self...
+
+---write the arg description---
+
+#### showHeader
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### showEnterprise
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### showSeparator
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### passImageInDeeplink
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### expiry
+**type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
+
+---write the arg description---
+
+#### hyperlinkVars
+**type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2,...
+
+---write the arg description---
+
+#### report
+**type:** null | Symbol
+
+---write the arg description---
+
+#### outputFormContentLayout
+**type:** null | Symbol
+
+---write the arg description---
+
+### spreadsheetEditor
+#### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+#### name
+**type:** null | Symbol
+
+---write the arg description---
+
+#### description
+**type:** null | @null | @empty | paragraph
+
+---write the arg description---
+
+#### visibilityConstraint
+**type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
+
+---write the arg description---
+
+#### creationRoles
+**type:** null | @empty | Role1, Role2, $AllAssistants,$AllManagers,$Assistants,$GrandManager,$Manager,$Public,$Self...
+
+---write the arg description---
+
+#### showHeader
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### showEnterprise
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### showSeparator
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### passImageInDeeplink
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### expiry
+**type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
+
+---write the arg description---
+
+#### hyperlinkVars
+**type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2,...
+
+---write the arg description---
+
+#### spreadsheet
+**type:** null | Symbol
+
+---write the arg description---
+
+#### spreadsheetLayout
+**type:** null | Symbol
+
+---write the arg description---
+
+### spreadsheetInsert
+#### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+#### name
+**type:** null | Symbol
+
+---write the arg description---
+
+#### description
+**type:** null | @null | @empty | paragraph
+
+---write the arg description---
+
+#### visibilityConstraint
+**type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
+
+---write the arg description---
+
+#### creationRoles
+**type:** null | @empty | Role1, Role2, $AllAssistants,$AllManagers,$Assistants,$GrandManager,$Manager,$Public,$Self...
+
+---write the arg description---
+
+#### showHeader
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### showEnterprise
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### showSeparator
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### passImageInDeeplink
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### expiry
+**type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
+
+---write the arg description---
+
+#### hyperlinkVars
+**type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2,...
+
+---write the arg description---
+
+#### spreadsheet
+**type:** null | Symbol
+
+---write the arg description---
+
+#### successMessage
+**type:** @null | @empty | @@paragraph | paragraph
+
+---write the arg description---
+
+#### successMessageFontVar
+**type:** @null | @empty | @@font | font
+
+---write the arg description---
+
+#### successMessageBgColorVar
+**type:** @null | @empty | @@color | color
+
+---write the arg description---
+
+#### showRepeatButton
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### repeatButtonLabel
+**type:** null | @null | @empty | repeatButtonLabel
+
+---write the arg description---
+
+### spreadsheetRow
+#### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+#### name
+**type:** null | Symbol
+
+---write the arg description---
+
+#### description
+**type:** null | @null | @empty | paragraph
+
+---write the arg description---
+
+#### visibilityConstraint
+**type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
+
+---write the arg description---
+
+#### creationRoles
+**type:** null | @empty | Role1, Role2, $AllAssistants,$AllManagers,$Assistants,$GrandManager,$Manager,$Public,$Self...
+
+---write the arg description---
+
+#### showHeader
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### showEnterprise
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### showSeparator
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### passImageInDeeplink
+**type:** null | true | false | yes | no
+
+---write the arg description---
+
+#### expiry
+**type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
+
+---write the arg description---
+
+#### hyperlinkVars
+**type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2,...
+
+---write the arg description---
+
+#### spreadsheet
+**type:** null | Symbol
+
+---write the arg description---
+
+#### formContentLayout
+**type:** null | Symbol
+
+---write the arg description---
+
+
+## goTo
+
+
+This command doesn't require any additional arguments.
+

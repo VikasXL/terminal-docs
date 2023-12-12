@@ -1,0 +1,71 @@
+---
+title: entSpreadsheetRowsGet
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"POST"} /> entSpreadsheetRowsGet
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `wsoc` `rpc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | N.A. |
+| Scope | global and enterprise |
+
+
+- **Flags** Log message
+- **Publishes** N.A.
+- **Scope** global and enterprise
+
+
+## Description
+
+Get spreadsheet rows for editing
+
+## Message format
+
+```json
+{
+  "spreadsheetId": "MetaIdSpreadsheet",
+  "actionId": "MetaIdAction",
+  "searchText?": "string",
+  "orderByFieldId?": "MetaIdField",
+  "groupByFieldId?": "MetaIdField",
+  "ascOrder?": "boolean",
+  "categoryFieldIds?": [
+    "MetaIdField"
+  ],
+  "advancedFieldIds?": [
+    "MetaIdField"
+  ]
+}
+```
+
+## Signal format
+
+```json
+{
+  "rowIdSet?": [
+    "RowId"
+  ],
+  "groupByRowIdSetMap?": {
+    "string": [
+      "RowId"
+    ]
+  },
+  "outputFormId": "MetaIdForm"
+}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=ent_entAside_entSpreadsheetRowsGet)
+

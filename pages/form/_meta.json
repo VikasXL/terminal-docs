@@ -1,0 +1,17 @@
+{
+ "field": {
+ "title": "Field"
+},
+ "section": {
+ "title": "Section"
+},
+ "grid": {
+ "title": "Grid"
+},
+ "layout": {
+ "title": "Layout"
+},
+ "visibility": {
+ "title": "Visibility"
+}
+}

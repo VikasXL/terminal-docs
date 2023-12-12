@@ -1,0 +1,50 @@
+---
+title: addressBookContactRemove
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"DELETE"} /> addressBookContactRemove
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc` `wsoc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | `callerAddrBook`  |
+| Scope | global |
+
+
+- **Flags** Log message
+- **Publishes** `callerAddrBook` 
+- **Scope** global
+
+
+## Description
+
+Removes given contact contact from caller's address book by handle
+
+## Message format
+
+```json
+{
+  "handle": "string"
+}
+```
+
+## Signal format
+
+```json
+{}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=home_drawer_addressBookContactRemove)
+

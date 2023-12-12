@@ -1,0 +1,49 @@
+---
+title: studioDeployedArtifactListGet
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"GET"} /> studioDeployedArtifactListGet
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `wsoc` `rpc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | N.A. |
+| Scope | global |
+
+
+- **Flags** Log message
+- **Publishes** N.A.
+- **Scope** global
+
+
+## Description
+
+Get deployed enterprise and plugin list
+
+## Signal format
+
+```json
+{
+  "entIdSet?": [
+    "EntId"
+  ],
+  "pluginBundleIdSet?": [
+    "PluginBundleId"
+  ]
+}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=studio_studioDrawer_studioDeployedArtifactListGet)
+

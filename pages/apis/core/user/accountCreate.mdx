@@ -1,0 +1,56 @@
+---
+title: accountCreate
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"POST"} /> accountCreate
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | refreshOptional |
+| Publishes | N.A. |
+| Scope | global |
+
+
+- **Publishes** N.A.
+- **Scope** global
+
+
+## Description
+
+Start account creation workflow for new user
+
+## Message format
+
+```json
+{
+  "deviceName": "string",
+  "deviceType": "android | ios | web | agent | test",
+  "firstName": "string",
+  "lastName": "string",
+  "newPassword": "string",
+  "handle": "string"
+}
+```
+
+## Signal format
+
+```json
+{
+  "verifyKey": "AnyKey",
+  "expiryMins": "number"
+}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=core_user_accountCreate)
+

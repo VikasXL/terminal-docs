@@ -1,0 +1,52 @@
+---
+title: studioEntDeploy
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"POST"} /> studioEntDeploy
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | `entAvatar` `groupActionList` `groupMembership` `studioEntAvatar` `callerRecentList` `studioEnt` `entDefnForm` `studioEntDeploy` `agentEnt`  |
+| Scope | ent |
+
+
+- **Flags** Log message
+- **Publishes** `entAvatar` `groupActionList` `groupMembership` `studioEntAvatar` `callerRecentList` `studioEnt` `entDefnForm` `studioEntDeploy` `agentEnt` 
+- **Scope** ent
+
+
+## Description
+
+Deploy enterprise
+
+## Message format
+
+```json
+{
+  "sendInvites?": "boolean"
+}
+```
+
+## Signal format
+
+```json
+{
+  "jobKey": "string"
+}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=studio_studioDrawer_studioEntDeploy)
+

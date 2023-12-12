@@ -1,0 +1,76 @@
+---
+title: entFormMappingResultGet
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"POST"} /> entFormMappingResultGet
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `wsoc` `rpc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | N.A. |
+| Scope | ent |
+
+
+- **Flags** Log message
+- **Publishes** N.A.
+- **Scope** ent
+
+
+## Description
+
+Map one form value to another
+
+## Message format
+
+```json
+{
+  "inputFormId": "MetaIdForm",
+  "inputFormValueRaw": {
+    "rowId": "RowId",
+    "rowOrder?": "number",
+    "createdOn?": "string",
+    "createdBy?": "EntUserId",
+    "updatedOn?": "string",
+    "updatedBy?": "EntUserId",
+    "valueMap": {
+      "MetaIdComp": "Object"
+    }
+  },
+  "mappingVarId": "MetaIdVar",
+  "outputFormId": "MetaIdForm"
+}
+```
+
+## Signal format
+
+```json
+{
+  "formId": "MetaIdForm",
+  "formValue": {
+    "rowId": "RowId",
+    "rowOrder?": "number",
+    "createdOn?": "string",
+    "createdBy?": "EntUserId",
+    "updatedOn?": "string",
+    "updatedBy?": "EntUserId",
+    "valueMap": {
+      "MetaIdComp": "Object"
+    }
+  }
+}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=ent_entMain_entFormMappingResultGet)
+

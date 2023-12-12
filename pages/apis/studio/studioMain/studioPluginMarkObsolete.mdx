@@ -1,0 +1,50 @@
+---
+title: studioPluginMarkObsolete
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"PUT"} /> studioPluginMarkObsolete
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | `studioPlugin` `studioPluginAvatar`  |
+| Scope | plugin |
+
+
+- **Flags** Log message
+- **Publishes** `studioPlugin` `studioPluginAvatar` 
+- **Scope** plugin
+
+
+## Description
+
+Make specific plugin an obsolete
+
+## Message format
+
+```json
+{
+  "pluginId": "PluginId"
+}
+```
+
+## Signal format
+
+```json
+{}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=studio_studioMain_studioPluginMarkObsolete)
+

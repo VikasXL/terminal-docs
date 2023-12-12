@@ -1,0 +1,63 @@
+---
+title: spreadsheetRowMarkRead
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"PUT"} /> spreadsheetRowMarkRead
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc` `wsoc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | `formResult`  |
+| Scope | global and enterprise |
+
+
+- **Flags** Log message
+- **Publishes** `formResult` 
+- **Scope** global and enterprise
+
+
+## Description
+
+Mark form data as read
+
+## Message format
+
+```json
+{
+  "rowId": "RowId",
+  "spreadsheetId": "MetaIdSpreadsheet",
+  "formValueRaw": {
+    "rowId": "RowId",
+    "rowOrder?": "number",
+    "createdOn?": "string",
+    "createdBy?": "EntUserId",
+    "updatedOn?": "string",
+    "updatedBy?": "EntUserId",
+    "valueMap": {
+      "MetaIdComp": "Object"
+    }
+  },
+  "version?": "string"
+}
+```
+
+## Signal format
+
+```json
+{}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=ent_entMain_spreadsheetRowMarkRead)
+

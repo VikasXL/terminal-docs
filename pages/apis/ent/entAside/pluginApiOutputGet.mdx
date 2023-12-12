@@ -1,0 +1,74 @@
+---
+title: pluginApiOutputGet
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"POST"} /> pluginApiOutputGet
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc` `wsoc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | N.A. |
+| Scope | ent |
+
+
+- **Flags** Log message
+- **Publishes** N.A.
+- **Scope** ent
+
+
+## Description
+
+Get plugin api response as output
+
+## Message format
+
+```json
+{
+  "formId": "MetaIdForm",
+  "fieldId": "MetaIdField",
+  "formValueRaw?": {
+    "rowId": "RowId",
+    "rowOrder?": "number",
+    "createdOn?": "string",
+    "createdBy?": "EntUserId",
+    "updatedOn?": "string",
+    "updatedBy?": "EntUserId",
+    "valueMap": {
+      "MetaIdComp": "Object"
+    }
+  }
+}
+```
+
+## Signal format
+
+```json
+{
+  "formValueRaw": {
+    "rowId": "RowId",
+    "rowOrder?": "number",
+    "createdOn?": "string",
+    "createdBy?": "EntUserId",
+    "updatedOn?": "string",
+    "updatedBy?": "EntUserId",
+    "valueMap": {
+      "MetaIdComp": "Object"
+    }
+  }
+}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=ent_entAside_pluginApiOutputGet)
+

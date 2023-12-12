@@ -1,0 +1,69 @@
+---
+title: spreadsheetRowSend
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"POST"} /> spreadsheetRowSend
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc` `wsoc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | `newMessage` `recent` `lastMessage` `badge` `mediaList` `callerBadgeMap` `callerRecentList` `formResult` `spreadsheetRowExpiry`  |
+| Scope | ent |
+
+
+- **Flags** Log message
+- **Publishes** `newMessage` `recent` `lastMessage` `badge` `mediaList` `callerBadgeMap` `callerRecentList` `formResult` `spreadsheetRowExpiry` 
+- **Scope** ent
+
+
+## Description
+
+Sends a form message
+
+## Message format
+
+```json
+{
+  "actionId?": "MetaIdAction",
+  "formValueRaw": {
+    "rowId": "RowId",
+    "rowOrder?": "number",
+    "createdOn?": "string",
+    "createdBy?": "EntUserId",
+    "updatedOn?": "string",
+    "updatedBy?": "EntUserId",
+    "valueMap": {
+      "MetaIdComp": "Object"
+    }
+  },
+  "transactionId?": "string",
+  "mappingVarId?": "MetaIdVar",
+  "targetSpreadsheetId?": "MetaIdSpreadsheet"
+}
+```
+
+## Signal format
+
+```json
+{
+  "formId": "MetaIdForm",
+  "spreadsheetId": "MetaIdSpreadsheet",
+  "rowId": "RowId",
+  "spreadsheetPartitionId": "SpreadsheetPartitionId"
+}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=ent_entMain_spreadsheetRowSend)
+

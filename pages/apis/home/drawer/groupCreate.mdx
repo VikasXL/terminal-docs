@@ -1,0 +1,60 @@
+---
+title: groupCreate
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"POST"} /> groupCreate
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc` `wsoc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | `caller`  |
+| Scope | global |
+
+
+- **Flags** Log message
+- **Publishes** `caller` 
+- **Scope** global
+
+
+## Description
+
+Creates group
+
+## Message format
+
+```json
+{
+  "name": "string",
+  "about?": "string",
+  "mediaIdAvatar?": "MediaIdAvatar",
+  "settings": {
+    "anyOneCanJoin": "boolean",
+    "onlyAdminCanUpdateGroupInfo": "boolean",
+    "onlyAdminCanSendMessages": "boolean"
+  },
+  "members": [
+    "EntUserId"
+  ]
+}
+```
+
+## Signal format
+
+```json
+{}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=home_drawer_groupCreate)
+

@@ -1,0 +1,55 @@
+---
+title: callerProfilePatch
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"PATCH"} /> callerProfilePatch
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc` `wsoc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | `userAvatar` `caller`  |
+| Scope | global |
+
+
+- **Flags** Log message
+- **Publishes** `userAvatar` `caller` 
+- **Scope** global
+
+
+## Description
+
+Updates caller profile information
+
+## Message format
+
+```json
+{
+  "firstName": "string",
+  "lastName": "string",
+  "about?": "string",
+  "mediaIdAvatar?": "MediaIdAvatar",
+  "enterIsSendMobile?": "boolean",
+  "enterIsSendDesktop?": "boolean"
+}
+```
+
+## Signal format
+
+```json
+{}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=home_drawer_callerProfilePatch)
+

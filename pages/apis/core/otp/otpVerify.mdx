@@ -1,0 +1,51 @@
+---
+title: otpVerify
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"POST"} /> otpVerify
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | none |
+| Flags | Log message |
+| Publishes | N.A. |
+| Scope | global |
+
+
+- **Flags** Log message
+- **Publishes** N.A.
+- **Scope** global
+
+
+## Description
+
+Verify OTP and invoke callback function
+
+## Message format
+
+```json
+{
+  "verifyKey": "AnyKey",
+  "otp": "AnyOtpValue"
+}
+```
+
+## Signal format
+
+```json
+{}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=core_otp_otpVerify)
+

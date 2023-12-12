@@ -1,0 +1,1082 @@
+---
+title: Step
+---
+
+# automationStep
+
+import { Callout } from 'nextra/components'
+
+  <Callout type="error" emoji="">
+   *All the bellow commands require a symbol name*
+  </Callout>
+
+## remove
+
+This command doesn't require any additional arguments.
+
+
+## print
+
+This command doesn't require any additional arguments.
+
+
+## ensure
+
+This command accepts the following arguments:
+
+### scheduled
+#### kind
+**type:** callPlugin | insertIntoSpreadsheet
+
+---write the arg description---
+
+### spreadsheet
+#### kind
+**type:** calculateFormulas | callPlugin | callReport | forwardToGroups | forwardToUsers | generateDeeplink | insertIntoSpreadsheet | partitionSend | removeField | removeFromSpreadsheet | removeRow | returnEvent | terminate | updateField | updateLogNumber | updateSpreadsheet
+
+---write the arg description---
+
+### webhook
+#### kind
+**type:** insertIntoSpreadsheet
+
+---write the arg description---
+
+
+## update
+
+This command accepts the following arguments:
+
+### scheduled
+#### callPlugin
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### plugin
+**type:** null | @null | @empty | pluginName
+
+---write the arg description---
+
+##### pluginApi
+**type:** null | Symbol
+
+---write the arg description---
+
+##### pluginInputMapping
+**type:** @null | @empty | @@mapping | mapping
+
+---write the arg description---
+
+##### errorRetryCount
+**type:** @null | @empty | @@number | number
+
+---write the arg description---
+
+##### errorRetryDuration
+**type:** @null | @empty | @@duration | duration
+
+---write the arg description---
+
+##### errorSpreadsheet
+**type:** null | Symbol
+
+---write the arg description---
+
+##### errorField
+**type:** null | sectionField | grid/field
+
+---write the arg description---
+
+#### insertIntoSpreadsheet
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### target
+**type:** null | Symbol
+
+---write the arg description---
+
+##### targetFormMapping
+**type:** @null | @empty | @@mapping | mapping
+
+---write the arg description---
+
+### spreadsheet
+#### calculateFormulas
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### field
+**type:** null | sectionField | grid/field
+
+---write the arg description---
+
+##### newCondition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### newFormula
+**type:** null | @null | @empty | formula
+
+---write the arg description---
+
+#### callPlugin
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### pluginName
+**type:** null | @null | @empty | pluginName
+
+---write the arg description---
+
+##### pluginApi
+**type:** null | Symbol
+
+---write the arg description---
+
+##### sourceGrid
+**type:** null | Symbol
+
+---write the arg description---
+
+##### sourceGridFilter
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### pluginInputMapping
+**type:** @null | @empty | @@mapping | mapping
+
+---write the arg description---
+
+##### pluginOutputMapping
+**type:** @null | @empty | @@mapping | mapping
+
+---write the arg description---
+
+##### errorRetryCount
+**type:** @null | @empty | @@number | number
+
+---write the arg description---
+
+##### errorRetryDuration
+**type:** @null | @empty | @@duration | duration
+
+---write the arg description---
+
+##### errorField
+**type:** null | sectionField | grid/field
+
+---write the arg description---
+
+#### callReport
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### scheduler
+**type:** @null | @empty | @@scheduler | scheduler
+
+---write the arg description---
+
+##### report
+**type:** null | Symbol
+
+---write the arg description---
+
+##### sourceGrid
+**type:** null | Symbol
+
+---write the arg description---
+
+##### sourceGridFilter
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### reportInputMappingVar
+**type:** @null | @empty | @@mapping | mapping
+
+---write the arg description---
+
+##### reportOutputMapping
+**type:** @null | @empty | @@mapping | mapping
+
+---write the arg description---
+
+##### errorRetryCountVar
+**type:** @null | @empty | @@number | number
+
+---write the arg description---
+
+##### errorRetryDuration
+**type:** @null | @empty | @@duration | duration
+
+---write the arg description---
+
+##### errorField
+**type:** null | sectionField | grid/field
+
+---write the arg description---
+
+#### forwardToGroups
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### groups
+**type:** null | @empty | Group1, Group2,...
+
+---write the arg description---
+
+##### senderField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### senderRole
+**type:** null | Role | $AllAssistants,$AllManagers,$Assistants,$GrandManager,$Manager,$Public,$Self...
+
+---write the arg description---
+
+#### forwardToUsers
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### senderField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### senderRole
+**type:** null | Symbol
+
+---write the arg description---
+
+##### conjunction
+**type:** and | or
+
+---write the arg description---
+
+##### roles
+**type:** null | @empty | Role1, Role2, $AllAssistants,$AllManagers,$Assistants,$GrandManager,$Manager,$Public,$Self...
+
+---write the arg description---
+
+##### userField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### grid
+**type:** null | Symbol
+
+---write the arg description---
+
+##### gridUserField
+**type:** null | Symbol
+
+---write the arg description---
+
+#### generateDeeplink
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### deeplink
+**type:** null | Symbol
+
+---write the arg description---
+
+##### deeplinkField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### reportInputFormMappingVar
+**type:** null | Symbol
+
+---write the arg description---
+
+##### spreadsheetEditorAction
+**type:** null | Symbol
+
+---write the arg description---
+
+#### insertIntoSpreadsheet
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### target
+**type:** null | Symbol
+
+---write the arg description---
+
+##### sourceGrid
+**type:** null | Symbol
+
+---write the arg description---
+
+##### sourceGridFilter
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### sourceToTargetMapping
+**type:** @null | @empty | @@mapping | mapping
+
+---write the arg description---
+
+##### targetToSourceMapping
+**type:** @null | @empty | @@mapping | mapping
+
+---write the arg description---
+
+#### partitionSend
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### target
+**type:** null | Symbol
+
+---write the arg description---
+
+##### groups
+**type:** null | @empty | Group1, Group2,...
+
+---write the arg description---
+
+#### removeField
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### removeField
+**type:** null | Symbol
+
+---write the arg description---
+
+#### removeFromSpreadsheet
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### target
+**type:** null | Symbol
+
+---write the arg description---
+
+##### sourceGrid
+**type:** null | Symbol
+
+---write the arg description---
+
+##### sourceGridFilter
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### rowIdField
+**type:** null | sectionField | grid/field
+
+---write the arg description---
+
+#### removeRow
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+#### returnEvent
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+#### terminate
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+#### updateField
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### assignValueField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### value
+**type:** null | @null | @empty | ArgBinderValue
+
+---write the arg description---
+
+#### updateLogNumber
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### target
+**type:** null | Symbol
+
+---write the arg description---
+
+##### rowField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### targetField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### operation
+**type:** add | remove | set
+
+---write the arg description---
+
+##### value
+**type:** null | @null | @empty | value
+
+---write the arg description---
+
+#### updateSpreadsheet
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### target
+**type:** null | Symbol
+
+---write the arg description---
+
+##### sourceGrid
+**type:** null | Symbol
+
+---write the arg description---
+
+##### sourceGridFilter
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### rowIdField
+**type:** null | sectionField | grid/field
+
+---write the arg description---
+
+##### sourceToTargetMapping
+**type:** @null | @empty | @@mapping | mapping
+
+---write the arg description---
+
+### webhook
+#### insertIntoSpreadsheet
+##### filterTags
+**type:** null | @null | @empty | text1, text2,...
+
+---write the arg description---
+
+##### name
+**type:** null | Symbol
+
+---write the arg description---
+
+##### description
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### secondary
+**type:** null | @null | @empty | text
+
+---write the arg description---
+
+##### condition
+**type:** @null | @empty | @@condition | condition
+
+---write the arg description---
+
+##### terminateKind
+**type:** resume | setField | terminate
+
+---write the arg description---
+
+##### terminateField
+**type:** null | Symbol
+
+---write the arg description---
+
+##### target
+**type:** null | Symbol
+
+---write the arg description---
+
+##### targetFormMapping
+**type:** @null | @empty | @@mapping | mapping
+
+---write the arg description---
+
+
+## goTo
+
+
+This command doesn't require any additional arguments.
+

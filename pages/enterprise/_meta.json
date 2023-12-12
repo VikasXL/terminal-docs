@@ -1,0 +1,38 @@
+{
+ "plugin": {
+ "title": "Plugin"
+},
+ "role": {
+ "title": "Role"
+},
+ "spreadsheet": {
+ "title": "Spreadsheet"
+},
+ "report": {
+ "title": "Report"
+},
+ "automation": {
+ "title": "Automation"
+},
+ "action": {
+ "title": "Action"
+},
+ "group": {
+ "title": "Group"
+},
+ "deeplink": {
+ "title": "Deeplink"
+},
+ "drive": {
+ "title": "Drive"
+},
+ "prompt": {
+ "title": "Prompt"
+},
+ "translation": {
+ "title": "Translation"
+},
+ "deploy": {
+ "title": "Deploy"
+}
+}

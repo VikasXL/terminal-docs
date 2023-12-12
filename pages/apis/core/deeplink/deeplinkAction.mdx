@@ -1,0 +1,50 @@
+---
+title: deeplinkAction
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"POST"} /> deeplinkAction
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | refreshOptional |
+| Flags | Log message |
+| Publishes | N.A. |
+| Scope | global |
+
+
+- **Flags** Log message
+- **Publishes** N.A.
+- **Scope** global
+
+
+## Description
+
+Get Deeplink related data
+
+## Message format
+
+```json
+{
+  "deeplinkCode": "string"
+}
+```
+
+## Signal format
+
+```json
+{}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=core_deeplink_deeplinkAction)
+

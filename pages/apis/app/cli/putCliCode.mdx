@@ -1,0 +1,110 @@
+---
+title: putCliCode
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"PUT"} /> putCliCode
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc` `wsoc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | N.A. |
+| Scope | global |
+
+
+- **Flags** Log message
+- **Publishes** N.A.
+- **Scope** global
+
+
+## Description
+
+Do any thing with cli code
+
+## Message format
+
+```json
+{
+  "cliCode": "string"
+}
+```
+
+## Signal format
+
+```json
+{
+  "entCliCodeMap?": {
+    "SysId": {
+      "printList?": [
+        {
+          "type": "studioEnt | form | validation | other",
+          "data": {}
+        }
+      ],
+      "apiCmdList?": [
+        {
+          "apiSpec?": {
+            "apiName?": "string",
+            "apiMethod?": "delete | get | patch | post | put",
+            "serviceName?": "ServiceName",
+            "version?": "v1"
+          },
+          "msgPayload?": "string"
+        }
+      ],
+      "gotoCtx?": {
+        "currentGoto?": "action | automation | automationStep | composite | deeplink | ent | plugin | field | form | group | layoutGrid | layoutSpreadsheet | spreadsheet | var | visibilityRule",
+        "gotoForm?": "Symbol",
+        "gotoFormId?": "MetaIdForm",
+        "gotoDeeplink?": "Symbol",
+        "gotoDeeplinkId?": "MetaIdDeeplink",
+        "gotoGroup?": "Symbol",
+        "gotoGroupId?": "MetaIdGroup",
+        "gotoAction?": "Symbol",
+        "gotoActionId?": "MetaIdAction",
+        "gotoComposite?": "Symbol",
+        "gotoCompositeId?": "MetaIdComposite",
+        "gotoField?": "Symbol",
+        "gotoFieldId?": "MetaIdField",
+        "gotoVisibilityRule?": "Symbol",
+        "gotoVisibilityRuleId?": "MetaIdVisibilityRule",
+        "gotoSpreadsheet?": "Symbol",
+        "gotoSpreadsheetId?": "MetaIdSpreadsheet",
+        "gotoLayoutSpreadsheet?": "Symbol",
+        "gotoLayoutSpreadsheetId?": "MetaIdLayoutSpreadsheet",
+        "gotoLayoutGrid?": "Symbol",
+        "gotoLayoutGridId?": "MetaIdLayoutGrid",
+        "gotoAutomation?": "Symbol",
+        "gotoAutomationId?": "MetaIdAutomation",
+        "gotoAutomationEvent?": "Symbol",
+        "gotoAutomationEventId?": "MetaIdEvent",
+        "gotoAutomationStep?": "Symbol",
+        "gotoAutomationStepId?": "MetaIdStep",
+        "gotoVar?": "Symbol",
+        "gotoVarId?": "MetaIdVar",
+        "hardCodeIds?": "boolean",
+        "gotoEnt?": "string",
+        "gotoEntId?": "EntId",
+        "gotoPlugin?": "string",
+        "gotoPluginId?": "PluginId"
+      }
+    }
+  },
+  "lastGotoId?": "SysId",
+  "lastGoto?": "string"
+}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=app_cli_putCliCode)
+

@@ -1,0 +1,68 @@
+---
+title: entPromptActionsGet
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"POST"} /> entPromptActionsGet
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `wsoc` `rpc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | N.A. |
+| Scope | ent |
+
+
+- **Flags** Log message
+- **Publishes** N.A.
+- **Scope** ent
+
+
+## Description
+
+Return the matching prompt actions
+
+## Message format
+
+```json
+{
+  "groupId": "GroupId",
+  "promptText": "string"
+}
+```
+
+## Signal format
+
+```json
+{
+  "promptActionList?": [
+    {
+      "promptActionId": "MetaIdAction",
+      "formValue": {
+        "rowId": "RowId",
+        "rowOrder?": "number",
+        "createdOn?": "string",
+        "createdBy?": "EntUserId",
+        "updatedOn?": "string",
+        "updatedBy?": "EntUserId",
+        "valueMap": {
+          "MetaIdComp": "Object"
+        }
+      }
+    }
+  ]
+}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=ent_entMain_entPromptActionsGet)
+

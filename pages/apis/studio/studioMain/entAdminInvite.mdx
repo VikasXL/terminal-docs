@@ -1,0 +1,53 @@
+---
+title: entAdminInvite
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"POST"} /> entAdminInvite
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | N.A. |
+| Scope | ent |
+
+
+- **Flags** Log message
+- **Publishes** N.A.
+- **Scope** ent
+
+
+## Description
+
+Send invite to admins / admins who has not joined yet to join
+
+## Message format
+
+```json
+{
+  "adminIdSet?": [
+    "AdminId"
+  ],
+  "inviteAllPendingAdmins?": "boolean"
+}
+```
+
+## Signal format
+
+```json
+{}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=studio_studioMain_entAdminInvite)
+

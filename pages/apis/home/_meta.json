@@ -1,0 +1,11 @@
+{
+ "aside": {
+ "title": "Aside"
+},
+ "drawer": {
+ "title": "Drawer"
+},
+ "main": {
+ "title": "Main"
+}
+}

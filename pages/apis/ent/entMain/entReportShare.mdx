@@ -1,0 +1,65 @@
+---
+title: entReportShare
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"PUT"} /> entReportShare
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `wsoc` `rpc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | N.A. |
+| Scope | global and enterprise |
+
+
+- **Flags** Log message
+- **Publishes** N.A.
+- **Scope** global and enterprise
+
+
+## Description
+
+Generate Report Url to Share
+
+## Message format
+
+```json
+{
+  "reportId": "MetaIdReport",
+  "actionId": "MetaIdAction",
+  "inputFormValueRaw?": {
+    "rowId": "RowId",
+    "rowOrder?": "number",
+    "createdOn?": "string",
+    "createdBy?": "EntUserId",
+    "updatedOn?": "string",
+    "updatedBy?": "EntUserId",
+    "valueMap": {
+      "MetaIdComp": "Object"
+    }
+  },
+  "reset?": "boolean"
+}
+```
+
+## Signal format
+
+```json
+{
+  "url": "string"
+}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=ent_entMain_entReportShare)
+

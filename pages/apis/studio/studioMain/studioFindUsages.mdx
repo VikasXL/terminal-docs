@@ -1,0 +1,69 @@
+---
+title: studioFindUsages
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"GET"} /> studioFindUsages
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `test` `ios` `android` `web` `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | N.A. |
+| Scope | pluginOrEnt |
+
+
+- **Flags** Log message
+- **Publishes** N.A.
+- **Scope** pluginOrEnt
+
+
+## Description
+
+Search element or filter tags within artifact
+
+## Message format
+
+```json
+{
+  "metaId": "MetaId"
+}
+```
+
+## Signal format
+
+```json
+{
+  "artifactSearchResult?": {
+    "searchResult?": {
+      "result?": {
+        "SearchPath": [
+          "string"
+        ]
+      }
+    },
+    "neatPathMap?": {
+      "SearchPath": {
+        "primary?": [
+          "string"
+        ],
+        "secondary?": "string",
+        "caption?": "About | Plugins | Roles | Variables | Translations | Forms | Reports | Spreadsheets | Actions | Groups | Deeplinks | DriveSheets | Deploy | Automation | Admins | Users | Followers | Details | API | Resources | Store"
+      }
+    }
+  }
+}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=studio_studioMain_studioFindUsages)
+

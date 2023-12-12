@@ -1,0 +1,26 @@
+{
+ "index": {
+ "title": "Index"
+},
+ "variable": {
+ "title": "Variable"
+},
+ "form": {
+ "title": "Form"
+},
+ "enterprise": {
+ "title": "Enterprise"
+},
+ "plugin": {
+ "title": "Plugin"
+},
+ "misc": {
+ "title": "Misc"
+},
+ "contacts": {
+ "title": "Contacts"
+},
+ "apis": {
+ "title": "Apis"
+}
+}
