@@ -375,7 +375,8 @@ Create store item
                       "menuGroup?": "string",
                       "deviceSizeSet?": [
                         "mobile | tablet | laptop | desktop"
-                      ]
+                      ],
+                      "showMessageTooltip?": "boolean"
                     }
                   },
                   "metaId": "MetaIdField",
@@ -470,6 +471,7 @@ Create store item
                         "deviceSizeSet?": [
                           "mobile | tablet | laptop | desktop"
                         ],
+                        "showMessageTooltip?": "boolean",
                         "storeVersionId?": "StoreVersionId"
                       }
                     },
@@ -942,9 +944,16 @@ Create store item
             "name": "Symbol",
             "action?": "MetaIdAction",
             "promptText?": {},
-            "reviewBeforeExecuting?": "boolean"
+            "reviewBeforeExecuting?": "boolean",
+            "permissionRoleIdSet?": [
+              "MetaIdRole"
+            ]
           }
-        }
+        },
+        "fieldSeparatorSet?": [
+          "string"
+        ],
+        "lineSeparator?": "string"
       },
       "groupMap": {
         "keys": [

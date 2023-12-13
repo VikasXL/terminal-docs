@@ -1,0 +1,60 @@
+---
+title: guaranteedRequestListGet
+---
+
+import MasterChip from "../../../../components/MasterChip"
+
+# <MasterChip value={"GET"} /> guaranteedRequestListGet
+
+## Details
+
+| Property | Value | 
+| :--- | :--- | 
+| Version | `v1` |
+| Allowed Connection Types | `rpc` `wsoc`  |
+| Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
+| Allowed Device Types | `agent`  |
+| SLA | time: 600 ms, timeout: 6000 ms |
+| Token | bearer |
+| Flags | Log message |
+| Publishes | N.A. |
+| Scope | global |
+
+
+- **Flags** Log message
+- **Publishes** N.A.
+- **Scope** global
+
+
+## Description
+
+Accept plugin response
+
+## Message format
+
+```json
+{
+  "queueId": "string",
+  "pageSize": "number"
+}
+```
+
+## Signal format
+
+```json
+{
+  "list": [
+    {
+      "offset": "number",
+      "payload": {
+        "type": "pluginRequest"
+      }
+    }
+  ]
+}
+```
+
+## Try it
+
+[Click here](https://web.neome.ai/api?path=ent_agent_guaranteedRequestListGet)
+

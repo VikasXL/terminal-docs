@@ -371,7 +371,8 @@ Update existing enterprise draft
                     "menuGroup?": "string",
                     "deviceSizeSet?": [
                       "mobile | tablet | laptop | desktop"
-                    ]
+                    ],
+                    "showMessageTooltip?": "boolean"
                   }
                 },
                 "metaId": "MetaIdField",
@@ -466,6 +467,7 @@ Update existing enterprise draft
                       "deviceSizeSet?": [
                         "mobile | tablet | laptop | desktop"
                       ],
+                      "showMessageTooltip?": "boolean",
                       "storeVersionId?": "StoreVersionId"
                     }
                   },
@@ -938,9 +940,16 @@ Update existing enterprise draft
           "name": "Symbol",
           "action?": "MetaIdAction",
           "promptText?": {},
-          "reviewBeforeExecuting?": "boolean"
+          "reviewBeforeExecuting?": "boolean",
+          "permissionRoleIdSet?": [
+            "MetaIdRole"
+          ]
         }
-      }
+      },
+      "fieldSeparatorSet?": [
+        "string"
+      ],
+      "lineSeparator?": "string"
     },
     "groupMap": {
       "keys": [

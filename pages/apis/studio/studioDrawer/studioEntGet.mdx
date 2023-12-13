@@ -379,7 +379,8 @@ Get Saved draft / deployed version if there is no saved draft
                     "menuGroup?": "string",
                     "deviceSizeSet?": [
                       "mobile | tablet | laptop | desktop"
-                    ]
+                    ],
+                    "showMessageTooltip?": "boolean"
                   }
                 },
                 "metaId": "MetaIdField",
@@ -474,6 +475,7 @@ Get Saved draft / deployed version if there is no saved draft
                       "deviceSizeSet?": [
                         "mobile | tablet | laptop | desktop"
                       ],
+                      "showMessageTooltip?": "boolean",
                       "storeVersionId?": "StoreVersionId"
                     }
                   },
@@ -946,9 +948,16 @@ Get Saved draft / deployed version if there is no saved draft
           "name": "Symbol",
           "action?": "MetaIdAction",
           "promptText?": {},
-          "reviewBeforeExecuting?": "boolean"
+          "reviewBeforeExecuting?": "boolean",
+          "permissionRoleIdSet?": [
+            "MetaIdRole"
+          ]
         }
-      }
+      },
+      "fieldSeparatorSet?": [
+        "string"
+      ],
+      "lineSeparator?": "string"
     },
     "groupMap": {
       "keys": [

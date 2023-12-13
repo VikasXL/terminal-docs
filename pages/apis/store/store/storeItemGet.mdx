@@ -383,7 +383,8 @@ Get store item
                       "menuGroup?": "string",
                       "deviceSizeSet?": [
                         "mobile | tablet | laptop | desktop"
-                      ]
+                      ],
+                      "showMessageTooltip?": "boolean"
                     }
                   },
                   "metaId": "MetaIdField",
@@ -478,6 +479,7 @@ Get store item
                         "deviceSizeSet?": [
                           "mobile | tablet | laptop | desktop"
                         ],
+                        "showMessageTooltip?": "boolean",
                         "storeVersionId?": "StoreVersionId"
                       }
                     },
@@ -950,9 +952,16 @@ Get store item
             "name": "Symbol",
             "action?": "MetaIdAction",
             "promptText?": {},
-            "reviewBeforeExecuting?": "boolean"
+            "reviewBeforeExecuting?": "boolean",
+            "permissionRoleIdSet?": [
+              "MetaIdRole"
+            ]
           }
-        }
+        },
+        "fieldSeparatorSet?": [
+          "string"
+        ],
+        "lineSeparator?": "string"
       },
       "groupMap": {
         "keys": [
