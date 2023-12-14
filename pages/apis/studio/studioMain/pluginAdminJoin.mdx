@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `rpc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | `studioAdminBook`  |
 | Scope | global |
-
-
-- **Flags** Log message
-- **Publishes** `studioAdminBook` 
-- **Scope** global
 
 
 ## Description
@@ -32,7 +27,7 @@ Join plugin admin from invitation
 
 ## Message format
 
-```json
+```json copy
 {
   "pluginBundleId": "PluginBundleId"
 }
@@ -40,11 +35,11 @@ Join plugin admin from invitation
 
 ## Signal format
 
-```json
+```json copy
 {}
 ```
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=studio_studioMain_pluginAdminJoin)
+Try this API, [Click here](https://web.neome.ai/api?path=studio_studioMain_pluginAdminJoin)
 

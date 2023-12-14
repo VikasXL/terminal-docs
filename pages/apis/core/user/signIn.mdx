@@ -14,14 +14,10 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `rpc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | refreshOptional |
 | Publishes | `callerDeviceList`  |
 | Scope | global |
-
-
-- **Publishes** `callerDeviceList` 
-- **Scope** global
 
 
 ## Description
@@ -30,7 +26,7 @@ SignIn user
 
 ## Message format
 
-```json
+```json copy
 {
   "password": "string",
   "deviceName": "string",
@@ -42,7 +38,7 @@ SignIn user
 
 ## Signal format
 
-```json
+```json copy
 {
   "refreshToken": "string",
   "callerId": "UserId",
@@ -54,5 +50,5 @@ SignIn user
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=core_user_signIn)
+Try this API, [Click here](https://web.neome.ai/api?path=core_user_signIn)
 

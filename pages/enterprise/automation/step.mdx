@@ -4,20 +4,18 @@ title: Step
 
 # automationStep
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove automationStep AutomationStepName
+```
 
 
 ## print
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ print automationStep AutomationStepName
+```
 
 
 ## ensure
@@ -25,20 +23,32 @@ This command doesn't require any additional arguments.
 This command accepts the following arguments:
 
 ### scheduled
+```js filename="Terminal" copy
+ ensure automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 #### kind
-**type:** ---write the arg description---
+**type:** callPlugin | insertIntoSpreadsheet
 
 ---write the arg description---
 
 ### spreadsheet
+```js filename="Terminal" copy
+ ensure automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 #### kind
-**type:** ---write the arg description---
+**type:** calculateFormulas | callPlugin | callReport | forwardToGroups | forwardToUsers | generateDeeplink | insertIntoSpreadsheet | partitionSend | removeField | removeFromSpreadsheet | removeRow | returnEvent | terminate | updateField | updateLogNumber | updateSpreadsheet
 
 ---write the arg description---
 
 ### webhook
+```js filename="Terminal" copy
+ ensure automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 #### kind
-**type:** ---write the arg description---
+**type:** insertIntoSpreadsheet
 
 ---write the arg description---
 
@@ -49,1028 +59,1104 @@ This command accepts the following arguments:
 
 ### scheduled
 #### callPlugin
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### plugin
-**type:** ---write the arg description---
+**type:** null | @null | @empty | pluginName
 
 ---write the arg description---
 
 ##### pluginApi
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### pluginInputMapping
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mapping type variable | mapping value
 
 ---write the arg description---
 
 ##### errorRetryCount
-**type:** ---write the arg description---
+**type:** null | @null | @empty | number type variable | number value
 
 ---write the arg description---
 
 ##### errorRetryDuration
-**type:** ---write the arg description---
+**type:** null | @null | @empty | duration type variable | duration value
 
 ---write the arg description---
 
 ##### errorSpreadsheet
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### errorField
-**type:** ---write the arg description---
+**type:** null | sectionField | grid/field
 
 ---write the arg description---
 
 #### insertIntoSpreadsheet
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### target
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### targetFormMapping
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mapping type variable | mapping value
 
 ---write the arg description---
 
 ### spreadsheet
 #### calculateFormulas
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### field
-**type:** ---write the arg description---
+**type:** null | sectionField | grid/field
 
 ---write the arg description---
 
 ##### newCondition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### newFormula
-**type:** ---write the arg description---
+**type:** null | @null | @empty | formula
 
 ---write the arg description---
 
 #### callPlugin
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### pluginName
-**type:** ---write the arg description---
+**type:** null | @null | @empty | pluginName
 
 ---write the arg description---
 
 ##### pluginApi
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### sourceGrid
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### sourceGridFilter
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### pluginInputMapping
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mapping type variable | mapping value
 
 ---write the arg description---
 
 ##### pluginOutputMapping
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mapping type variable | mapping value
 
 ---write the arg description---
 
 ##### errorRetryCount
-**type:** ---write the arg description---
+**type:** null | @null | @empty | number type variable | number value
 
 ---write the arg description---
 
 ##### errorRetryDuration
-**type:** ---write the arg description---
+**type:** null | @null | @empty | duration type variable | duration value
 
 ---write the arg description---
 
 ##### errorField
-**type:** ---write the arg description---
+**type:** null | sectionField | grid/field
 
 ---write the arg description---
 
 #### callReport
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### scheduler
-**type:** ---write the arg description---
+**type:** null | @null | @empty | scheduler type variable | scheduler value
 
 ---write the arg description---
 
 ##### report
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### sourceGrid
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### sourceGridFilter
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### reportInputMappingVar
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mapping type variable | mapping value
 
 ---write the arg description---
 
 ##### reportOutputMapping
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mapping type variable | mapping value
 
 ---write the arg description---
 
 ##### errorRetryCountVar
-**type:** ---write the arg description---
+**type:** null | @null | @empty | number type variable | number value
 
 ---write the arg description---
 
 ##### errorRetryDuration
-**type:** ---write the arg description---
+**type:** null | @null | @empty | duration type variable | duration value
 
 ---write the arg description---
 
 ##### errorField
-**type:** ---write the arg description---
+**type:** null | sectionField | grid/field
 
 ---write the arg description---
 
 #### forwardToGroups
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### groups
-**type:** ---write the arg description---
+**type:** null | @empty | Group1, Group2, ...
 
 ---write the arg description---
 
 ##### senderField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### senderRole
-**type:** ---write the arg description---
+**type:** null | Role | $AllAssistants | $AllManagers | $Assistants | $GrandManager | $Manager | $Public | $Self ...
 
 ---write the arg description---
 
 #### forwardToUsers
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### senderField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### senderRole
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### conjunction
-**type:** ---write the arg description---
+**type:** and | or
 
 ---write the arg description---
 
 ##### roles
-**type:** ---write the arg description---
+**type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
 
 ---write the arg description---
 
 ##### userField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### grid
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### gridUserField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### generateDeeplink
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### deeplink
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### deeplinkField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### reportInputFormMappingVar
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### spreadsheetEditorAction
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### insertIntoSpreadsheet
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### target
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### sourceGrid
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### sourceGridFilter
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### sourceToTargetMapping
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mapping type variable | mapping value
 
 ---write the arg description---
 
 ##### targetToSourceMapping
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mapping type variable | mapping value
 
 ---write the arg description---
 
 #### partitionSend
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### target
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### groups
-**type:** ---write the arg description---
+**type:** null | @empty | Group1, Group2, ...
 
 ---write the arg description---
 
 #### removeField
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### removeField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### removeFromSpreadsheet
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### target
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### sourceGrid
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### sourceGridFilter
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### rowIdField
-**type:** ---write the arg description---
+**type:** null | sectionField | grid/field
 
 ---write the arg description---
 
 #### removeRow
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### returnEvent
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### terminate
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### updateField
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### assignValueField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | argBinderValue
 
 ---write the arg description---
 
 #### updateLogNumber
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### target
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### rowField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### targetField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### operation
-**type:** ---write the arg description---
+**type:** add | remove | set
 
 ---write the arg description---
 
 ##### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | value
 
 ---write the arg description---
 
 #### updateSpreadsheet
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### target
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### sourceGrid
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### sourceGridFilter
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### rowIdField
-**type:** ---write the arg description---
+**type:** null | sectionField | grid/field
 
 ---write the arg description---
 
 ##### sourceToTargetMapping
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mapping type variable | mapping value
 
 ---write the arg description---
 
 ### webhook
 #### insertIntoSpreadsheet
+```js filename="Terminal" copy
+ update automationStep AutomationStepName argument1:"value1" argument2:"value2"
+```
+
 ##### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ##### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ##### condition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 ##### terminateKind
-**type:** ---write the arg description---
+**type:** resume | setField | terminate
 
 ---write the arg description---
 
 ##### terminateField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### target
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ##### targetFormMapping
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mapping type variable | mapping value
 
 ---write the arg description---
 
@@ -1078,5 +1164,7 @@ This command accepts the following arguments:
 ## goTo
 
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ goto automationStep AutomationStepName
+```
 

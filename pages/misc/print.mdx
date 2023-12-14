@@ -8,7 +8,7 @@ title: Print
 ## actionFormDefaultValue
 
 ### field
-type : ---write the arg description---
+type : null | Symbol
 
 
 ## actions
@@ -17,7 +17,7 @@ type : ---write the arg description---
 ## admin
 
 ### handle
-type : ---write the arg description---
+type : null | @null | @empty | handle
 
 
 ## admins
@@ -35,7 +35,7 @@ type : ---write the arg description---
 ## automationStepFormula
 
 ### field
-type : ---write the arg description---
+type : null | sectionField | grid/field
 
 
 ## automations
@@ -47,10 +47,10 @@ type : ---write the arg description---
 ## deeplinkProp
 
 ### prop
-type : ---write the arg description---
+type : null | @null | @empty | prop
 
 ### param
-type : ---write the arg description---
+type : null | @null | @empty | param
 
 
 ## deeplinks
@@ -62,7 +62,7 @@ type : ---write the arg description---
 ## deployEntPluginConfigFormValue
 
 ### field
-type : ---write the arg description---
+type : null | Symbol
 
 
 ## driveSheet
@@ -72,6 +72,9 @@ type : ---write the arg description---
 
 
 ## entPlugin
+
+### name
+type : null | @null | @empty | pluginName
 
 
 ## entPlugins
@@ -89,25 +92,25 @@ type : ---write the arg description---
 ## fieldProp
 
 ### prop
-type : ---write the arg description---
+type : null | @null | @empty | prop
 
 ### param
-type : ---write the arg description---
+type : null | @null | @empty | param
 
 
 ## follower
 
 ### handle
-type : ---write the arg description---
+type : null | @null | @empty | handle
 
 
 ## followers
 
 ### name
-type : ---write the arg description---
+type : null | @null | @empty | name
 
 ### handle
-type : ---write the arg description---
+type : null | @null | @empty | email/mobile
 
 
 ## form
@@ -116,13 +119,13 @@ type : ---write the arg description---
 ## formFormula
 
 ### field
-type : ---write the arg description---
+type : null | sectionField | grid/field
 
 
 ## formMenu
 
 ### action
-type : ---write the arg description---
+type : null | Symbol
 
 
 ## formPermission
@@ -131,10 +134,10 @@ type : ---write the arg description---
 ## formProp
 
 ### prop
-type : ---write the arg description---
+type : null | @null | @empty | prop
 
 ### param
-type : ---write the arg description---
+type : null | @null | @empty | param
 
 
 ## formVisibilityAction
@@ -161,13 +164,13 @@ type : ---write the arg description---
 ## gridMenu
 
 ### action
-type : ---write the arg description---
+type : null | Symbol
 
 
 ## gridMenuRow
 
 ### action
-type : ---write the arg description---
+type : null | Symbol
 
 
 ## gridPermission
@@ -176,10 +179,10 @@ type : ---write the arg description---
 ## gridProp
 
 ### prop
-type : ---write the arg description---
+type : null | @null | @empty | prop
 
 ### param
-type : ---write the arg description---
+type : null | @null | @empty | param
 
 
 ## group
@@ -188,7 +191,7 @@ type : ---write the arg description---
 ## groupAction
 
 ### action
-type : ---write the arg description---
+type : null | Symbol
 
 
 ## groups
@@ -203,7 +206,7 @@ type : ---write the arg description---
 ## pluginResource
 
 ### type
-type : ---write the arg description---
+type : dev | jar | rpc
 
 
 ## prompt
@@ -230,7 +233,7 @@ type : ---write the arg description---
 ## sectionMenu
 
 ### action
-type : ---write the arg description---
+type : null | Symbol
 
 
 ## sectionPermission
@@ -239,10 +242,10 @@ type : ---write the arg description---
 ## sectionProp
 
 ### prop
-type : ---write the arg description---
+type : null | @null | @empty | prop
 
 ### param
-type : ---write the arg description---
+type : null | @null | @empty | param
 
 
 ## spreadsheet
@@ -257,13 +260,13 @@ type : ---write the arg description---
 ## spreadsheetPermissionForwardGroups
 
 ### role
-type : ---write the arg description---
+type : null | Symbol
 
 
 ## spreadsheetPermissionForwardRoles
 
 ### role
-type : ---write the arg description---
+type : null | Symbol
 
 
 ## spreadsheets
@@ -275,22 +278,22 @@ type : ---write the arg description---
 ## user
 
 ### handle
-type : ---write the arg description---
+type : null | @null | @empty | handle
 
 
 ## users
 
 ### name
-type : ---write the arg description---
+type : null | @null | @empty | name
 
 ### handle
-type : ---write the arg description---
+type : null | @null | @empty | email/mobile
 
 ### roles
-type : ---write the arg description---
+type : null | @empty | Role1, Role2, ...
 
 ### manager
-type : ---write the arg description---
+type : null | @null | @empty | managerName
 
 
 ## validations

@@ -6,51 +6,63 @@ title: Permission
 
 ## ensure
 
+```js filename="Terminal" copy
+ ensure formPermission  argument1:"value1" argument2:"value2"
+```
+
 This command accepts the following arguments:
 
 ### default
-**type:** ---write the arg description---
+**type:** invisible | read | write | writeOnce
 
 ---write the arg description---
 
 ### role
-**type:** ---write the arg description---
+**type:** null | Role | $AllAssistants | $AllManagers | $Assistants | $GrandManager | $Manager | $Public | $Self ...
 
 ---write the arg description---
 
 ### permission
-**type:** ---write the arg description---
+**type:** invisible | read | write | writeOnce
 
 ---write the arg description---
 
 ### allowToPrintForm
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 ### commentRoles
-**type:** ---write the arg description---
+**type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
 
 ---write the arg description---
 
 
 ## remove
 
+```js filename="Terminal" copy
+ remove formPermission  argument1:"value1" argument2:"value2"
+```
+
 This command accepts the following arguments:
 
 ### role
-**type:** ---write the arg description---
+**type:** null | Role | $AllAssistants | $AllManagers | $Assistants | $GrandManager | $Manager | $Public | $Self ...
 
 ---write the arg description---
 
 
 ## print
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ print formPermission 
+```
 
 
 ## goTo
 
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ goto formPermission FormPermissionName
+```
 

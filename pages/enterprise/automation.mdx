@@ -4,30 +4,32 @@ title: Automation
 
 # automation
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## ensure
+
+```js filename="Terminal" copy
+ ensure automation AutomationName argument1:"value1" argument2:"value2"
+```
 
 This command accepts the following arguments:
 
 ### kind
-**type:** ---write the arg description---
+**type:** scheduled | spreadsheet | webhook
 
 ---write the arg description---
 
 
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove automation AutomationName
+```
 
 
 ## print
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ print automation AutomationName
+```
 
 
 ## update
@@ -35,65 +37,77 @@ This command doesn't require any additional arguments.
 This command accepts the following arguments:
 
 ### scheduled
+```js filename="Terminal" copy
+ update automation AutomationName argument1:"value1" argument2:"value2"
+```
+
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ### spreadsheet
+```js filename="Terminal" copy
+ update automation AutomationName argument1:"value1" argument2:"value2"
+```
+
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ### webhook
+```js filename="Terminal" copy
+ update automation AutomationName argument1:"value1" argument2:"value2"
+```
+
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### secondary
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
@@ -101,5 +115,7 @@ This command accepts the following arguments:
 ## goTo
 
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ goto automation AutomationName
+```
 

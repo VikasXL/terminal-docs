@@ -4,30 +4,32 @@ title: Report
 
 # report
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## ensure
+
+```js filename="Terminal" copy
+ ensure report ReportName argument1:"value1" argument2:"value2"
+```
 
 This command accepts the following arguments:
 
 ### kind
-**type:** ---write the arg description---
+**type:** composite | mapper | plugin | query | spreadsheet
 
 ---write the arg description---
 
 
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove report ReportName
+```
 
 
 ## print
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ print report ReportName
+```
 
 
 ## update
@@ -35,227 +37,247 @@ This command doesn't require any additional arguments.
 This command accepts the following arguments:
 
 ### composite
+```js filename="Terminal" copy
+ update report ReportName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### inputForm
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### outputForm
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### mergeReports
-**type:** ---write the arg description---
+**type:** null | @empty | Report1, Report2, ...
 
 ---write the arg description---
 
 ### mapper
+```js filename="Terminal" copy
+ update report ReportName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### inputForm
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### outputForm
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### mappedReport
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### saveToSpreadsheet
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### inputFormMapping
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mapping type variable | mapping value
 
 ---write the arg description---
 
 #### outputFormMapping
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mapping type variable | mapping value
 
 ---write the arg description---
 
 ### plugin
+```js filename="Terminal" copy
+ update report ReportName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### inputForm
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### outputForm
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### pluginName
-**type:** ---write the arg description---
+**type:** null | @null | @empty | pluginName
 
 ---write the arg description---
 
 #### pluginApi
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### inputFormMapping
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mapping type variable | mapping value
 
 ---write the arg description---
 
 #### outputFormMapping
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mapping type variable | mapping value
 
 ---write the arg description---
 
 ### query
+```js filename="Terminal" copy
+ update report ReportName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### inputForm
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### outputForm
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### fromSpreadsheets
-**type:** ---write the arg description---
+**type:** null | @empty | Spreadsheet1, Spreadsheet2, ...
 
 ---write the arg description---
 
 #### neoQL
-**type:** ---write the arg description---
+**type:** null | @null | @empty | neoQL code
 
 ---write the arg description---
 
 ### spreadsheet
+```js filename="Terminal" copy
+ update report ReportName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### inputForm
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### outputForm
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### fromSpreadsheet
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### filterCondition
-**type:** ---write the arg description---
+**type:** null | @null | @empty | condition type variable | condition value
 
 ---write the arg description---
 
 #### outputFormMapping
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mapping type variable | mapping value
 
 ---write the arg description---
 

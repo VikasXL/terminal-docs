@@ -4,74 +4,78 @@ title: Group
 
 # group
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## ensure
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ ensure group GroupName
+```
 
 
 ## update
 
+```js filename="Terminal" copy
+ update group GroupName argument1:"value1" argument2:"value2"
+```
+
 This command accepts the following arguments:
 
 ### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 ### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 ### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ### allowPromptAssistant
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 ### pinnedActions
-**type:** ---write the arg description---
+**type:** null | @empty | PinnedActions1, PinnedActions2, ...
 
 ---write the arg description---
 
 ### pinnedActionsMobile
-**type:** ---write the arg description---
+**type:** null | @empty | PinnedActionsMobile1, PinnedActionsMobile2, ...
 
 ---write the arg description---
 
 ### groupPermissions
-**type:** ---write the arg description---
+**type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
 
 ---write the arg description---
 
 ### chatPermissions
-**type:** ---write the arg description---
+**type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
 
 ---write the arg description---
 
 
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove group GroupName
+```
 
 
 ## print
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ print group GroupName
+```
 
 

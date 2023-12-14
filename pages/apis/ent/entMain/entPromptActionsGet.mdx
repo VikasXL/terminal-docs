@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `wsoc` `rpc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | N.A. |
 | Scope | ent |
-
-
-- **Flags** Log message
-- **Publishes** N.A.
-- **Scope** ent
 
 
 ## Description
@@ -32,7 +27,7 @@ Return the matching prompt actions
 
 ## Message format
 
-```json
+```json copy
 {
   "groupId": "GroupId",
   "promptText": "string"
@@ -41,7 +36,7 @@ Return the matching prompt actions
 
 ## Signal format
 
-```json
+```json copy
 {
   "reviewPromptActionList?": [
     {
@@ -57,7 +52,8 @@ Return the matching prompt actions
         "valueMap": {
           "MetaIdComp": "Object"
         }
-      }
+      },
+      "executeOnClient": "boolean"
     }
   ],
   "executedPromptActionList?": [
@@ -68,5 +64,5 @@ Return the matching prompt actions
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=ent_entMain_entPromptActionsGet)
+Try this API, [Click here](https://web.neome.ai/api?path=ent_entMain_entPromptActionsGet)
 

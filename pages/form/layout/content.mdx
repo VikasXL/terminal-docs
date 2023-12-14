@@ -4,118 +4,120 @@ title: Content
 
 # formLayoutContent
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## ensure
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ ensure formLayoutContent FormLayoutContentName
+```
 
 
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove formLayoutContent FormLayoutContentName
+```
 
 
 ## update
 
+```js filename="Terminal" copy
+ update formLayoutContent FormLayoutContentName argument1:"value1" argument2:"value2"
+```
+
 This command accepts the following arguments:
 
 ### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text type variable | text value
 
 ---write the arg description---
 
 ### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 ### displayLabel
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text type variable | text value
 
 ---write the arg description---
 
 ### direction
-**type:** ---write the arg description---
+**type:** horizontal | vertical
 
 ---write the arg description---
 
 ### allowToSwitchLayouts
-**type:** ---write the arg description---
+**type:** null | @empty | FormContentLayout1, FormContentLayout2, ...
 
 ---write the arg description---
 
 ### position
-**type:** ---write the arg description---
+**type:** end | flexCenter | start
 
 ---write the arg description---
 
 ### defaultLayout
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 ### showBorders
-**type:** ---write the arg description---
+**type:** null | @empty | bottom, left, right, top
 
 ---write the arg description---
 
 ### showPaddings
-**type:** ---write the arg description---
+**type:** null | @empty | bottom, left, right, top
 
 ---write the arg description---
 
 ### contentPadding
-**type:** ---write the arg description---
+**type:** thick | thin
 
 ---write the arg description---
 
 ### renderingMode
-**type:** ---write the arg description---
+**type:** a4Size | fullScreen
 
 ---write the arg description---
 
 ### fields
-**type:** ---write the arg description---
+**type:** null | @empty | Field1, Field2, ...
 
 ---write the arg description---
 
 ### contentLayouts
-**type:** ---write the arg description---
+**type:** null | @empty | ContentLayout1, ContentLayout2, ...
 
 ---write the arg description---
 
 ### gridLayouts
-**type:** ---write the arg description---
+**type:** null | @empty | Grid1/Layout1, Grid2/Layout2, ...
 
 ---write the arg description---
 
 ### gridSwitchers
-**type:** ---write the arg description---
+**type:** null | @empty | Grid1, Grid2, ...
 
 ---write the arg description---
 
 ### showItemBorders
-**type:** ---write the arg description---
+**type:** null | @empty | bottom, left, right, top
 
 ---write the arg description---
 
 ### showItemPadding
-**type:** ---write the arg description---
+**type:** null | @empty | bottom, left, right, top
 
 ---write the arg description---
 
 ### padding
-**type:** ---write the arg description---
+**type:** thick | thin
 
 ---write the arg description---
 

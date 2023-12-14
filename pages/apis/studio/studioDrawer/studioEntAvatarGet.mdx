@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `rpc` `wsoc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | N.A. |
 | Scope | ent |
-
-
-- **Flags** Log message
-- **Publishes** N.A.
-- **Scope** ent
 
 
 ## Description
@@ -32,7 +27,7 @@ Get enterprise avatar for studio from draft or deployed copy
 
 ## Message format
 
-```json
+```json copy
 {
   "version?": "string"
 }
@@ -40,7 +35,7 @@ Get enterprise avatar for studio from draft or deployed copy
 
 ## Signal format
 
-```json
+```json copy
 {
   "entId": "EntId",
   "name": "string",
@@ -56,5 +51,5 @@ Get enterprise avatar for studio from draft or deployed copy
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=studio_studioDrawer_studioEntAvatarGet)
+Try this API, [Click here](https://web.neome.ai/api?path=studio_studioDrawer_studioEntAvatarGet)
 

@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `rpc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | refresh |
 | Flags | Log message |
 | Publishes | N.A. |
 | Scope | global |
-
-
-- **Flags** Log message
-- **Publishes** N.A.
-- **Scope** global
 
 
 ## Description
@@ -32,7 +27,7 @@ If refresh token sent transparently via Http cookie is valid, grant a bearer tok
 
 ## Message format
 
-```json
+```json copy
 {
   "tabId": "TabId",
   "appVersion": "AppVersion",
@@ -42,7 +37,7 @@ If refresh token sent transparently via Http cookie is valid, grant a bearer tok
 
 ## Signal format
 
-```json
+```json copy
 {
   "bearerToken": "string",
   "caller?": {
@@ -83,5 +78,5 @@ If refresh token sent transparently via Http cookie is valid, grant a bearer tok
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=core_user_grantBearerToken)
+Try this API, [Click here](https://web.neome.ai/api?path=core_user_grantBearerToken)
 

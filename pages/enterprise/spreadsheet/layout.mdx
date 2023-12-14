@@ -4,30 +4,32 @@ title: Layout
 
 # spreadsheetLayout
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## ensure
+
+```js filename="Terminal" copy
+ ensure spreadsheetLayout SpreadsheetLayoutName argument1:"value1" argument2:"value2"
+```
 
 This command accepts the following arguments:
 
 ### kind
-**type:** ---write the arg description---
+**type:** card | kanban | list | table
 
 ---write the arg description---
 
 
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove spreadsheetLayout SpreadsheetLayoutName
+```
 
 
 ## print
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ print spreadsheetLayout SpreadsheetLayoutName
+```
 
 
 ## update
@@ -35,271 +37,287 @@ This command doesn't require any additional arguments.
 This command accepts the following arguments:
 
 ### card
+```js filename="Terminal" copy
+ update spreadsheetLayout SpreadsheetLayoutName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### toolTipField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### bkgColorField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### allowToSwitchLayouts
-**type:** ---write the arg description---
+**type:** null | @empty | SpreadsheetLayout1, SpreadsheetLayout2, ...
 
 ---write the arg description---
 
 #### groupByField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### kind
-**type:** ---write the arg description---
+**type:** tab | tree
 
 ---write the arg description---
 
 #### showSearchBar
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### categoryFields
-**type:** ---write the arg description---
+**type:** null | @empty | Field1, Field2, ...
 
 ---write the arg description---
 
 #### advanceFilterFields
-**type:** ---write the arg description---
+**type:** null | @empty | Field1, Field2, ...
 
 ---write the arg description---
 
 #### sortByFields
-**type:** ---write the arg description---
+**type:** null | @empty | Field1, Field2, ...
 
 ---write the arg description---
 
 ### kanban
+```js filename="Terminal" copy
+ update spreadsheetLayout SpreadsheetLayoutName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### toolTipField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### bkgColorField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### allowToSwitchLayouts
-**type:** ---write the arg description---
+**type:** null | @empty | SpreadsheetLayout1, SpreadsheetLayout2, ...
 
 ---write the arg description---
 
 #### showCommentCount
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### showSectionName
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### showFooter
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### fontSize
-**type:** ---write the arg description---
+**type:** body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4
 
 ---write the arg description---
 
 #### showFields
-**type:** ---write the arg description---
+**type:** null | @empty | Field1, Field2, ...
 
 ---write the arg description---
 
 #### sortByFields
-**type:** ---write the arg description---
+**type:** null | @empty | Field1, Field2, ...
 
 ---write the arg description---
 
 #### kanbanField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### swimLaneLabels
-**type:** ---write the arg description---
+**type:** null | @null | @empty | label1 \n label2 \n ...
 
 ---write the arg description---
 
 #### swimLaneColors
-**type:** ---write the arg description---
+**type:** null | @empty | ColorVar1, ColorVar2, ...
 
 ---write the arg description---
 
 ### list
+```js filename="Terminal" copy
+ update spreadsheetLayout SpreadsheetLayoutName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### toolTipField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### bkgColorField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### allowToSwitchLayouts
-**type:** ---write the arg description---
+**type:** null | @empty | SpreadsheetLayout1, SpreadsheetLayout2, ...
 
 ---write the arg description---
 
 #### groupByField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### kind
-**type:** ---write the arg description---
+**type:** tab | tree
 
 ---write the arg description---
 
 #### showSearchBar
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### categoryFields
-**type:** ---write the arg description---
+**type:** null | @empty | Field1, Field2, ...
 
 ---write the arg description---
 
 #### advanceFilterFields
-**type:** ---write the arg description---
+**type:** null | @empty | Field1, Field2, ...
 
 ---write the arg description---
 
 #### sortByFields
-**type:** ---write the arg description---
+**type:** null | @empty | Field1, Field2, ...
 
 ---write the arg description---
 
 ### table
+```js filename="Terminal" copy
+ update spreadsheetLayout SpreadsheetLayoutName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### toolTipField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### bkgColorField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### allowToSwitchLayouts
-**type:** ---write the arg description---
+**type:** null | @empty | SpreadsheetLayout1, SpreadsheetLayout2, ...
 
 ---write the arg description---
 
 #### showCommentCount
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### pagination
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### rowsPerPage
-**type:** ---write the arg description---
+**type:** null | integer
 
 ---write the arg description---
 
 #### showFields
-**type:** ---write the arg description---
+**type:** null | @empty | Field1, Field2, ...
 
 ---write the arg description---
 
 #### masterDetailGrids
-**type:** ---write the arg description---
+**type:** null | @empty | Grid1, Grid2, ...
 
 ---write the arg description---
 
 #### hideRowSeparator
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### columnSizes
-**type:** ---write the arg description---
+**type:** null | @null | @empty | AutoSize, Flex, [number]px, [number]em, ...
 
 ---write the arg description---
 
 #### sortByFields
-**type:** ---write the arg description---
+**type:** null | @empty | Field1, Field2, ...
 
 ---write the arg description---
 
@@ -307,5 +325,7 @@ This command accepts the following arguments:
 ## goTo
 
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ goto spreadsheetLayout SpreadsheetLayoutName
+```
 

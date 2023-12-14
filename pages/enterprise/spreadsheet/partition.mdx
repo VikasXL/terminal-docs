@@ -4,44 +4,48 @@ title: Partition
 
 # spreadsheetPartition
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## ensure
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ ensure spreadsheetPartition SpreadsheetPartitionName
+```
 
 
 ## update
 
+```js filename="Terminal" copy
+ update spreadsheetPartition SpreadsheetPartitionName argument1:"value1" argument2:"value2"
+```
+
 This command accepts the following arguments:
 
 ### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ### field
-**type:** ---write the arg description---
+**type:** null | sectionField | grid/field
 
 ---write the arg description---
 
 ### formula
-**type:** ---write the arg description---
+**type:** null | @null | @empty | formula
 
 ---write the arg description---
 
 
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove spreadsheetPartition SpreadsheetPartitionName
+```
 
 
 ## print
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ print spreadsheetPartition SpreadsheetPartitionName
+```
 
 

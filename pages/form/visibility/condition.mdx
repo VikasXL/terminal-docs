@@ -4,54 +4,60 @@ title: Condition
 
 # formVisibilityCondition
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## ensure
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ ensure formVisibilityCondition FormVisibilityConditionName
+```
 
 
 ## update
 
+```js filename="Terminal" copy
+ update formVisibilityCondition FormVisibilityConditionName argument1:"value1" argument2:"value2"
+```
+
 This command accepts the following arguments:
 
 ### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ### lhs
-**type:** ---write the arg description---
+**type:** null | sectionField | grid/field
 
 ---write the arg description---
 
 ### rhs
-**type:** ---write the arg description---
+**type:** null | @null | @empty | argBinderValue
 
 ---write the arg description---
 
 ### visibilityOperator
-**type:** ---write the arg description---
+**type:** equalTo | hasNoValue | hasValue | notEqualTo
 
 ---write the arg description---
 
 
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove formVisibilityCondition FormVisibilityConditionName
+```
 
 
 ## print
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ print formVisibilityCondition FormVisibilityConditionName
+```
 
 
 ## goTo
 
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ goto formVisibilityCondition FormVisibilityConditionName
+```
 

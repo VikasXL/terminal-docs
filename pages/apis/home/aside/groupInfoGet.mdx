@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `rpc` `wsoc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | N.A. |
 | Scope | global and enterprise |
-
-
-- **Flags** Log message
-- **Publishes** N.A.
-- **Scope** global and enterprise
 
 
 ## Description
@@ -32,7 +27,7 @@ Get details about given group and its configurations
 
 ## Message format
 
-```json
+```json copy
 {
   "groupId": "GroupId",
   "version?": "string"
@@ -41,7 +36,7 @@ Get details about given group and its configurations
 
 ## Signal format
 
-```json
+```json copy
 {
   "groupId": "GroupId",
   "entId": "EntId",
@@ -78,5 +73,5 @@ Get details about given group and its configurations
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=home_aside_groupInfoGet)
+Try this API, [Click here](https://web.neome.ai/api?path=home_aside_groupInfoGet)
 

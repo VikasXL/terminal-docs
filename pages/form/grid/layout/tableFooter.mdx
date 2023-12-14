@@ -4,38 +4,38 @@ title: Table footer
 
 # gridLayoutTableFooter
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove gridLayoutTableFooter GridLayoutTableFooterName
+```
 
 
 ## update
 
+```js filename="Terminal" copy
+ update gridLayoutTableFooter GridLayoutTableFooterName argument1:"value1" argument2:"value2"
+```
+
 This command accepts the following arguments:
 
 ### displayField
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ### fields
-**type:** ---write the arg description---
+**type:** null | @empty | Field1, Field2, ...
 
 ---write the arg description---
 
 ### showLabel
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 ### alignment
-**type:** ---write the arg description---
+**type:** bottom | center | diagonal | end | flexCenter | justify | overlayTop | spaceBetween | start | top
 
 ---write the arg description---
 

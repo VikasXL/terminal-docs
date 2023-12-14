@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `rpc` `wsoc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | N.A. |
 | Scope | ent |
-
-
-- **Flags** Log message
-- **Publishes** N.A.
-- **Scope** ent
 
 
 ## Description
@@ -32,7 +27,7 @@ Executes formula and gets a new form result
 
 ## Message format
 
-```json
+```json copy
 {
   "formId": "MetaIdForm",
   "formValueRaw": {
@@ -51,7 +46,7 @@ Executes formula and gets a new form result
 
 ## Signal format
 
-```json
+```json copy
 {
   "formValue": {
     "rowId": "RowId",
@@ -69,5 +64,5 @@ Executes formula and gets a new form result
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=ent_entMain_entFormResultCalc)
+Try this API, [Click here](https://web.neome.ai/api?path=ent_entMain_entFormResultCalc)
 

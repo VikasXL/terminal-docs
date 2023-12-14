@@ -5,9 +5,6 @@
  "otp": {
  "title": "Otp"
 },
- "scheduler": {
- "title": "Scheduler"
-},
  "session": {
  "title": "Session"
 },

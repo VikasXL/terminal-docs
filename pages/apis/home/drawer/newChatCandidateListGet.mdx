@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `rpc` `wsoc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | N.A. |
 | Scope | global |
-
-
-- **Flags** Log message
-- **Publishes** N.A.
-- **Scope** global
 
 
 ## Description
@@ -32,7 +27,7 @@ Get chat candidate list for new chat
 
 ## Message format
 
-```json
+```json copy
 {
   "filterEntIdSet?": [
     "EntId"
@@ -42,7 +37,7 @@ Get chat candidate list for new chat
 
 ## Signal format
 
-```json
+```json copy
 {
   "candidateMap": {
     "AnyPrefixKey": [
@@ -79,5 +74,5 @@ Get chat candidate list for new chat
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=home_drawer_newChatCandidateListGet)
+Try this API, [Click here](https://web.neome.ai/api?path=home_drawer_newChatCandidateListGet)
 

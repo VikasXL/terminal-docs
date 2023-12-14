@@ -4,49 +4,53 @@ title: Role
 
 # role
 
-import { Callout } from 'nextra/components'
+## ensure
 
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
+```js filename="Terminal" copy
+ ensure role RoleName
+```
+
 
 ## update
+
+```js filename="Terminal" copy
+ update role RoleName argument1:"value1" argument2:"value2"
+```
 
 This command accepts the following arguments:
 
 ### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 ### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 ### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 
 ## remove
 
-This command doesn't require any additional arguments.
-
-
-## ensure
-
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove role RoleName
+```
 
 
 ## print
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ print role RoleName
+```
 
 

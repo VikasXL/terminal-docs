@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `rpc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | N.A. |
 | Scope | global |
-
-
-- **Flags** Log message
-- **Publishes** N.A.
-- **Scope** global
 
 
 ## Description
@@ -32,7 +27,7 @@ Create store item
 
 ## Message format
 
-```json
+```json copy
 {
   "adminId": "AdminId",
   "storeItem": {
@@ -507,7 +502,7 @@ Create store item
                         "map": {
                           "string": {
                             "argName": "string",
-                            "kind": "argument | context | derived | field | input | output | spreadsheet | variable",
+                            "kind": "argument | context | derived | field | input | output | spreadsheet | sep | variable",
                             "value?": {
                               "storeVersionId?": "StoreVersionId"
                             },
@@ -1255,11 +1250,11 @@ Create store item
 
 ## Signal format
 
-```json
+```json copy
 {}
 ```
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=store_store_storeItemCreate)
+Try this API, [Click here](https://web.neome.ai/api?path=store_store_storeItemCreate)
 

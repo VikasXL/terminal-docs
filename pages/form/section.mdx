@@ -4,74 +4,80 @@ title: Section
 
 # section
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## ensure
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ ensure section SectionName
+```
 
 
 ## update
 
+```js filename="Terminal" copy
+ update section SectionName argument1:"value1" argument2:"value2"
+```
+
 This command accepts the following arguments:
 
 ### disabled
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 ### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 ### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 ### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ### propertyEditorLabel
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text type variable | text value
 
 ---write the arg description---
 
 ### direction
-**type:** ---write the arg description---
+**type:** horizontal | vertical
 
 ---write the arg description---
 
 ### sectionVariant
-**type:** ---write the arg description---
+**type:** form | propertyEditor
 
 ---write the arg description---
 
 
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove section SectionName
+```
 
 
 ## print
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ print section SectionName
+```
 
 
 ## goTo
 
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ goto section SectionName
+```
 

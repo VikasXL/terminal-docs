@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `rpc` `wsoc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | N.A. |
 | Scope | global |
-
-
-- **Flags** Log message
-- **Publishes** N.A.
-- **Scope** global
 
 
 ## Description
@@ -32,7 +27,7 @@ Accept plugin response
 
 ## Message format
 
-```json
+```json copy
 {
   "queueId": "string",
   "pageSize": "number"
@@ -41,7 +36,7 @@ Accept plugin response
 
 ## Signal format
 
-```json
+```json copy
 {
   "list": [
     {
@@ -56,5 +51,5 @@ Accept plugin response
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=ent_agent_guaranteedRequestListGet)
+Try this API, [Click here](https://web.neome.ai/api?path=ent_agent_guaranteedRequestListGet)
 

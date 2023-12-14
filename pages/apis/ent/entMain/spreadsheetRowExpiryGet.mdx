@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `wsoc` `rpc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | N.A. |
 | Scope | ent |
-
-
-- **Flags** Log message
-- **Publishes** N.A.
-- **Scope** ent
 
 
 ## Description
@@ -32,7 +27,7 @@ Generate Report Url to Share
 
 ## Message format
 
-```json
+```json copy
 {
   "spreadsheetPartitionId": "SpreadsheetPartitionId",
   "spreadsheetId": "MetaIdSpreadsheet",
@@ -42,7 +37,7 @@ Generate Report Url to Share
 
 ## Signal format
 
-```json
+```json copy
 {
   "remainingReadTimeMillis?": "number",
   "remainingInvisibleTimeMillis?": "number",
@@ -54,5 +49,5 @@ Generate Report Url to Share
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=ent_entMain_spreadsheetRowExpiryGet)
+Try this API, [Click here](https://web.neome.ai/api?path=ent_entMain_spreadsheetRowExpiryGet)
 

@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `rpc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | `studioPlugin` `studioPluginAvatar`  |
 | Scope | global |
-
-
-- **Flags** Log message
-- **Publishes** `studioPlugin` `studioPluginAvatar` 
-- **Scope** global
 
 
 ## Description
@@ -32,7 +27,7 @@ Create plugin
 
 ## Message format
 
-```json
+```json copy
 {
   "pluginBundleId": "PluginBundleId",
   "adminId": "AdminId",
@@ -182,7 +177,7 @@ Create plugin
                       "map": {
                         "string": {
                           "argName": "string",
-                          "kind": "argument | context | derived | field | input | output | spreadsheet | variable",
+                          "kind": "argument | context | derived | field | input | output | spreadsheet | sep | variable",
                           "value?": {
                             "storeVersionId?": "StoreVersionId"
                           },
@@ -433,11 +428,11 @@ Create plugin
 
 ## Signal format
 
-```json
+```json copy
 {}
 ```
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=studio_studioDrawer_studioPluginCreate)
+Try this API, [Click here](https://web.neome.ai/api?path=studio_studioDrawer_studioPluginCreate)
 

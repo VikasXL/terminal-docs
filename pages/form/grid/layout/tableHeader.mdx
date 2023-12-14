@@ -4,28 +4,28 @@ title: Table header
 
 # gridLayoutTableHeader
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove gridLayoutTableHeader GridLayoutTableHeaderName
+```
 
 
 ## update
 
+```js filename="Terminal" copy
+ update gridLayoutTableHeader GridLayoutTableHeaderName argument1:"value1" argument2:"value2"
+```
+
 This command accepts the following arguments:
 
 ### displayText
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ### fields
-**type:** ---write the arg description---
+**type:** null | @empty | Field1, Field2, ...
 
 ---write the arg description---
 

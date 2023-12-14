@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `wsoc` `rpc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | N.A. |
 | Scope | global |
-
-
-- **Flags** Log message
-- **Publishes** N.A.
-- **Scope** global
 
 
 ## Description
@@ -32,7 +27,7 @@ Search text in drawer
 
 ## Message format
 
-```json
+```json copy
 {
   "filterEntIdSet?": [
     "EntId"
@@ -45,7 +40,7 @@ Search text in drawer
 
 ## Signal format
 
-```json
+```json copy
 {
   "latestMessageMap?": {
     "EntId": {
@@ -322,5 +317,5 @@ Search text in drawer
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=home_drawer_drawerSearch)
+Try this API, [Click here](https://web.neome.ai/api?path=home_drawer_drawerSearch)
 

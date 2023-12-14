@@ -4,49 +4,55 @@ title: Rule
 
 # formVisibilityRule
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## ensure
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ ensure formVisibilityRule FormVisibilityRuleName
+```
 
 
 ## update
 
+```js filename="Terminal" copy
+ update formVisibilityRule FormVisibilityRuleName argument1:"value1" argument2:"value2"
+```
+
 This command accepts the following arguments:
 
 ### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 ### conjunction
-**type:** ---write the arg description---
+**type:** and | or
 
 ---write the arg description---
 
 
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove formVisibilityRule FormVisibilityRuleName
+```
 
 
 ## print
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ print formVisibilityRule FormVisibilityRuleName
+```
 
 
 ## goTo
 
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ goto formVisibilityRule FormVisibilityRuleName
+```
 

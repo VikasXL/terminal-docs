@@ -4,64 +4,70 @@ title: Api
 
 # pluginApi
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## ensure
+
+```js filename="Terminal" copy
+ ensure pluginApi PluginApiName argument1:"value1" argument2:"value2"
+```
 
 This command accepts the following arguments:
 
 ### type
-**type:** ---write the arg description---
+**type:** delete | get | patch | post | put | webhook
 
 ---write the arg description---
 
 
 ## update
 
+```js filename="Terminal" copy
+ update pluginApi PluginApiName argument1:"value1" argument2:"value2"
+```
+
 This command accepts the following arguments:
 
 ### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 ### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 ### inputForm
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ### outputForm
-**type:** ---write the arg description---
+**type:** null | Form | $FormMapOfOptions | $FormPickTree | $FormPluginConfig | $FormSetOfUser ...
 
 ---write the arg description---
 
 ### guaranteedInvocation
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 ### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove pluginApi PluginApiName
+```
 
 
 ## print
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ print pluginApi PluginApiName
+```
 
 

@@ -4,49 +4,55 @@ title: Action
 
 # formVisibilityAction
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## ensure
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ ensure formVisibilityAction FormVisibilityActionName
+```
 
 
 ## update
 
+```js filename="Terminal" copy
+ update formVisibilityAction FormVisibilityActionName argument1:"value1" argument2:"value2"
+```
+
 This command accepts the following arguments:
 
 ### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ### comp
-**type:** ---write the arg description---
+**type:** null | sectionField | grid/field
 
 ---write the arg description---
 
 ### visibilityAction
-**type:** ---write the arg description---
+**type:** blink | click | disable | enable | hidden | highlight | invisible | shake | visible
 
 ---write the arg description---
 
 
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove formVisibilityAction FormVisibilityActionName
+```
 
 
 ## print
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ print formVisibilityAction FormVisibilityActionName
+```
 
 
 ## goTo
 
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ goto formVisibilityAction FormVisibilityActionName
+```
 

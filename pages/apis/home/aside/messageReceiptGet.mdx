@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `rpc` `wsoc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | N.A. |
 | Scope | global and enterprise |
-
-
-- **Flags** Log message
-- **Publishes** N.A.
-- **Scope** global and enterprise
 
 
 ## Description
@@ -32,7 +27,7 @@ Get read and received receipts for given message
 
 ## Message format
 
-```json
+```json copy
 {
   "offset": "number",
   "chatId": "ChatId"
@@ -41,7 +36,7 @@ Get read and received receipts for given message
 
 ## Signal format
 
-```json
+```json copy
 {
   "entUserReceiptMap": {
     "EntUserId": {
@@ -54,5 +49,5 @@ Get read and received receipts for given message
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=home_aside_messageReceiptGet)
+Try this API, [Click here](https://web.neome.ai/api?path=home_aside_messageReceiptGet)
 

@@ -4,69 +4,77 @@ title: Spreadsheet
 
 # spreadsheet
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## ensure
+
+```js filename="Terminal" copy
+ ensure spreadsheet SpreadsheetName argument1:"value1" argument2:"value2"
+```
 
 This command accepts the following arguments:
 
 ### form
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 
 ## update
 
+```js filename="Terminal" copy
+ update spreadsheet SpreadsheetName argument1:"value1" argument2:"value2"
+```
+
 This command accepts the following arguments:
 
 ### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 ### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 ### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ### searchableFields
-**type:** ---write the arg description---
+**type:** null | @empty | sectionField, grid/field ...
 
 ---write the arg description---
 
 ### queryableFields
-**type:** ---write the arg description---
+**type:** null | @empty | sectionField, grid/field ...
 
 ---write the arg description---
 
 
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove spreadsheet SpreadsheetName
+```
 
 
 ## print
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ print spreadsheet SpreadsheetName
+```
 
 
 ## goTo
 
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ goto spreadsheet SpreadsheetName
+```
 

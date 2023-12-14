@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `rpc` `wsoc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | N.A. |
 | Scope | global and enterprise |
-
-
-- **Flags** Log message
-- **Publishes** N.A.
-- **Scope** global and enterprise
 
 
 ## Description
@@ -32,7 +27,7 @@ Get message details for given offset
 
 ## Message format
 
-```json
+```json copy
 {
   "offset": "number",
   "chatId": "ChatId"
@@ -41,7 +36,7 @@ Get message details for given offset
 
 ## Signal format
 
-```json
+```json copy
 {
   "receiptStatus?": "error | singleTick | doubleTick | blueTick",
   "messageId": "MessageId",
@@ -272,5 +267,5 @@ Get message details for given offset
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=home_main_messageGet)
+Try this API, [Click here](https://web.neome.ai/api?path=home_main_messageGet)
 

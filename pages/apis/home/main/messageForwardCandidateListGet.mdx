@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `rpc` `wsoc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | N.A. |
 | Scope | global and enterprise |
-
-
-- **Flags** Log message
-- **Publishes** N.A.
-- **Scope** global and enterprise
 
 
 ## Description
@@ -32,7 +27,7 @@ Get chat candidate list for forward message
 
 ## Message format
 
-```json
+```json copy
 {
   "spreadsheetId?": "MetaIdSpreadsheet"
 }
@@ -40,7 +35,7 @@ Get chat candidate list for forward message
 
 ## Signal format
 
-```json
+```json copy
 {
   "candidateMap": {
     "AnyPrefixKey": [
@@ -77,5 +72,5 @@ Get chat candidate list for forward message
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=home_main_messageForwardCandidateListGet)
+Try this API, [Click here](https://web.neome.ai/api?path=home_main_messageForwardCandidateListGet)
 

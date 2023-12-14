@@ -4,30 +4,32 @@ title: Deeplink
 
 # deeplink
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## ensure
+
+```js filename="Terminal" copy
+ ensure deeplink DeeplinkName argument1:"value1" argument2:"value2"
+```
 
 This command accepts the following arguments:
 
 ### kind
-**type:** ---write the arg description---
+**type:** report | spreadsheetEditor | spreadsheetInsert | spreadsheetRow
 
 ---write the arg description---
 
 
 ## remove
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ remove deeplink DeeplinkName
+```
 
 
 ## print
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ print deeplink DeeplinkName
+```
 
 
 ## update
@@ -35,286 +37,302 @@ This command doesn't require any additional arguments.
 This command accepts the following arguments:
 
 ### report
+```js filename="Terminal" copy
+ update deeplink DeeplinkName argument1:"value1" argument2:"value2"
+```
+
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### visibilityConstraint
-**type:** ---write the arg description---
+**type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
 
 ---write the arg description---
 
 #### creationRoles
-**type:** ---write the arg description---
+**type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
 
 ---write the arg description---
 
 #### showHeader
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### showEnterprise
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### showSeparator
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### passImageInDeeplink
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### expiry
-**type:** ---write the arg description---
+**type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
 
 ---write the arg description---
 
 #### hyperlinkVars
-**type:** ---write the arg description---
+**type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
 
 ---write the arg description---
 
 #### report
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### outputFormContentLayout
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ### spreadsheetEditor
+```js filename="Terminal" copy
+ update deeplink DeeplinkName argument1:"value1" argument2:"value2"
+```
+
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### visibilityConstraint
-**type:** ---write the arg description---
+**type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
 
 ---write the arg description---
 
 #### creationRoles
-**type:** ---write the arg description---
+**type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
 
 ---write the arg description---
 
 #### showHeader
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### showEnterprise
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### showSeparator
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### passImageInDeeplink
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### expiry
-**type:** ---write the arg description---
+**type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
 
 ---write the arg description---
 
 #### hyperlinkVars
-**type:** ---write the arg description---
+**type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
 
 ---write the arg description---
 
 #### spreadsheet
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### spreadsheetLayout
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ### spreadsheetInsert
+```js filename="Terminal" copy
+ update deeplink DeeplinkName argument1:"value1" argument2:"value2"
+```
+
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### visibilityConstraint
-**type:** ---write the arg description---
+**type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
 
 ---write the arg description---
 
 #### creationRoles
-**type:** ---write the arg description---
+**type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
 
 ---write the arg description---
 
 #### showHeader
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### showEnterprise
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### showSeparator
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### passImageInDeeplink
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### expiry
-**type:** ---write the arg description---
+**type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
 
 ---write the arg description---
 
 #### hyperlinkVars
-**type:** ---write the arg description---
+**type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
 
 ---write the arg description---
 
 #### spreadsheet
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### successMessage
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph type variable | paragraph value
 
 ---write the arg description---
 
 #### successMessageFontVar
-**type:** ---write the arg description---
+**type:** null | @null | @empty | font type variable | font value
 
 ---write the arg description---
 
 #### successMessageBgColorVar
-**type:** ---write the arg description---
+**type:** null | @null | @empty | color type variable | color value
 
 ---write the arg description---
 
 #### showRepeatButton
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### repeatButtonLabel
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 ### spreadsheetRow
+```js filename="Terminal" copy
+ update deeplink DeeplinkName argument1:"value1" argument2:"value2"
+```
+
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### name
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### visibilityConstraint
-**type:** ---write the arg description---
+**type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
 
 ---write the arg description---
 
 #### creationRoles
-**type:** ---write the arg description---
+**type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
 
 ---write the arg description---
 
 #### showHeader
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### showEnterprise
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### showSeparator
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### passImageInDeeplink
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### expiry
-**type:** ---write the arg description---
+**type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
 
 ---write the arg description---
 
 #### hyperlinkVars
-**type:** ---write the arg description---
+**type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
 
 ---write the arg description---
 
 #### spreadsheet
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### formContentLayout
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
@@ -322,5 +340,7 @@ This command accepts the following arguments:
 ## goTo
 
 
-This command doesn't require any additional arguments.
+```js filename="Terminal" copy
+ goto deeplink DeeplinkName
+```
 

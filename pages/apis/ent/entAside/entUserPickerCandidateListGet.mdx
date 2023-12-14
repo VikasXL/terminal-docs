@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `rpc` `wsoc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | N.A. |
 | Scope | global and enterprise |
-
-
-- **Flags** Log message
-- **Publishes** N.A.
-- **Scope** global and enterprise
 
 
 ## Description
@@ -32,7 +27,7 @@ Get list of user for given roles
 
 ## Message format
 
-```json
+```json copy
 {
   "roleIdSet?": [
     "MetaIdRole"
@@ -43,7 +38,7 @@ Get list of user for given roles
 
 ## Signal format
 
-```json
+```json copy
 {
   "candidateList": [
     {
@@ -56,5 +51,5 @@ Get list of user for given roles
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=ent_entAside_entUserPickerCandidateListGet)
+Try this API, [Click here](https://web.neome.ai/api?path=ent_entAside_entUserPickerCandidateListGet)
 

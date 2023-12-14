@@ -4,1751 +4,1957 @@ title: Var
 
 # deployVar
 
-import { Callout } from 'nextra/components'
-
-  <Callout type="error" emoji="">
-   *All the bellow commands require a symbol name*
-  </Callout>
-
 ## update
 
 This command accepts the following arguments:
 
 ### any
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 ### bool
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | @null | true | false | yes | no
 
 ---write the arg description---
 
 ### buttonVariant
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** contained | icon | outlined | text
 
 ---write the arg description---
 
 ### calendar
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### nameDate
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### date
-**type:** ---write the arg description---
+**type:** null | dd/MM/yyyy
 
 ---write the arg description---
 
 ### chipSetDay
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @empty | friday, monday, saturday, sunday, thursday, tuesday, wednesday
 
 ---write the arg description---
 
 ### chipSetTime
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | time, ...
 
 ---write the arg description---
 
 ### color
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** amber | black | blue | cyan | deepOrange | deepPurple | error | errorDark | errorLight | green | grey | indigo | info | infoDark | infoLight | lightBlue | lightGreen | lime | orange | pink | primary | primaryDark | primaryLight | purple | red | secondary | secondaryDark | secondaryLight | success | successDark | successLight | teal | textDisabled | textInverse | textPrimary | textSecondary | transparent | warning | warningDark | warningLight | white | yellow
 
 ---write the arg description---
 
 ### condition
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### fromSourcePlugin
-**type:** ---write the arg description---
+**type:** null | @null | @empty | fromSourcePlugin
 
 ---write the arg description---
 
 #### inputForm
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### sourceForm
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### sourceGrid
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### condition
-**type:** ---write the arg description---
+**type:** And(statement1, Or(Statement2,Statement3, And(Statement6,Statement7)), Statement4)
 
 ---write the arg description---
 
 ### currency
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | currencyCode
 
 ---write the arg description---
 
 ### dataPartitionPeriod
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** daily | hourly | monthly | quarterly | weekly | yearly
 
 ---write the arg description---
 
 ### dataPriority
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** high | low | medium
 
 ---write the arg description---
 
 ### date
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** lastQuarter | lastWeek | lastYear | nextQuarter | nextWeek | nextYear | now | tomorrow | yesterday
 
 ---write the arg description---
 
 ### dateTime
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** lastQuarter | lastWeek | lastYear | nextQuarter | nextWeek | nextYear | now | tomorrow | yesterday
 
 ---write the arg description---
 
 ### day
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** friday | monday | saturday | sunday | thursday | tuesday | wednesday
 
 ---write the arg description---
 
 ### decimal
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | decimal
 
 ---write the arg description---
 
 ### deviceSize
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** desktop | laptop | mobile | tablet
 
 ---write the arg description---
 
 ### deviceType
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** agent | android | ios | test | web
 
 ---write the arg description---
 
 ### direction
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** horizontal | vertical
 
 ---write the arg description---
 
 ### dividerKind
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** thick | thin
 
 ---write the arg description---
 
 ### document
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 ### duration
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | duration
 
 ---write the arg description---
 
 ### email
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | email
 
 ---write the arg description---
 
 ### fieldVariant
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** filled | outlined | standard
 
 ---write the arg description---
 
 ### font
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4
 
 ---write the arg description---
 
 ### function
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### outputKind
-**type:** ---write the arg description---
+**type:** number | numberArray | text | textArray
 
 ---write the arg description---
 
 #### javascript
-**type:** ---write the arg description---
+**type:** null | @null | @empty | javascript
 
 ---write the arg description---
 
 #### inputArgs
-**type:** ---write the arg description---
+**type:** A1:ArgType, A2?:ArgType ArgType: number | numberArray | text | textArray
 
 ---write the arg description---
 
 ### html
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 ### hyperlink
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### displayText
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### color
-**type:** ---write the arg description---
+**type:** null | @null | @empty | color type variable | color value
 
 ---write the arg description---
 
 #### kind
-**type:** ---write the arg description---
+**type:** general | youtube
 
 ---write the arg description---
 
 ### icon
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | icon
 
 ---write the arg description---
 
 ### image
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 ### imageCorner
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** circle | rectangle | rounded
 
 ---write the arg description---
 
 ### language
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | language
 
 ---write the arg description---
 
 ### location
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 ### mapOfText
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### form
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ### mapPinShape
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** circle | circleBig | circleMedium | heart | heartBig | heartMedium | pin | square | squareBig | squareMedium | star | starBig | starMedium | triangle | triangleBig | triangleMedium
 
 ---write the arg description---
 
 ### mapping
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### fromForm
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### fromGrid
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### fromPlugin
-**type:** ---write the arg description---
+**type:** null | @null | @empty | fromPlugin
 
 ---write the arg description---
 
 #### toForm
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### toGrid
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 #### toPlugin
-**type:** ---write the arg description---
+**type:** null | @null | @empty | toPlugin
 
 ---write the arg description---
 
 ### mobileNumber
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | mobileNumber
 
 ---write the arg description---
 
 ### month
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** April | August | December | February | January | July | June | March | May | November | October | September
 
 ---write the arg description---
 
 ### number
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | long1, long2, ...
 
 ---write the arg description---
 
 ### paragraph
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### params
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ### quarter
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** Quarter_1 | Quarter_2 | Quarter_3 | Quarter_4
 
 ---write the arg description---
 
 ### ratingKind
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** heart | star | thumbs
 
 ---write the arg description---
 
 ### scheduler
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### startDateTime
-**type:** ---write the arg description---
+**type:** null | dd/MM/yyyy hh:mm:ss am/pm
 
 ---write the arg description---
 
 #### timeZone
-**type:** ---write the arg description---
+**type:** null | @null | @empty | Timezone
 
 ---write the arg description---
 
 #### repeatFrequencyKind
-**type:** ---write the arg description---
+**type:** days | hours | minutes | months | weeks | years
 
 ---write the arg description---
 
 ### sequence
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | seqStart
 
 ---write the arg description---
 
 ### setOfNumber
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | number1, number2, ...
 
 ---write the arg description---
 
 ### setOfText
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### colors
-**type:** ---write the arg description---
+**type:** null | @empty | amber, black, blue, cyan, deepOrange, deepPurple, error, errorDark, errorLight, green, grey, indigo, info, infoDark, infoLight, lightBlue, lightGreen, lime, orange, pink, primary, primaryDark, primaryLight, purple, red, secondary, secondaryDark, secondaryLight, success, successDark, successLight, teal, textDisabled, textInverse, textPrimary, textSecondary, transparent, warning, warningDark, warningLight, white, yellow
 
 ---write the arg description---
 
 #### shades
-**type:** ---write the arg description---
+**type:** null | @empty | s100, s200, s50, s500
 
 ---write the arg description---
 
 ### stroke
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** dash | dotted | solid
 
 ---write the arg description---
 
 ### symbol
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | Symbol
 
 ---write the arg description---
 
 ### text
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### params
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 ### themePlacement
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** bottom | center | diagonal | end | flexCenter | justify | overlayTop | spaceBetween | start | top
 
 ---write the arg description---
 
 ### time
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | time
 
 ---write the arg description---
 
 ### timeZone
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### value
-**type:** ---write the arg description---
+**type:** null | @null | @empty | timeZone
 
 ---write the arg description---
 
 ### tree
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### paths
-**type:** ---write the arg description---
+**type:** null | @null | @empty | a1/b1/c1, a1/b1/c2, a1/b2/c3, ...
 
 ---write the arg description---
 
 ### userSetting
+```js filename="Terminal" copy
+ update deployVar DeployVarName argument1:"value1" argument2:"value2"
+```
+
 #### name
-**type:** ---write the arg description---
+**type:** Symbol
 
 ---write the arg description---
 
 #### label
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text
 
 ---write the arg description---
 
 #### description
-**type:** ---write the arg description---
+**type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
 #### filterTags
-**type:** ---write the arg description---
+**type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
 #### deploy
-**type:** ---write the arg description---
+**type:** fixedOnDeploy | requiredOnDeploy
 
 ---write the arg description---
 
 #### kind
-**type:** ---write the arg description---
+**type:** pickMany | pickOne | text
 
 ---write the arg description---
 
 #### dataSource
-**type:** ---write the arg description---
+**type:** null | @null | @empty | setOfText type variable | setOfText value
 
 ---write the arg description---
 
 #### excludeOnUserSettings
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 
 #### doNotShowValueToAdmin
-**type:** ---write the arg description---
+**type:** true | false | yes | no
 
 ---write the arg description---
 

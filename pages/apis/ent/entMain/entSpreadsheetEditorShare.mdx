@@ -14,16 +14,11 @@ import MasterChip from "components/Masterchip/MasterChip.js"
 | Allowed Connection Types | `wsoc` `rpc`  |
 | Allowed Deployment Kinds | `beta` `prod` `localHost` `test`  |
 | Allowed Device Types | `test` `ios` `android` `web` `agent`  |
-| SLA | time: 600 ms, timeout: 6000 ms |
+| SLA | time: `600 ms`, timeout: `6000 ms` |
 | Token | bearer |
 | Flags | Log message |
 | Publishes | N.A. |
 | Scope | ent |
-
-
-- **Flags** Log message
-- **Publishes** N.A.
-- **Scope** ent
 
 
 ## Description
@@ -32,7 +27,7 @@ Generate Spreadsheet editor Url to share
 
 ## Message format
 
-```json
+```json copy
 {
   "reset?": "boolean",
   "chatId": "ChatId",
@@ -43,7 +38,7 @@ Generate Spreadsheet editor Url to share
 
 ## Signal format
 
-```json
+```json copy
 {
   "url": "string"
 }
@@ -51,5 +46,5 @@ Generate Spreadsheet editor Url to share
 
 ## Try it
 
-[Click here](https://web.neome.ai/api?path=ent_entMain_entSpreadsheetEditorShare)
+Try this API, [Click here](https://web.neome.ai/api?path=ent_entMain_entSpreadsheetEditorShare)
 
