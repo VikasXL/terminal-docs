@@ -4,46 +4,31 @@ title: Terminal
 
 # Terminal
 
-## Terminal Command Structure
+## Terminal Command Format
 
-Each command in the Terminal adheres to the following structure,
-```js
+Each command in the Terminal adheres to the following structure:
+```js filename="type"
  <cmd> <what> <name> argument1:"value1" argument2:"value2" ...
 ```
 
+The command is composed of the following parts:
 
-**`cmd`**  This is the first mandatory token in the command. It represents various operations,
-| Command         | Description                                                          |
-|-----------------|--------------------------------------------------------------------- |
-| add             | Adds a specified `what`.               |
-| ensure          | Ensures that specific `what` is present , if not present it will add  |
-| goTo            | Navigates to a specific contextual `what`.                          |
-| remove          | Removes a specific `what`.               |
-| update          | Updates properties of an existing `what`.                           |
-| print           | Displays or prints information on the screen.                       |
-| deploy          | Deploys an enterprise pr plugin.                                    |
-| revertToDeploy  | Reverts to a previously deployed enterprise or plugin.              |
-| fromStore       | Retrieves or imports an enterprise or plugin from a store.          |
-| invite          | Sends an invitation to a specific user, follower, or admin.         |
-| inviteAll       | Sends invitations to all users, followers, and admins.              |
-| activate        | Activates a user, follower, or admin.                               |
-| deActivate      | Deactivates a user, follower, or admin.                             |
-| ensureSelf      | Used to add oneself as a user or follower. |
+ **`cmd`** This is the first and mandatory token in the command. It represents various operations, including:
+```js filename="type"
+ add | ensure | goTo | remove | update | print | deploy | revertToDeploy | fromStore | invite | inviteAll | activate | deActivate | ensureSelf
+```
 
-
-
-**`what`**  This is the second mandatory token in the command, representing distinct categories,
-```js
+ **`what`** The second mandatory token in the command, representing distinct categories such as:
+```js filename="type"
  action | actionFormDefaultValue | actions | admin | admins | automation | automationEvent | automationStep | automationStepFormula | automations | deeplink | deeplinkProp | deeplinks | deployConfig | deployEntPlugin | deployEntPluginConfigFormValue | deployVar | driveSettings | driveSheet | driveSheets | entPlugin | entPlugins | enterprise | field | fieldPermission | fieldProp | fieldRefOverlayLayout | follower | followers | form | formFormula | formLayoutContent | formLayoutFooter | formLayoutHeader | formLayoutWatermark | formMenu | formPermission | formProp | formVisibilityAction | formVisibilityCondition | formVisibilityRule | forms | gotoCtx | grid | gridLayout | gridLayoutCardItem | gridLayoutListItem | gridLayoutTableFooter | gridLayoutTableHeader | gridMenu | gridMenuRow | gridPermission | gridProp | group | groupAction | groups | plugin | pluginApi | pluginResource | prompt | promptConfig | prompts | report | reports | role | roles | section | sectionMenu | sectionPermission | sectionProp | spreadsheet | spreadsheetLayout | spreadsheetLayoutCardItem | spreadsheetLayoutListItem | spreadsheetPartition | spreadsheetPermission | spreadsheetPermissionForwardGroups | spreadsheetPermissionForwardRoles | spreadsheets | translation | translations | user | users | validations | variableMapOfTextKeyValue | variableMappingField | variableMappingGrid | variable | variables
 ```
 
-**`name`**  It is a Symbol, which is optional for certain 'what' categories.
+ **`name`**  A symbolic identifier, which is optional for certain 'what' categories.
+  - Requirements for `name`: 
+    - Starts with a capital alphabetic character.
+    - Does not start with a number.
+    - Excludes the use of special characters.
 
-Symbol properties:
-- Starts with a capital alphabetic character.
-- Does not start with a number.
-- Excludes the use of special characters.
-
-**`argument`**  Available arguments and their respective value types can be found in the respective 'what' page.
-
-These commands help you do many things in the Terminal, making it useful for both enterprise and plugin development.
+  **`argument`**  Available arguments and their respective value types can be found in the respective 'what' page.
+  <br/>
+  These commands enable a diverse range of functionalities within the Terminal, fostering a structured and adaptable approach to both enterprise and plugin development.

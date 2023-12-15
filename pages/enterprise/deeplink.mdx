@@ -12,8 +12,8 @@ title: Deeplink
 
 This command accepts the following arguments:
 
-### kind
-**type:** report | spreadsheetEditor | spreadsheetInsert | spreadsheetRow
+### `kind`
+**Value type:** report | spreadsheetEditor | spreadsheetInsert | spreadsheetRow
 
 ---write the arg description---
 
@@ -32,6 +32,13 @@ This command accepts the following arguments:
 ```
 
 
+## goTo
+
+
+```js filename="Terminal" copy
+ goto deeplink DeeplinkName
+```
+
 ## update
 
 This command accepts the following arguments:
@@ -41,68 +48,68 @@ This command accepts the following arguments:
  update deeplink DeeplinkName argument1:"value1" argument2:"value2"
 ```
 
-#### filterTags
-**type:** null | @null | @empty | text1, text2, ...
+#### `filterTags`
+**Value type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
-#### name
-**type:** null | Symbol
+#### `name`
+**Value type:** null | Symbol
 
 ---write the arg description---
 
-#### description
-**type:** null | @null | @empty | paragraph
+#### `description`
+**Value type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
-#### visibilityConstraint
-**type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
+#### `visibilityConstraint`
+**Value type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
 
 ---write the arg description---
 
-#### creationRoles
-**type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
+#### `creationRoles`
+**Value type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
 
 ---write the arg description---
 
-#### showHeader
-**type:** true | false | yes | no
+#### `showHeader`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### showEnterprise
-**type:** true | false | yes | no
+#### `showEnterprise`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### showSeparator
-**type:** true | false | yes | no
+#### `showSeparator`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### passImageInDeeplink
-**type:** true | false | yes | no
+#### `passImageInDeeplink`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### expiry
-**type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
+#### `expiry`
+**Value type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
 
 ---write the arg description---
 
-#### hyperlinkVars
-**type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
+#### `hyperlinkVars`
+**Value type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
 
 ---write the arg description---
 
-#### report
-**type:** null | Symbol
+#### `report`
+**Value type:** null | Symbol
 
 ---write the arg description---
 
-#### outputFormContentLayout
-**type:** null | Symbol
+#### `outputFormContentLayout`
+**Value type:** null | Symbol
 
 ---write the arg description---
 
@@ -111,68 +118,68 @@ This command accepts the following arguments:
  update deeplink DeeplinkName argument1:"value1" argument2:"value2"
 ```
 
-#### filterTags
-**type:** null | @null | @empty | text1, text2, ...
+#### `filterTags`
+**Value type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
-#### name
-**type:** null | Symbol
+#### `name`
+**Value type:** null | Symbol
 
 ---write the arg description---
 
-#### description
-**type:** null | @null | @empty | paragraph
+#### `description`
+**Value type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
-#### visibilityConstraint
-**type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
+#### `visibilityConstraint`
+**Value type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
 
 ---write the arg description---
 
-#### creationRoles
-**type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
+#### `creationRoles`
+**Value type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
 
 ---write the arg description---
 
-#### showHeader
-**type:** true | false | yes | no
+#### `showHeader`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### showEnterprise
-**type:** true | false | yes | no
+#### `showEnterprise`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### showSeparator
-**type:** true | false | yes | no
+#### `showSeparator`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### passImageInDeeplink
-**type:** true | false | yes | no
+#### `passImageInDeeplink`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### expiry
-**type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
+#### `expiry`
+**Value type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
 
 ---write the arg description---
 
-#### hyperlinkVars
-**type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
+#### `hyperlinkVars`
+**Value type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
 
 ---write the arg description---
 
-#### spreadsheet
-**type:** null | Symbol
+#### `spreadsheet`
+**Value type:** null | Symbol
 
 ---write the arg description---
 
-#### spreadsheetLayout
-**type:** null | Symbol
+#### `spreadsheetLayout`
+**Value type:** null | Symbol
 
 ---write the arg description---
 
@@ -181,88 +188,88 @@ This command accepts the following arguments:
  update deeplink DeeplinkName argument1:"value1" argument2:"value2"
 ```
 
-#### filterTags
-**type:** null | @null | @empty | text1, text2, ...
+#### `filterTags`
+**Value type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
-#### name
-**type:** null | Symbol
+#### `name`
+**Value type:** null | Symbol
 
 ---write the arg description---
 
-#### description
-**type:** null | @null | @empty | paragraph
+#### `description`
+**Value type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
-#### visibilityConstraint
-**type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
+#### `visibilityConstraint`
+**Value type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
 
 ---write the arg description---
 
-#### creationRoles
-**type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
+#### `creationRoles`
+**Value type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
 
 ---write the arg description---
 
-#### showHeader
-**type:** true | false | yes | no
+#### `showHeader`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### showEnterprise
-**type:** true | false | yes | no
+#### `showEnterprise`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### showSeparator
-**type:** true | false | yes | no
+#### `showSeparator`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### passImageInDeeplink
-**type:** true | false | yes | no
+#### `passImageInDeeplink`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### expiry
-**type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
+#### `expiry`
+**Value type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
 
 ---write the arg description---
 
-#### hyperlinkVars
-**type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
+#### `hyperlinkVars`
+**Value type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
 
 ---write the arg description---
 
-#### spreadsheet
-**type:** null | Symbol
+#### `spreadsheet`
+**Value type:** null | Symbol
 
 ---write the arg description---
 
-#### successMessage
-**type:** null | @null | @empty | paragraph type variable | paragraph value
+#### `successMessage`
+**Value type:** null | @null | @empty | paragraph type variable | paragraph value
 
 ---write the arg description---
 
-#### successMessageFontVar
-**type:** null | @null | @empty | font type variable | font value
+#### `successMessageFontVar`
+**Value type:** null | @null | @empty | font type variable | font value
 
 ---write the arg description---
 
-#### successMessageBgColorVar
-**type:** null | @null | @empty | color type variable | color value
+#### `successMessageBgColorVar`
+**Value type:** null | @null | @empty | color type variable | color value
 
 ---write the arg description---
 
-#### showRepeatButton
-**type:** true | false | yes | no
+#### `showRepeatButton`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### repeatButtonLabel
-**type:** null | @null | @empty | text
+#### `repeatButtonLabel`
+**Value type:** null | @null | @empty | text
 
 ---write the arg description---
 
@@ -271,76 +278,69 @@ This command accepts the following arguments:
  update deeplink DeeplinkName argument1:"value1" argument2:"value2"
 ```
 
-#### filterTags
-**type:** null | @null | @empty | text1, text2, ...
+#### `filterTags`
+**Value type:** null | @null | @empty | text1, text2, ...
 
 ---write the arg description---
 
-#### name
-**type:** null | Symbol
+#### `name`
+**Value type:** null | Symbol
 
 ---write the arg description---
 
-#### description
-**type:** null | @null | @empty | paragraph
+#### `description`
+**Value type:** null | @null | @empty | paragraph
 
 ---write the arg description---
 
-#### visibilityConstraint
-**type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
+#### `visibilityConstraint`
+**Value type:** allowPublicSharing | enforceFollowerSignIn | enforceUserSignIn | makeFollower
 
 ---write the arg description---
 
-#### creationRoles
-**type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
+#### `creationRoles`
+**Value type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
 
 ---write the arg description---
 
-#### showHeader
-**type:** true | false | yes | no
+#### `showHeader`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### showEnterprise
-**type:** true | false | yes | no
+#### `showEnterprise`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### showSeparator
-**type:** true | false | yes | no
+#### `showSeparator`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### passImageInDeeplink
-**type:** true | false | yes | no
+#### `passImageInDeeplink`
+**Value type:** true | false | yes | no
 
 ---write the arg description---
 
-#### expiry
-**type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
+#### `expiry`
+**Value type:** noExpiry | onFirstClick | withinOneMonth | withinOneWeek
 
 ---write the arg description---
 
-#### hyperlinkVars
-**type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
+#### `hyperlinkVars`
+**Value type:** null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
 
 ---write the arg description---
 
-#### spreadsheet
-**type:** null | Symbol
+#### `spreadsheet`
+**Value type:** null | Symbol
 
 ---write the arg description---
 
-#### formContentLayout
-**type:** null | Symbol
+#### `formContentLayout`
+**Value type:** null | Symbol
 
 ---write the arg description---
 
-
-## goTo
-
-
-```js filename="Terminal" copy
- goto deeplink DeeplinkName
-```
 
