@@ -29,15 +29,12 @@ title: Event
 
 ### scheduled
 ```js filename="Terminal" copy
- ensure automationEvent AutomationEventName argument:"value"
+ ensure automationEvent AutomationEventName type:"onFire"
 ```
-
-**`type`**
-onFire
 
 ### spreadsheet
 ```js filename="Terminal" copy
- ensure automationEvent AutomationEventName argument:"value"
+ ensure automationEvent AutomationEventName type:"..."
 ```
 
 **`type`**
@@ -45,62 +42,41 @@ afterInsert | afterRemove | afterUpdate | beforeInsert | beforeRemove | beforeUp
 
 ### webhook
 ```js filename="Terminal" copy
- ensure automationEvent AutomationEventName argument:"value"
+ ensure automationEvent AutomationEventName type:"onFire"
 ```
-
-**`type`**
-onFire
 
 
 ## update
 
 ### scheduled
 ```js filename="Terminal" copy
- update automationEvent AutomationEventName argument1:"value1" argument2:"value2"
+ update automationEvent AutomationEventName name:"Symbol"
+ update automationEvent AutomationEventName description:"null | @null | @empty | text"
+ update automationEvent AutomationEventName secondary:"null | @null | @empty | text"
+ update automationEvent AutomationEventName condition:"..."
 ```
-
-**`name`**
-null | Symbol
-
-**`description`**
-null | @null | @empty | text
-
-**`secondary`**
-null | @null | @empty | text
 
 **`condition`**
 null | condition type variable | condition value
 
 ### spreadsheet
 ```js filename="Terminal" copy
- update automationEvent AutomationEventName argument1:"value1" argument2:"value2"
+ update automationEvent AutomationEventName name:"Symbol"
+ update automationEvent AutomationEventName description:"null | @null | @empty | text"
+ update automationEvent AutomationEventName secondary:"null | @null | @empty | text"
+ update automationEvent AutomationEventName condition:"..."
 ```
-
-**`name`**
-null | Symbol
-
-**`description`**
-null | @null | @empty | text
-
-**`secondary`**
-null | @null | @empty | text
 
 **`condition`**
 null | condition type variable | condition value
 
 ### webhook
 ```js filename="Terminal" copy
- update automationEvent AutomationEventName argument1:"value1" argument2:"value2"
+ update automationEvent AutomationEventName name:"Symbol"
+ update automationEvent AutomationEventName description:"null | @null | @empty | text"
+ update automationEvent AutomationEventName secondary:"null | @null | @empty | text"
+ update automationEvent AutomationEventName condition:"..."
 ```
-
-**`name`**
-null | Symbol
-
-**`description`**
-null | @null | @empty | text
-
-**`secondary`**
-null | @null | @empty | text
 
 **`condition`**
 null | condition type variable | condition value

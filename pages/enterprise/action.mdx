@@ -39,134 +39,72 @@ report | rowInsert | spreadsheetEditor | auditTrailSpreadsheet
 
 ### auditTrailSpreadsheet
 ```js filename="Terminal" copy
- update action ActionName argument1:"value1" argument2:"value2"
+ update action ActionName name:"Symbol"
+ update action ActionName label:"null | @null | @empty | text"
+ update action ActionName description:"null | @null | @empty | paragraph"
+ update action ActionName filterTags:"..."
+ update action ActionName icon:"null | @null | @empty | icon"
+ update action ActionName tooltip:"null | @null | @empty | text"
+ update action ActionName spreadsheet:"null | Symbol"
+ update action ActionName trackRowActions:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`icon`**
-null | @null | @empty | icon
-
-**`tooltip`**
-null | @null | @empty | text
-
-**`spreadsheet`**
-null | Symbol
 
 **`trackRowActions`**
 null | @empty | read, insert, update, remove, forward
 
 ### report
 ```js filename="Terminal" copy
- update action ActionName argument1:"value1" argument2:"value2"
+ update action ActionName name:"Symbol"
+ update action ActionName label:"null | @null | @empty | text"
+ update action ActionName description:"null | @null | @empty | paragraph"
+ update action ActionName filterTags:"..."
+ update action ActionName icon:"null | @null | @empty | icon"
+ update action ActionName tooltip:"null | @null | @empty | text"
+ update action ActionName report:"null | Symbol"
+ update action ActionName outputFormContentLayout:"null | Symbol"
+ update action ActionName sendMessageToInbox:"true | false | yes | no"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`icon`**
-null | @null | @empty | icon
-
-**`tooltip`**
-null | @null | @empty | text
-
-**`report`**
-null | Symbol
-
-**`outputFormContentLayout`**
-null | Symbol
-
-**`sendMessageToInbox`**
-true | false | yes | no
 
 ### rowInsert
 ```js filename="Terminal" copy
- update action ActionName argument1:"value1" argument2:"value2"
+ update action ActionName name:"Symbol"
+ update action ActionName label:"null | @null | @empty | text"
+ update action ActionName description:"null | @null | @empty | paragraph"
+ update action ActionName filterTags:"..."
+ update action ActionName icon:"null | @null | @empty | icon"
+ update action ActionName tooltip:"null | @null | @empty | text"
+ update action ActionName subTitle:"null | @null | @empty | text"
+ update action ActionName title:"null | @null | @empty | text"
+ update action ActionName spreadsheet:"null | Symbol"
+ update action ActionName mappingVar:"null | Symbol"
+ update action ActionName sendMessageToInbox:"true | false | yes | no"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`icon`**
-null | @null | @empty | icon
-
-**`tooltip`**
-null | @null | @empty | text
-
-**`subTitle`**
-null | @null | @empty | text
-
-**`title`**
-null | @null | @empty | text
-
-**`spreadsheet`**
-null | Symbol
-
-**`mappingVar`**
-null | Symbol
-
-**`sendMessageToInbox`**
-true | false | yes | no
 
 ### spreadsheetEditor
 ```js filename="Terminal" copy
- update action ActionName argument1:"value1" argument2:"value2"
+ update action ActionName name:"Symbol"
+ update action ActionName label:"null | @null | @empty | text"
+ update action ActionName description:"null | @null | @empty | paragraph"
+ update action ActionName filterTags:"..."
+ update action ActionName icon:"null | @null | @empty | icon"
+ update action ActionName tooltip:"null | @null | @empty | text"
+ update action ActionName spreadsheet:"null | Symbol"
+ update action ActionName readOnly:"true | false | yes | no"
+ update action ActionName spreadsheetLayout:"null | Symbol"
+ update action ActionName filterCondition:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`icon`**
-null | @null | @empty | icon
-
-**`tooltip`**
-null | @null | @empty | text
-
-**`spreadsheet`**
-null | Symbol
-
-**`readOnly`**
-true | false | yes | no
-
-**`spreadsheetLayout`**
-null | Symbol
 
 **`filterCondition`**
 null | condition type variable | condition value

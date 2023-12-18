@@ -36,88 +36,47 @@ title: Layout
 
 ### card
 ```js filename="Terminal" copy
- update spreadsheetLayout SpreadsheetLayoutName argument1:"value1" argument2:"value2"
+ update spreadsheetLayout SpreadsheetLayoutName name:"null | Symbol"
+ update spreadsheetLayout SpreadsheetLayoutName label:"null | @null | @empty | text"
+ update spreadsheetLayout SpreadsheetLayoutName description:"null | @null | @empty | paragraph"
+ update spreadsheetLayout SpreadsheetLayoutName toolTipField:"null | Symbol"
+ update spreadsheetLayout SpreadsheetLayoutName bkgColorField:"null | Symbol"
+ update spreadsheetLayout SpreadsheetLayoutName allowToSwitchLayouts:"..."
+ update spreadsheetLayout SpreadsheetLayoutName groupByField:"null | Symbol"
+ update spreadsheetLayout SpreadsheetLayoutName kind:"tree | tab"
+ update spreadsheetLayout SpreadsheetLayoutName showSearchBar:"true | false | yes | no"
+ update spreadsheetLayout SpreadsheetLayoutName categoryFields:"null | @empty | Field1, Field2, ..."
+ update spreadsheetLayout SpreadsheetLayoutName advanceFilterFields:"null | @empty | Field1, Field2, ..."
+ update spreadsheetLayout SpreadsheetLayoutName sortByFields:"null | @empty | Field1, Field2, ..."
 ```
-
-**`name`**
-null | Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
-
-**`toolTipField`**
-null | Symbol
-
-**`bkgColorField`**
-null | Symbol
 
 **`allowToSwitchLayouts`**
 null | @empty | SpreadsheetLayout1, SpreadsheetLayout2, ...
-
-**`groupByField`**
-null | Symbol
-
-**`kind`**
-tree | tab
-
-**`showSearchBar`**
-true | false | yes | no
-
-**`categoryFields`**
-null | @empty | Field1, Field2, ...
-
-**`advanceFilterFields`**
-null | @empty | Field1, Field2, ...
-
-**`sortByFields`**
-null | @empty | Field1, Field2, ...
 
 ### kanban
 ```js filename="Terminal" copy
- update spreadsheetLayout SpreadsheetLayoutName argument1:"value1" argument2:"value2"
+ update spreadsheetLayout SpreadsheetLayoutName name:"null | Symbol"
+ update spreadsheetLayout SpreadsheetLayoutName label:"null | @null | @empty | text"
+ update spreadsheetLayout SpreadsheetLayoutName description:"null | @null | @empty | paragraph"
+ update spreadsheetLayout SpreadsheetLayoutName toolTipField:"null | Symbol"
+ update spreadsheetLayout SpreadsheetLayoutName bkgColorField:"null | Symbol"
+ update spreadsheetLayout SpreadsheetLayoutName allowToSwitchLayouts:"..."
+ update spreadsheetLayout SpreadsheetLayoutName showCommentCount:"true | false | yes | no"
+ update spreadsheetLayout SpreadsheetLayoutName showSectionName:"true | false | yes | no"
+ update spreadsheetLayout SpreadsheetLayoutName showFooter:"true | false | yes | no"
+ update spreadsheetLayout SpreadsheetLayoutName fontSize:"..."
+ update spreadsheetLayout SpreadsheetLayoutName showFields:"null | @empty | Field1, Field2, ..."
+ update spreadsheetLayout SpreadsheetLayoutName sortByFields:"null | @empty | Field1, Field2, ..."
+ update spreadsheetLayout SpreadsheetLayoutName kanbanField:"null | Symbol"
+ update spreadsheetLayout SpreadsheetLayoutName swimLaneLabels:"..."
+ update spreadsheetLayout SpreadsheetLayoutName swimLaneColors:"..."
 ```
-
-**`name`**
-null | Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
-
-**`toolTipField`**
-null | Symbol
-
-**`bkgColorField`**
-null | Symbol
 
 **`allowToSwitchLayouts`**
 null | @empty | SpreadsheetLayout1, SpreadsheetLayout2, ...
 
-**`showCommentCount`**
-true | false | yes | no
-
-**`showSectionName`**
-true | false | yes | no
-
-**`showFooter`**
-true | false | yes | no
-
 **`fontSize`**
 body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4
-
-**`showFields`**
-null | @empty | Field1, Field2, ...
-
-**`sortByFields`**
-null | @empty | Field1, Field2, ...
-
-**`kanbanField`**
-null | Symbol
 
 **`swimLaneLabels`**
 null | @null | @empty | label1 \n label2 \n ...
@@ -127,90 +86,45 @@ null | @empty | ColorVar1, ColorVar2, ...
 
 ### list
 ```js filename="Terminal" copy
- update spreadsheetLayout SpreadsheetLayoutName argument1:"value1" argument2:"value2"
+ update spreadsheetLayout SpreadsheetLayoutName name:"null | Symbol"
+ update spreadsheetLayout SpreadsheetLayoutName label:"null | @null | @empty | text"
+ update spreadsheetLayout SpreadsheetLayoutName description:"null | @null | @empty | paragraph"
+ update spreadsheetLayout SpreadsheetLayoutName toolTipField:"null | Symbol"
+ update spreadsheetLayout SpreadsheetLayoutName bkgColorField:"null | Symbol"
+ update spreadsheetLayout SpreadsheetLayoutName allowToSwitchLayouts:"..."
+ update spreadsheetLayout SpreadsheetLayoutName groupByField:"null | Symbol"
+ update spreadsheetLayout SpreadsheetLayoutName kind:"tree | tab"
+ update spreadsheetLayout SpreadsheetLayoutName showSearchBar:"true | false | yes | no"
+ update spreadsheetLayout SpreadsheetLayoutName categoryFields:"null | @empty | Field1, Field2, ..."
+ update spreadsheetLayout SpreadsheetLayoutName advanceFilterFields:"null | @empty | Field1, Field2, ..."
+ update spreadsheetLayout SpreadsheetLayoutName sortByFields:"null | @empty | Field1, Field2, ..."
 ```
-
-**`name`**
-null | Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
-
-**`toolTipField`**
-null | Symbol
-
-**`bkgColorField`**
-null | Symbol
 
 **`allowToSwitchLayouts`**
 null | @empty | SpreadsheetLayout1, SpreadsheetLayout2, ...
-
-**`groupByField`**
-null | Symbol
-
-**`kind`**
-tree | tab
-
-**`showSearchBar`**
-true | false | yes | no
-
-**`categoryFields`**
-null | @empty | Field1, Field2, ...
-
-**`advanceFilterFields`**
-null | @empty | Field1, Field2, ...
-
-**`sortByFields`**
-null | @empty | Field1, Field2, ...
 
 ### table
 ```js filename="Terminal" copy
- update spreadsheetLayout SpreadsheetLayoutName argument1:"value1" argument2:"value2"
+ update spreadsheetLayout SpreadsheetLayoutName name:"null | Symbol"
+ update spreadsheetLayout SpreadsheetLayoutName label:"null | @null | @empty | text"
+ update spreadsheetLayout SpreadsheetLayoutName description:"null | @null | @empty | paragraph"
+ update spreadsheetLayout SpreadsheetLayoutName toolTipField:"null | Symbol"
+ update spreadsheetLayout SpreadsheetLayoutName bkgColorField:"null | Symbol"
+ update spreadsheetLayout SpreadsheetLayoutName allowToSwitchLayouts:"..."
+ update spreadsheetLayout SpreadsheetLayoutName showCommentCount:"true | false | yes | no"
+ update spreadsheetLayout SpreadsheetLayoutName pagination:"true | false | yes | no"
+ update spreadsheetLayout SpreadsheetLayoutName rowsPerPage:"null | integer"
+ update spreadsheetLayout SpreadsheetLayoutName showFields:"null | @empty | Field1, Field2, ..."
+ update spreadsheetLayout SpreadsheetLayoutName masterDetailGrids:"null | @empty | Grid1, Grid2, ..."
+ update spreadsheetLayout SpreadsheetLayoutName hideRowSeparator:"true | false | yes | no"
+ update spreadsheetLayout SpreadsheetLayoutName columnSizes:"..."
+ update spreadsheetLayout SpreadsheetLayoutName sortByFields:"null | @empty | Field1, Field2, ..."
 ```
-
-**`name`**
-null | Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
-
-**`toolTipField`**
-null | Symbol
-
-**`bkgColorField`**
-null | Symbol
 
 **`allowToSwitchLayouts`**
 null | @empty | SpreadsheetLayout1, SpreadsheetLayout2, ...
 
-**`showCommentCount`**
-true | false | yes | no
-
-**`pagination`**
-true | false | yes | no
-
-**`rowsPerPage`**
-null | integer
-
-**`showFields`**
-null | @empty | Field1, Field2, ...
-
-**`masterDetailGrids`**
-null | @empty | Grid1, Grid2, ...
-
-**`hideRowSeparator`**
-true | false | yes | no
-
 **`columnSizes`**
 null | @null | @empty | AutoSize, Flex, [number]px, [number]em, ...
-
-**`sortByFields`**
-null | @empty | Field1, Field2, ...
 
 

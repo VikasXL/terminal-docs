@@ -39,73 +39,42 @@ card | list | map | table | xyChart | kanban
 
 ### card
 ```js filename="Terminal" copy
- update gridLayout GridLayoutName argument1:"value1" argument2:"value2"
+ update gridLayout GridLayoutName name:"null | Symbol"
+ update gridLayout GridLayoutName label:"null | @null | @empty | text"
+ update gridLayout GridLayoutName description:"null | @null | @empty | paragraph"
+ update gridLayout GridLayoutName toolTipField:"null | Symbol"
+ update gridLayout GridLayoutName bkgColorField:"null | Symbol"
+ update gridLayout GridLayoutName allowToSwitchLayouts:"..."
+ update gridLayout GridLayoutName groupByField:"null | Symbol"
 ```
-
-**`name`**
-null | Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
-
-**`toolTipField`**
-null | Symbol
-
-**`bkgColorField`**
-null | Symbol
 
 **`allowToSwitchLayouts`**
 null | @empty | GridLayout1, GridLayout2, ...
-
-**`groupByField`**
-null | Symbol
 
 ### kanban
 ```js filename="Terminal" copy
- update gridLayout GridLayoutName argument1:"value1" argument2:"value2"
+ update gridLayout GridLayoutName name:"null | Symbol"
+ update gridLayout GridLayoutName label:"null | @null | @empty | text"
+ update gridLayout GridLayoutName description:"null | @null | @empty | paragraph"
+ update gridLayout GridLayoutName toolTipField:"null | Symbol"
+ update gridLayout GridLayoutName bkgColorField:"null | Symbol"
+ update gridLayout GridLayoutName allowToSwitchLayouts:"..."
+ update gridLayout GridLayoutName showCommentCount:"true | false | yes | no"
+ update gridLayout GridLayoutName showSectionName:"true | false | yes | no"
+ update gridLayout GridLayoutName showFooter:"true | false | yes | no"
+ update gridLayout GridLayoutName fontSize:"..."
+ update gridLayout GridLayoutName showFields:"null | @empty | Field1, Field2, ..."
+ update gridLayout GridLayoutName sortByFields:"null | @empty | Field1, Field2, ..."
+ update gridLayout GridLayoutName kanbanField:"null | Symbol"
+ update gridLayout GridLayoutName swimLaneLabels:"..."
+ update gridLayout GridLayoutName swimLaneColors:"..."
 ```
-
-**`name`**
-null | Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
-
-**`toolTipField`**
-null | Symbol
-
-**`bkgColorField`**
-null | Symbol
 
 **`allowToSwitchLayouts`**
 null | @empty | GridLayout1, GridLayout2, ...
 
-**`showCommentCount`**
-true | false | yes | no
-
-**`showSectionName`**
-true | false | yes | no
-
-**`showFooter`**
-true | false | yes | no
-
 **`fontSize`**
 body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4
-
-**`showFields`**
-null | @empty | Field1, Field2, ...
-
-**`sortByFields`**
-null | @empty | Field1, Field2, ...
-
-**`kanbanField`**
-null | Symbol
 
 **`swimLaneLabels`**
 null | @null | @empty | label1 \n label2 \n ...
@@ -115,152 +84,90 @@ null | @empty | ColorVar1, ColorVar2, ...
 
 ### list
 ```js filename="Terminal" copy
- update gridLayout GridLayoutName argument1:"value1" argument2:"value2"
+ update gridLayout GridLayoutName name:"null | Symbol"
+ update gridLayout GridLayoutName label:"null | @null | @empty | text"
+ update gridLayout GridLayoutName description:"null | @null | @empty | paragraph"
+ update gridLayout GridLayoutName toolTipField:"null | Symbol"
+ update gridLayout GridLayoutName bkgColorField:"null | Symbol"
+ update gridLayout GridLayoutName allowToSwitchLayouts:"..."
+ update gridLayout GridLayoutName groupByField:"null | Symbol"
 ```
-
-**`name`**
-null | Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
-
-**`toolTipField`**
-null | Symbol
-
-**`bkgColorField`**
-null | Symbol
 
 **`allowToSwitchLayouts`**
 null | @empty | GridLayout1, GridLayout2, ...
-
-**`groupByField`**
-null | Symbol
 
 ### map
 ```js filename="Terminal" copy
- update gridLayout GridLayoutName argument1:"value1" argument2:"value2"
+ update gridLayout GridLayoutName name:"null | Symbol"
+ update gridLayout GridLayoutName label:"null | @null | @empty | text"
+ update gridLayout GridLayoutName description:"null | @null | @empty | paragraph"
+ update gridLayout GridLayoutName toolTipField:"null | Symbol"
+ update gridLayout GridLayoutName bkgColorField:"null | Symbol"
+ update gridLayout GridLayoutName allowToSwitchLayouts:"..."
+ update gridLayout GridLayoutName locationField:"null | Symbol"
+ update gridLayout GridLayoutName toolTipFieldId:"null | Symbol"
+ update gridLayout GridLayoutName colorField:"null | Symbol"
+ update gridLayout GridLayoutName shapeField:"null | Symbol"
+ update gridLayout GridLayoutName groupByField:"..."
+ update gridLayout GridLayoutName strokeField:"null | Symbol"
 ```
-
-**`name`**
-null | Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
-
-**`toolTipField`**
-null | Symbol
-
-**`bkgColorField`**
-null | Symbol
 
 **`allowToSwitchLayouts`**
 null | @empty | GridLayout1, GridLayout2, ...
-
-**`locationField`**
-null | Symbol
-
-**`toolTipFieldId`**
-null | Symbol
-
-**`colorField`**
-null | Symbol
-
-**`shapeField`**
-null | Symbol
 
 **`groupByField`**
 null | Field | $CreatedBy | $CreatedOn | $RowId | $RowOrder | $UpdatedBy | $UpdatedOn ...
 
-**`strokeField`**
-null | Symbol
-
 ### table
 ```js filename="Terminal" copy
- update gridLayout GridLayoutName argument1:"value1" argument2:"value2"
+ update gridLayout GridLayoutName name:"null | Symbol"
+ update gridLayout GridLayoutName label:"null | @null | @empty | text"
+ update gridLayout GridLayoutName description:"null | @null | @empty | paragraph"
+ update gridLayout GridLayoutName toolTipField:"null | Symbol"
+ update gridLayout GridLayoutName bkgColorField:"null | Symbol"
+ update gridLayout GridLayoutName allowToSwitchLayouts:"..."
+ update gridLayout GridLayoutName groupByField:"null | Symbol"
+ update gridLayout GridLayoutName hideRowSeparator:"true | false | yes | no"
+ update gridLayout GridLayoutName pageSize:"..."
+ update gridLayout GridLayoutName showFields:"null | @empty | Field1, Field2, ..."
+ update gridLayout GridLayoutName columnSizes:"..."
+ update gridLayout GridLayoutName sortByFields:"null | @empty | Field1, Field2, ..."
+ update gridLayout GridLayoutName columnAlignments:"..."
+ update gridLayout GridLayoutName style:"defaultStyle"
 ```
-
-**`name`**
-null | Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
-
-**`toolTipField`**
-null | Symbol
-
-**`bkgColorField`**
-null | Symbol
 
 **`allowToSwitchLayouts`**
 null | @empty | GridLayout1, GridLayout2, ...
-
-**`groupByField`**
-null | Symbol
-
-**`hideRowSeparator`**
-true | false | yes | no
 
 **`pageSize`**
 null | number type variable | number value
 
-**`showFields`**
-null | @empty | Field1, Field2, ...
-
 **`columnSizes`**
 null | @null | @empty | AutoSize, Flex, [number]px, [number]em, ...
-
-**`sortByFields`**
-null | @empty | Field1, Field2, ...
 
 **`columnAlignments`**
 null | @empty | top, bottom, start, end, center, diagonal, overlayTop, flexCenter, spaceBetween, justify
 
-**`style`**
-defaultStyle
-
 ### xyChart
 ```js filename="Terminal" copy
- update gridLayout GridLayoutName argument1:"value1" argument2:"value2"
+ update gridLayout GridLayoutName name:"null | Symbol"
+ update gridLayout GridLayoutName label:"null | @null | @empty | text"
+ update gridLayout GridLayoutName description:"null | @null | @empty | paragraph"
+ update gridLayout GridLayoutName toolTipField:"null | Symbol"
+ update gridLayout GridLayoutName bkgColorField:"null | Symbol"
+ update gridLayout GridLayoutName allowToSwitchLayouts:"..."
+ update gridLayout GridLayoutName xField:"null | Symbol"
+ update gridLayout GridLayoutName xFieldColor:"null | color type variable | color value"
+ update gridLayout GridLayoutName chartType:"..."
+ update gridLayout GridLayoutName yFields:"null | @empty | YField1, YField2, ..."
+ update gridLayout GridLayoutName yFieldColors:"..."
 ```
-
-**`name`**
-null | Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
-
-**`toolTipField`**
-null | Symbol
-
-**`bkgColorField`**
-null | Symbol
 
 **`allowToSwitchLayouts`**
 null | @empty | GridLayout1, GridLayout2, ...
 
-**`xField`**
-null | Symbol
-
-**`xFieldColor`**
-null | color type variable | color value
-
 **`chartType`**
 barGraph | lineChart | pieChart | doughnut | scatterPlot
-
-**`yFields`**
-null | @empty | YField1, YField2, ...
 
 **`yFieldColors`**
 null | @empty | YFieldColor1, YFieldColor2, ...

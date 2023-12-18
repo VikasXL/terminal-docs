@@ -32,58 +32,34 @@ composite | mapper | plugin | query | spreadsheet
 
 ### composite
 ```js filename="Terminal" copy
- update report ReportName argument1:"value1" argument2:"value2"
+ update report ReportName name:"Symbol"
+ update report ReportName label:"null | @null | @empty | text"
+ update report ReportName description:"null | @null | @empty | paragraph"
+ update report ReportName filterTags:"..."
+ update report ReportName inputForm:"null | Symbol"
+ update report ReportName outputForm:"null | Symbol"
+ update report ReportName mergeReports:"null | @empty | Report1, Report2, ..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`inputForm`**
-null | Symbol
-
-**`outputForm`**
-null | Symbol
-
-**`mergeReports`**
-null | @empty | Report1, Report2, ...
 
 ### mapper
 ```js filename="Terminal" copy
- update report ReportName argument1:"value1" argument2:"value2"
+ update report ReportName name:"Symbol"
+ update report ReportName label:"null | @null | @empty | text"
+ update report ReportName description:"null | @null | @empty | paragraph"
+ update report ReportName filterTags:"..."
+ update report ReportName inputForm:"null | Symbol"
+ update report ReportName outputForm:"null | Symbol"
+ update report ReportName mappedReport:"null | Symbol"
+ update report ReportName saveToSpreadsheet:"null | Symbol"
+ update report ReportName inputFormMapping:"..."
+ update report ReportName outputFormMapping:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`inputForm`**
-null | Symbol
-
-**`outputForm`**
-null | Symbol
-
-**`mappedReport`**
-null | Symbol
-
-**`saveToSpreadsheet`**
-null | Symbol
 
 **`inputFormMapping`**
 null | mapping type variable | mapping value
@@ -93,32 +69,20 @@ null | mapping type variable | mapping value
 
 ### plugin
 ```js filename="Terminal" copy
- update report ReportName argument1:"value1" argument2:"value2"
+ update report ReportName name:"Symbol"
+ update report ReportName label:"null | @null | @empty | text"
+ update report ReportName description:"null | @null | @empty | paragraph"
+ update report ReportName filterTags:"..."
+ update report ReportName inputForm:"null | Symbol"
+ update report ReportName outputForm:"null | Symbol"
+ update report ReportName pluginName:"null | @null | @empty | pluginName"
+ update report ReportName pluginApi:"null | Symbol"
+ update report ReportName inputFormMapping:"..."
+ update report ReportName outputFormMapping:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`inputForm`**
-null | Symbol
-
-**`outputForm`**
-null | Symbol
-
-**`pluginName`**
-null | @null | @empty | pluginName
-
-**`pluginApi`**
-null | Symbol
 
 **`inputFormMapping`**
 null | mapping type variable | mapping value
@@ -128,58 +92,37 @@ null | mapping type variable | mapping value
 
 ### query
 ```js filename="Terminal" copy
- update report ReportName argument1:"value1" argument2:"value2"
+ update report ReportName name:"Symbol"
+ update report ReportName label:"null | @null | @empty | text"
+ update report ReportName description:"null | @null | @empty | paragraph"
+ update report ReportName filterTags:"..."
+ update report ReportName inputForm:"null | Symbol"
+ update report ReportName outputForm:"null | Symbol"
+ update report ReportName fromSpreadsheets:"..."
+ update report ReportName neoQL:"null | @null | @empty | neoQL code"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`inputForm`**
-null | Symbol
-
-**`outputForm`**
-null | Symbol
 
 **`fromSpreadsheets`**
 null | @empty | Spreadsheet1, Spreadsheet2, ...
 
-**`neoQL`**
-null | @null | @empty | neoQL code
-
 ### spreadsheet
 ```js filename="Terminal" copy
- update report ReportName argument1:"value1" argument2:"value2"
+ update report ReportName name:"Symbol"
+ update report ReportName label:"null | @null | @empty | text"
+ update report ReportName description:"null | @null | @empty | paragraph"
+ update report ReportName filterTags:"..."
+ update report ReportName inputForm:"null | Symbol"
+ update report ReportName outputForm:"null | Symbol"
+ update report ReportName fromSpreadsheet:"null | Symbol"
+ update report ReportName filterCondition:"..."
+ update report ReportName outputFormMapping:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`inputForm`**
-null | Symbol
-
-**`outputForm`**
-null | Symbol
-
-**`fromSpreadsheet`**
-null | Symbol
 
 **`filterCondition`**
 null | condition type variable | condition value

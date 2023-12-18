@@ -39,1074 +39,651 @@ any | bool | buttonVariant | color | currency | dataPartitionPeriod | dataPriori
 
 ### any
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 ### bool
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 **`value`**
 null | @null | @empty | @null | true | false | yes | no
 
 ### buttonVariant
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"text | contained | outlined | icon"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-text | contained | outlined | icon
 
 ### calendar
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName nameDate:"null | @null | @empty | text"
+ update variable VariableName date:"null | dd/MM/yyyy"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`nameDate`**
-null | @null | @empty | text
-
-**`date`**
-null | dd/MM/yyyy
 
 ### chipSetDay
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 **`value`**
 null | @empty | sunday, monday, tuesday, wednesday, thursday, friday, saturday
 
 ### chipSetTime
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | @null | @empty | time, ..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | @null | @empty | time, ...
 
 ### color
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 **`value`**
 transparent | primary | secondary | error | info | success | warning | textPrimary | textSecondary | textDisabled | textInverse | primaryLight | secondaryLight | successLight | errorLight | infoLight | warningLight | primaryDark | secondaryDark | successDark | errorDark | infoDark | warningDark | amber | black | blue | cyan | deepOrange | deepPurple | green | grey | indigo | lightBlue | lightGreen | lime | orange | pink | purple | red | teal | white | yellow
 
 ### condition
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName fromSourcePlugin:"null | @null | @empty | fromSourcePlugin"
+ update variable VariableName inputForm:"null | Symbol"
+ update variable VariableName sourceForm:"null | Symbol"
+ update variable VariableName sourceGrid:"null | Symbol"
+ update variable VariableName condition:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`fromSourcePlugin`**
-null | @null | @empty | fromSourcePlugin
-
-**`inputForm`**
-null | Symbol
-
-**`sourceForm`**
-null | Symbol
-
-**`sourceGrid`**
-null | Symbol
 
 **`condition`**
 And(statement1, Or(Statement2,Statement3, And(Statement6,Statement7)), Statement4)
 
 ### currency
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | @null | @empty | currencyCode"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | @null | @empty | currencyCode
 
 ### dataPartitionPeriod
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 **`value`**
 daily | hourly | weekly | monthly | quarterly | yearly
 
 ### dataPriority
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"high | medium | low"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-high | medium | low
 
 ### date
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 **`value`**
 lastQuarter | lastWeek | lastYear | nextQuarter | nextWeek | nextYear | now | tomorrow | yesterday
 
 ### dateTime
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 **`value`**
 lastQuarter | lastWeek | lastYear | nextQuarter | nextWeek | nextYear | now | tomorrow | yesterday
 
 ### day
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 **`value`**
 sunday | monday | tuesday | wednesday | thursday | friday | saturday
 
 ### decimal
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | @null | @empty | decimal"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | @null | @empty | decimal
 
 ### deviceSize
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"mobile | tablet | laptop | desktop"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-mobile | tablet | laptop | desktop
 
 ### deviceType
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"android | ios | web | agent | test"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-android | ios | web | agent | test
 
 ### direction
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"horizontal | vertical"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-horizontal | vertical
 
 ### dividerKind
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"thick | thin"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-thick | thin
 
 ### document
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 ### duration
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | @null | @empty | duration"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | @null | @empty | duration
 
 ### email
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | @null | @empty | email"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | @null | @empty | email
 
 ### fieldVariant
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"outlined | filled | standard"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-outlined | filled | standard
 
 ### font
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 **`value`**
 body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4
 
 ### function
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName outputKind:"number | text | numberArray | textArray"
+ update variable VariableName javascript:"null | @null | @empty | javascript"
+ update variable VariableName inputArgs:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`outputKind`**
-number | text | numberArray | textArray
-
-**`javascript`**
-null | @null | @empty | javascript
 
 **`inputArgs`**
 A1:ArgType, A2?:ArgType ArgType: number | text | numberArray | textArray
 
 ### html
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 ### hyperlink
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | @null | @empty | text"
+ update variable VariableName displayText:"null | @null | @empty | text"
+ update variable VariableName color:"null | color type variable | color value"
+ update variable VariableName kind:"general | youtube"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | @null | @empty | text
-
-**`displayText`**
-null | @null | @empty | text
-
-**`color`**
-null | color type variable | color value
-
-**`kind`**
-general | youtube
 
 ### icon
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | @null | @empty | icon"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | @null | @empty | icon
 
 ### image
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 ### imageCorner
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"rectangle | circle | rounded"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-rectangle | circle | rounded
 
 ### language
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | @null | @empty | language"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | @null | @empty | language
 
 ### location
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 ### mapOfText
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName form:"null | Symbol"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`form`**
-null | Symbol
 
 ### mapPinShape
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 **`value`**
 circle | circleBig | circleMedium | heart | heartBig | heartMedium | pin | square | squareBig | squareMedium | star | starBig | starMedium | triangle | triangleBig | triangleMedium
 
 ### mapping
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName fromForm:"null | Symbol"
+ update variable VariableName fromGrid:"null | Symbol"
+ update variable VariableName fromPlugin:"null | @null | @empty | fromPlugin"
+ update variable VariableName toForm:"null | Symbol"
+ update variable VariableName toGrid:"null | Symbol"
+ update variable VariableName toPlugin:"null | @null | @empty | toPlugin"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`fromForm`**
-null | Symbol
-
-**`fromGrid`**
-null | Symbol
-
-**`fromPlugin`**
-null | @null | @empty | fromPlugin
-
-**`toForm`**
-null | Symbol
-
-**`toGrid`**
-null | Symbol
-
-**`toPlugin`**
-null | @null | @empty | toPlugin
 
 ### mobileNumber
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | @null | @empty | mobileNumber"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | @null | @empty | mobileNumber
 
 ### month
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 **`value`**
 January | February | March | April | May | June | July | August | September | October | November | December
 
 ### number
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | long1, long2, ..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | long1, long2, ...
 
 ### paragraph
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | @null | @empty | text"
+ update variable VariableName params:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | @null | @empty | text
 
 **`params`**
 null | @null | @empty | text1, text2, ...
 
 ### quarter
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 **`value`**
 Quarter_1 | Quarter_2 | Quarter_3 | Quarter_4
 
 ### ratingKind
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"star | heart | thumbs"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-star | heart | thumbs
 
 ### scheduler
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName startDateTime:"null | dd/MM/yyyy hh:mm:ss am/pm"
+ update variable VariableName timeZone:"null | @null | @empty | Timezone"
+ update variable VariableName repeatFrequencyKind:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`startDateTime`**
-null | dd/MM/yyyy hh:mm:ss am/pm
-
-**`timeZone`**
-null | @null | @empty | Timezone
 
 **`repeatFrequencyKind`**
 minutes | hours | days | weeks | months | years
 
 ### sequence
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | @null | @empty | seqStart"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | @null | @empty | seqStart
 
 ### setOfNumber
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 **`value`**
 null | @null | @empty | number1, number2, ...
 
 ### setOfText
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"..."
+ update variable VariableName colors:"..."
+ update variable VariableName shades:"null | @empty | s50, s100, s200, s500"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 **`value`**
 null | @null | @empty | text1, text2, ...
@@ -1114,203 +691,124 @@ null | @null | @empty | text1, text2, ...
 **`colors`**
 null | @empty | transparent, primary, secondary, error, info, success, warning, textPrimary, textSecondary, textDisabled, textInverse, primaryLight, secondaryLight, successLight, errorLight, infoLight, warningLight, primaryDark, secondaryDark, successDark, errorDark, infoDark, warningDark, amber, black, blue, cyan, deepOrange, deepPurple, green, grey, indigo, lightBlue, lightGreen, lime, orange, pink, purple, red, teal, white, yellow
 
-**`shades`**
-null | @empty | s50, s100, s200, s500
-
 ### stroke
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"dash | dotted | solid"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-dash | dotted | solid
 
 ### symbol
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | Symbol"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | Symbol
 
 ### text
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | @null | @empty | text"
+ update variable VariableName params:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | @null | @empty | text
 
 **`params`**
 null | @null | @empty | text1, text2, ...
 
 ### themePlacement
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 **`value`**
 top | bottom | start | end | center | diagonal | overlayTop | flexCenter | spaceBetween | justify
 
 ### time
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | @null | @empty | time"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | @null | @empty | time
 
 ### timeZone
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName value:"null | @null | @empty | timeZone"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`value`**
-null | @null | @empty | timeZone
 
 ### tree
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName paths:"..."
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
-
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
 
 **`paths`**
 null | @null | @empty | a1/b1/c1, a1/b1/c2, a1/b2/c3, ...
 
 ### userSetting
 ```js filename="Terminal" copy
- update variable VariableName argument1:"value1" argument2:"value2"
+ update variable VariableName name:"Symbol"
+ update variable VariableName label:"null | @null | @empty | text"
+ update variable VariableName description:"null | @null | @empty | paragraph"
+ update variable VariableName filterTags:"..."
+ update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+ update variable VariableName kind:"text | pickOne | pickMany"
+ update variable VariableName dataSource:"..."
+ update variable VariableName excludeOnUserSettings:"true | false | yes | no"
+ update variable VariableName doNotShowValueToAdmin:"true | false | yes | no"
 ```
-
-**`name`**
-Symbol
-
-**`label`**
-null | @null | @empty | text
-
-**`description`**
-null | @null | @empty | paragraph
 
 **`filterTags`**
 null | @null | @empty | text1, text2, ...
 
-**`deploy`**
-requiredOnDeploy | fixedOnDeploy
-
-**`kind`**
-text | pickOne | pickMany
-
 **`dataSource`**
 null | setOfText type variable | setOfText value
-
-**`excludeOnUserSettings`**
-true | false | yes | no
-
-**`doNotShowValueToAdmin`**
-true | false | yes | no
 
 
