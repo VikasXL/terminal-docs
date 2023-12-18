@@ -7,76 +7,35 @@ title: Plugin
 ## ensure
 
 ```js filename="Terminal" copy
- ensure entPlugin argument:"value"
+ ensure entPlugin name:"pluginName" version:"pluginVersion"
 ```
-
-This command accepts the following arguments:
-
-### `name`
-**Value type:** @null | pluginName
-
----write the arg description---
 
 
 ## update
 
 ```js filename="Terminal" copy
- update entPlugin argument1:"value1" argument2:"value2"
+ update entPlugin name:"pluginName"
+ update entPlugin version:"version"
+ update entPlugin singleton:"true | false | yes | no"
+ update entPlugin description:"null | @null | @empty | paragraph"
+ update entPlugin filterTags:"..."
 ```
 
-This command accepts the following arguments:
-
-### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
-
----write the arg description---
-
-### `description`
-**Value type:** null | @null | @empty | paragraph
-
----write the arg description---
-
-### `name`
-**Value type:** @null | pluginName
-
----write the arg description---
-
-### `version`
-**Value type:** null | @null | @empty | version
-
----write the arg description---
-
-### `singleton`
-**Value type:** true | false | yes | no
-
----write the arg description---
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove entPlugin argument:"value"
+ remove entPlugin name:"pluginName"
 ```
-
-This command accepts the following arguments:
-
-### `name`
-**Value type:** @null | pluginName
-
----write the arg description---
 
 
 ## print
 
 ```js filename="Terminal" copy
- print entPlugin argument:"value"
+ print entPlugin name:"pluginName"
 ```
-
-This command accepts the following arguments:
-
-### `name`
-**Value type:** @null | pluginName
-
----write the arg description---
 
 

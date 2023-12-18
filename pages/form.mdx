@@ -14,55 +14,22 @@ title: Form
 ## update
 
 ```js filename="Terminal" copy
- update form FormName argument1:"value1" argument2:"value2"
+ update form FormName name:"Symbol"
+ update form FormName label:"null | @null | @empty | text"
+ update form FormName description:"null | @null | @empty | paragraph"
+ update form FormName filterTags:"..."
+ update form FormName chatLabelField:"null | Symbol"
+ update form FormName textPattern:"null | text type variable | text value"
+ update form FormName chatPattern:"..."
+ update form FormName tabVariant:"standard | scrollable | fullWidth"
+ update form FormName chatBubbleFields:"null | @empty | Field1, Field2, ..."
 ```
 
-This command accepts the following arguments:
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
-### `name`
-**Value type:** Symbol
-
----write the arg description---
-
-### `label`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-### `description`
-**Value type:** null | @null | @empty | paragraph
-
----write the arg description---
-
-### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
-
----write the arg description---
-
-### `chatLabelField`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `textPattern`
-**Value type:** null | @null | @empty | text type variable | text value
-
----write the arg description---
-
-### `chatPattern`
-**Value type:** null | @null | @empty | paragraph type variable | paragraph value
-
----write the arg description---
-
-### `tabVariant`
-**Value type:** fullWidth | scrollable | standard
-
----write the arg description---
-
-### `chatBubbleFields`
-**Value type:** null | @empty | Field1, Field2, ...
-
----write the arg description---
+**`chatPattern`**
+null | paragraph type variable | paragraph value
 
 
 ## remove

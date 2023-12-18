@@ -4,17 +4,18 @@ title: Terminal
 
 # Terminal
 
-## Terminal Command Structure
+## Introduction
 
-Each command in the Terminal adheres to the following structure,
+Below is the structure of terminal commands.
 ```js
  <cmd> <what> <name> argument1:"value1" argument2:"value2" ...
 ```
 
 
-**`cmd`**  This is the first mandatory token in the command. It represents various operations,
+### `cmd`
+It Accepts the following valid values,
 | Command         | Description                                                          |
-|-----------------|--------------------------------------------------------------------- |
+|:-----------------|:--------------------------------------------------------------------- |
 | add             | Adds a specified `what`.               |
 | ensure          | Ensures that specific `what` is present , if not present it will add  |
 | goTo            | Navigates to a specific contextual `what`.                          |
@@ -32,18 +33,111 @@ Each command in the Terminal adheres to the following structure,
 
 
 
-**`what`**  This is the second mandatory token in the command, representing distinct categories,
-```js
- action | actionFormDefaultValue | actions | admin | admins | automation | automationEvent | automationStep | automationStepFormula | automations | deeplink | deeplinkProp | deeplinks | deployConfig | deployEntPlugin | deployEntPluginConfigFormValue | deployVar | driveSettings | driveSheet | driveSheets | entPlugin | entPlugins | enterprise | field | fieldPermission | fieldProp | fieldRefOverlayLayout | follower | followers | form | formFormula | formLayoutContent | formLayoutFooter | formLayoutHeader | formLayoutWatermark | formMenu | formPermission | formProp | formVisibilityAction | formVisibilityCondition | formVisibilityRule | forms | gotoCtx | grid | gridLayout | gridLayoutCardItem | gridLayoutListItem | gridLayoutTableFooter | gridLayoutTableHeader | gridMenu | gridMenuRow | gridPermission | gridProp | group | groupAction | groups | plugin | pluginApi | pluginResource | prompt | promptConfig | prompts | report | reports | role | roles | section | sectionMenu | sectionPermission | sectionProp | spreadsheet | spreadsheetLayout | spreadsheetLayoutCardItem | spreadsheetLayoutListItem | spreadsheetPartition | spreadsheetPermission | spreadsheetPermissionForwardGroups | spreadsheetPermissionForwardRoles | spreadsheets | translation | translations | user | users | validations | variableMapOfTextKeyValue | variableMappingField | variableMappingGrid | variable | variables
-```
+### `what`
+It accepts the following valid values,
+| What | Description |
+| :------- | :----------- |
+| action | action description |
+| actionFormDefaultValue | actionFormDefaultValue description |
+| actions | actions description |
+| admin | admin description |
+| admins | admins description |
+| automation | automation description |
+| automationEvent | automationEvent description |
+| automationStep | automationStep description |
+| automationStepFormula | automationStepFormula description |
+| automations | automations description |
+| deeplink | deeplink description |
+| deeplinkProp | deeplinkProp description |
+| deeplinks | deeplinks description |
+| deployConfig | deployConfig description |
+| deployEntPlugin | deployEntPlugin description |
+| deployEntPluginConfigFormValue | deployEntPluginConfigFormValue description |
+| deployVar | deployVar description |
+| driveSettings | driveSettings description |
+| driveSheet | driveSheet description |
+| driveSheets | driveSheets description |
+| entPlugin | entPlugin description |
+| entPlugins | entPlugins description |
+| enterprise | enterprise description |
+| field | field description |
+| fieldPermission | fieldPermission description |
+| fieldProp | fieldProp description |
+| fieldRefOverlayLayout | fieldRefOverlayLayout description |
+| follower | follower description |
+| followers | followers description |
+| form | form description |
+| formFormula | formFormula description |
+| formLayoutContent | formLayoutContent description |
+| formLayoutFooter | formLayoutFooter description |
+| formLayoutHeader | formLayoutHeader description |
+| formLayoutWatermark | formLayoutWatermark description |
+| formMenu | formMenu description |
+| formPermission | formPermission description |
+| formProp | formProp description |
+| formVisibilityAction | formVisibilityAction description |
+| formVisibilityCondition | formVisibilityCondition description |
+| formVisibilityRule | formVisibilityRule description |
+| forms | forms description |
+| gotoCtx | gotoCtx description |
+| grid | grid description |
+| gridLayout | gridLayout description |
+| gridLayoutCardItem | gridLayoutCardItem description |
+| gridLayoutListItem | gridLayoutListItem description |
+| gridLayoutTableFooter | gridLayoutTableFooter description |
+| gridLayoutTableHeader | gridLayoutTableHeader description |
+| gridMenu | gridMenu description |
+| gridMenuRow | gridMenuRow description |
+| gridPermission | gridPermission description |
+| gridProp | gridProp description |
+| group | group description |
+| groupAction | groupAction description |
+| groups | groups description |
+| plugin | plugin description |
+| pluginApi | pluginApi description |
+| pluginResource | pluginResource description |
+| prompt | prompt description |
+| promptConfig | promptConfig description |
+| prompts | prompts description |
+| report | report description |
+| reports | reports description |
+| role | role description |
+| roles | roles description |
+| section | section description |
+| sectionMenu | sectionMenu description |
+| sectionPermission | sectionPermission description |
+| sectionProp | sectionProp description |
+| spreadsheet | spreadsheet description |
+| spreadsheetLayout | spreadsheetLayout description |
+| spreadsheetLayoutCardItem | spreadsheetLayoutCardItem description |
+| spreadsheetLayoutListItem | spreadsheetLayoutListItem description |
+| spreadsheetPartition | spreadsheetPartition description |
+| spreadsheetPermission | spreadsheetPermission description |
+| spreadsheetPermissionForwardGroups | spreadsheetPermissionForwardGroups description |
+| spreadsheetPermissionForwardRoles | spreadsheetPermissionForwardRoles description |
+| spreadsheets | spreadsheets description |
+| translation | translation description |
+| translations | translations description |
+| user | user description |
+| users | users description |
+| validations | validations description |
+| variable | variable description |
+| variableMapOfTextKeyValue | variableMapOfTextKeyValue description |
+| variableMappingField | variableMappingField description |
+| variableMappingGrid | variableMappingGrid description |
+| variables | variables description |
 
-**`name`**  It is a Symbol, which is optional for certain 'what' categories.
+
+### `name`
+It is a Symbol, which is optional for certain 'what'.
 
 Symbol properties:
 - Starts with a capital alphabetic character.
 - Does not start with a number.
 - Excludes the use of special characters.
 
-**`argument`**  Available arguments and their respective value types can be found in the respective 'what' page.
+### `argument`
+Available arguments and their respective value types can be found in the respective 'what' page.
 
 These commands help you do many things in the Terminal, making it useful for both enterprise and plugin development.
+

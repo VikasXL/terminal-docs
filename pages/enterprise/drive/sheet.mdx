@@ -14,45 +14,29 @@ title: Sheet
 ## update
 
 ```js filename="Terminal" copy
- update driveSheet DriveSheetName argument1:"value1" argument2:"value2"
+ update driveSheet DriveSheetName driveType:"master | partitioned"
+ update driveSheet DriveSheetName roles:"null | @empty | Role1, Role2, ..."
+ update driveSheet DriveSheetName mediaRoles:"..."
+ update driveSheet DriveSheetName dataPartitionPeriod:"..."
+ update driveSheet DriveSheetName dataRetentionDuration:"..."
+ update driveSheet DriveSheetName dataUpdateDuration:"..."
+ update driveSheet DriveSheetName dataPriority:"..."
 ```
 
-This command accepts the following arguments:
+**`mediaRoles`**
+null | @empty | MediaRole1, MediaRole2, ...
 
-### `driveType`
-**Value type:** master | partitioned
+**`dataPartitionPeriod`**
+null | dataPartitionPeriod type variable | dataPartitionPeriod value
 
----write the arg description---
+**`dataRetentionDuration`**
+null | duration type variable | duration value
 
-### `roles`
-**Value type:** null | @empty | Role1, Role2, ...
+**`dataUpdateDuration`**
+null | duration type variable | duration value
 
----write the arg description---
-
-### `mediaRoles`
-**Value type:** null | @empty | MediaRole1, MediaRole2, ...
-
----write the arg description---
-
-### `dataPartitionPeriod`
-**Value type:** null | @null | @empty | dataPartitionPeriod type variable | dataPartitionPeriod value
-
----write the arg description---
-
-### `dataRetentionDuration`
-**Value type:** null | @null | @empty | duration type variable | duration value
-
----write the arg description---
-
-### `dataUpdateDuration`
-**Value type:** null | @null | @empty | duration type variable | duration value
-
----write the arg description---
-
-### `dataPriority`
-**Value type:** null | @null | @empty | dataPriority type variable | dataPriority value
-
----write the arg description---
+**`dataPriority`**
+null | dataPriority type variable | dataPriority value
 
 
 ## remove

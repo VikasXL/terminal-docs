@@ -7,49 +7,24 @@ title: Permission
 ## ensure
 
 ```js filename="Terminal" copy
- ensure formPermission argument1:"value1" argument2:"value2"
+ ensure formPermission role:"..." permission:"invisible | read | writeOnce | write" default:"invisible | read | writeOnce | write" allowToPrintForm:"true | false | yes | no" commentRoles:"..."
 ```
 
-This command accepts the following arguments:
+**`role`**
+Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
 
-### `default`
-**Value type:** invisible | read | write | writeOnce
-
----write the arg description---
-
-### `role`
-**Value type:** null | Role | $AllAssistants | $AllManagers | $Assistants | $GrandManager | $Manager | $Public | $Self ...
-
----write the arg description---
-
-### `permission`
-**Value type:** invisible | read | write | writeOnce
-
----write the arg description---
-
-### `allowToPrintForm`
-**Value type:** true | false | yes | no
-
----write the arg description---
-
-### `commentRoles`
-**Value type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
-
----write the arg description---
+**`commentRoles`**
+null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove formPermission argument:"value"
+ remove formPermission role:"..."
 ```
 
-This command accepts the following arguments:
-
-### `role`
-**Value type:** null | Role | $AllAssistants | $AllManagers | $Assistants | $GrandManager | $Manager | $Public | $Self ...
-
----write the arg description---
+**`role`**
+Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
 
 
 ## print

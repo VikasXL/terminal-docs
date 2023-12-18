@@ -7,78 +7,25 @@ title: Field
 ## update
 
 ```js filename="Terminal" copy
- update variableMappingField argument1:"value1" argument2:"value2"
+ update variableMappingField fromContext:"..."
+ update variableMappingField fromField:"sectionField | grid/field"
+ update variableMappingField fromVar:"Symbol"
+ update variableMappingField fromDerived:"Symbol"
+ update variableMappingField to:"sectionField | grid/field"
+ update variableMappingField primary:"true | false | yes | no"
 ```
 
-This command accepts the following arguments:
-
-### `fromContext`
-**Value type:** null | @null | @empty | caller.handle | caller.entUserId | ent.name | row.CreatedBy | ...
-
----write the arg description---
-
-### `fromField`
-**Value type:** null | sectionField | grid/field
-
----write the arg description---
-
-### `fromVar`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `fromDerived`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `to`
-**Value type:** null | sectionField | grid/field
-
----write the arg description---
-
-### `primary`
-**Value type:** true | false | yes | no
-
----write the arg description---
+**`fromContext`**
+caller.handle | caller.entUserId | ent.name | row.CreatedBy | ...
 
 
 ## ensure
 
 ```js filename="Terminal" copy
- ensure variableMappingField argument1:"value1" argument2:"value2"
+ ensure variableMappingField fromContext:"..." fromField:"sectionField | grid/field" fromVar:"Symbol" fromDerived:"Symbol" to:"sectionField | grid/field" primary:"true | false | yes | no"
 ```
 
-This command accepts the following arguments:
-
-### `fromContext`
-**Value type:** null | @null | @empty | caller.handle | caller.entUserId | ent.name | row.CreatedBy | ...
-
----write the arg description---
-
-### `fromField`
-**Value type:** null | sectionField | grid/field
-
----write the arg description---
-
-### `fromVar`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `fromDerived`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `to`
-**Value type:** null | sectionField | grid/field
-
----write the arg description---
-
-### `primary`
-**Value type:** true | false | yes | no
-
----write the arg description---
+**`fromContext`**
+caller.handle | caller.entUserId | ent.name | row.CreatedBy | ...
 
 

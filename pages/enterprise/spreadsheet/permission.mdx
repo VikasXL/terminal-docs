@@ -7,49 +7,31 @@ title: Permission
 ## ensure
 
 ```js filename="Terminal" copy
- ensure spreadsheetPermission argument1:"value1" argument2:"value2"
+ ensure spreadsheetPermission insertRoles:"..." updateRoles:"..." readRoles:"..." removeRoles:"..." auditTrailFormRoles:"..." readAfterDuration:"..." invisibleAfterDuration:"..." bypassDurationRoles:"..."
 ```
 
-This command accepts the following arguments:
+**`insertRoles`**
+null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
-### `insertRoles`
-**Value type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
+**`updateRoles`**
+null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
----write the arg description---
+**`readRoles`**
+null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
-### `updateRoles`
-**Value type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
+**`removeRoles`**
+null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
----write the arg description---
+**`auditTrailFormRoles`**
+null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
-### `readRoles`
-**Value type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
+**`readAfterDuration`**
+null | duration type variable | duration value
 
----write the arg description---
+**`invisibleAfterDuration`**
+null | duration type variable | duration value
 
-### `removeRoles`
-**Value type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
-
----write the arg description---
-
-### `auditTrailFormRoles`
-**Value type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
-
----write the arg description---
-
-### `readAfterDuration`
-**Value type:** null | @null | @empty | duration type variable | duration value
-
----write the arg description---
-
-### `invisibleAfterDuration`
-**Value type:** null | @null | @empty | duration type variable | duration value
-
----write the arg description---
-
-### `bypassDurationRoles`
-**Value type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
-
----write the arg description---
+**`bypassDurationRoles`**
+null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
 

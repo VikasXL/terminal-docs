@@ -11,114 +11,44 @@ title: Content
 ```
 
 
+## update
+
+```js filename="Terminal" copy
+ update formLayoutContent FormLayoutContentName name:"null | Symbol"
+ update formLayoutContent FormLayoutContentName label:"null | text type variable | text value"
+ update formLayoutContent FormLayoutContentName description:"null | @null | @empty | paragraph"
+ update formLayoutContent FormLayoutContentName displayLabel:"null | text type variable | text value"
+ update formLayoutContent FormLayoutContentName direction:"horizontal | vertical"
+ update formLayoutContent FormLayoutContentName allowToSwitchLayouts:"..."
+ update formLayoutContent FormLayoutContentName position:"start | flexCenter | end"
+ update formLayoutContent FormLayoutContentName defaultLayout:"true | false | yes | no"
+ update formLayoutContent FormLayoutContentName showBorders:"null | @empty | top, bottom, left, right"
+ update formLayoutContent FormLayoutContentName showPaddings:"null | @empty | top, bottom, left, right"
+ update formLayoutContent FormLayoutContentName contentPadding:"thick | thin"
+ update formLayoutContent FormLayoutContentName renderingMode:"a4Size | fullScreen"
+ update formLayoutContent FormLayoutContentName fields:"null | @empty | Field1, Field2, ..."
+ update formLayoutContent FormLayoutContentName contentLayouts:"..."
+ update formLayoutContent FormLayoutContentName gridLayouts:"..."
+ update formLayoutContent FormLayoutContentName gridSwitchers:"null | @empty | Grid1, Grid2, ..."
+ update formLayoutContent FormLayoutContentName showItemBorders:"null | @empty | top, bottom, left, right"
+ update formLayoutContent FormLayoutContentName showItemPadding:"null | @empty | top, bottom, left, right"
+ update formLayoutContent FormLayoutContentName padding:"thick | thin"
+```
+
+**`allowToSwitchLayouts`**
+null | @empty | FormContentLayout1, FormContentLayout2, ...
+
+**`contentLayouts`**
+null | @empty | ContentLayout1, ContentLayout2, ...
+
+**`gridLayouts`**
+null | @empty | Grid1/Layout1, Grid2/Layout2, ...
+
+
 ## remove
 
 ```js filename="Terminal" copy
  remove formLayoutContent FormLayoutContentName
 ```
-
-
-## update
-
-```js filename="Terminal" copy
- update formLayoutContent FormLayoutContentName argument1:"value1" argument2:"value2"
-```
-
-This command accepts the following arguments:
-
-### `name`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `label`
-**Value type:** null | @null | @empty | text type variable | text value
-
----write the arg description---
-
-### `description`
-**Value type:** null | @null | @empty | paragraph
-
----write the arg description---
-
-### `displayLabel`
-**Value type:** null | @null | @empty | text type variable | text value
-
----write the arg description---
-
-### `direction`
-**Value type:** horizontal | vertical
-
----write the arg description---
-
-### `allowToSwitchLayouts`
-**Value type:** null | @empty | FormContentLayout1, FormContentLayout2, ...
-
----write the arg description---
-
-### `position`
-**Value type:** end | flexCenter | start
-
----write the arg description---
-
-### `defaultLayout`
-**Value type:** true | false | yes | no
-
----write the arg description---
-
-### `showBorders`
-**Value type:** null | @empty | bottom, left, right, top
-
----write the arg description---
-
-### `showPaddings`
-**Value type:** null | @empty | bottom, left, right, top
-
----write the arg description---
-
-### `contentPadding`
-**Value type:** thick | thin
-
----write the arg description---
-
-### `renderingMode`
-**Value type:** a4Size | fullScreen
-
----write the arg description---
-
-### `fields`
-**Value type:** null | @empty | Field1, Field2, ...
-
----write the arg description---
-
-### `contentLayouts`
-**Value type:** null | @empty | ContentLayout1, ContentLayout2, ...
-
----write the arg description---
-
-### `gridLayouts`
-**Value type:** null | @empty | Grid1/Layout1, Grid2/Layout2, ...
-
----write the arg description---
-
-### `gridSwitchers`
-**Value type:** null | @empty | Grid1, Grid2, ...
-
----write the arg description---
-
-### `showItemBorders`
-**Value type:** null | @empty | bottom, left, right, top
-
----write the arg description---
-
-### `showItemPadding`
-**Value type:** null | @empty | bottom, left, right, top
-
----write the arg description---
-
-### `padding`
-**Value type:** thick | thin
-
----write the arg description---
 
 

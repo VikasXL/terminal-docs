@@ -7,102 +7,63 @@ title: Resource
 ## ensure
 
 ```js filename="Terminal" copy
- ensure pluginResource argument:"value"
+ ensure pluginResource type:"jar | rpc | dev"
 ```
-
-This command accepts the following arguments:
-
-### `type`
-**Value type:** dev | jar | rpc
-
----write the arg description---
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove pluginResource argument:"value"
+ remove pluginResource type:"jar | rpc | dev"
 ```
-
-This command accepts the following arguments:
-
-### `type`
-**Value type:** dev | jar | rpc
-
----write the arg description---
 
 
 ## print
 
 ```js filename="Terminal" copy
- print pluginResource argument:"value"
+ print pluginResource type:"jar | rpc | dev"
 ```
-
-This command accepts the following arguments:
-
-### `type`
-**Value type:** dev | jar | rpc
-
----write the arg description---
 
 
 ## update
-
-This command accepts the following arguments:
 
 ### dev
 ```js filename="Terminal" copy
  update pluginResource argument1:"value1" argument2:"value2"
 ```
 
-#### `type`
-**Value type:** dev | jar | rpc
+**`type`**
+jar | rpc | dev
 
----write the arg description---
+**`pluginConfigForm`**
+null | Form | $FormMapOfOptions | $FormPickTree | $FormSetOfUser | $FormPluginConfig ...
 
-#### `pluginConfigForm`
-**Value type:** null | Form | $FormMapOfOptions | $FormPickTree | $FormPluginConfig | $FormSetOfUser ...
-
----write the arg description---
-
-#### `packageNameVar`
-**Value type:** null | @null | @empty | text type variable | text value
-
----write the arg description---
+**`packageNameVar`**
+null | text type variable | text value
 
 ### jar
 ```js filename="Terminal" copy
  update pluginResource argument1:"value1" argument2:"value2"
 ```
 
-#### `type`
-**Value type:** dev | jar | rpc
+**`type`**
+jar | rpc | dev
 
----write the arg description---
+**`pluginConfigForm`**
+null | Form | $FormMapOfOptions | $FormPickTree | $FormSetOfUser | $FormPluginConfig ...
 
-#### `pluginConfigForm`
-**Value type:** null | Form | $FormMapOfOptions | $FormPickTree | $FormPluginConfig | $FormSetOfUser ...
-
----write the arg description---
-
-#### `packageNameVar`
-**Value type:** null | @null | @empty | text type variable | text value
-
----write the arg description---
+**`packageNameVar`**
+null | text type variable | text value
 
 ### rpc
 ```js filename="Terminal" copy
  update pluginResource argument1:"value1" argument2:"value2"
 ```
 
-#### `type`
-**Value type:** dev | jar | rpc
+**`type`**
+jar | rpc | dev
 
----write the arg description---
-
-#### `pluginConfigForm`
-**Value type:** null | Form | $FormMapOfOptions | $FormPickTree | $FormPluginConfig | $FormSetOfUser ...
-
----write the arg description---
+**`pluginConfigForm`**
+null | Form | $FormMapOfOptions | $FormPickTree | $FormSetOfUser | $FormPluginConfig ...
 
 

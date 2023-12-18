@@ -7,137 +7,58 @@ title: User
 ## add
 
 ```js filename="Terminal" copy
- add user argument1:"value1" argument2:"value2"
+ add user name:"name" handle:"email/mobile" roles:"null | @empty | Role1, Role2, ..."
 ```
-
-This command accepts the following arguments:
-
-### `name`
-**Value type:** null | @null | @empty | name
-
----write the arg description---
-
-### `handle`
-**Value type:** @null | email/mobile
-
----write the arg description---
-
-### `roles`
-**Value type:** null | @empty | Role1, Role2, ...
-
----write the arg description---
 
 
 ## update
 
 ```js filename="Terminal" copy
- update user argument1:"value1" argument2:"value2"
+ update user handle:"email/mobile" name:"name"
+ update user handle:"email/mobile" roles:"null | @empty | Role1, Role2, ..."
+ update user handle:"email/mobile" manager:"manager name or handle"
 ```
-
-This command accepts the following arguments:
-
-### `name`
-**Value type:** null | @null | @empty | name
-
----write the arg description---
-
-### `handle`
-**Value type:** @null | email/mobile
-
----write the arg description---
-
-### `roles`
-**Value type:** null | @empty | Role1, Role2, ...
-
----write the arg description---
-
-### `manager`
-**Value type:** null | @null | @empty | managerName
-
----write the arg description---
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove user argument:"value"
+ remove user handle:"email/mobile"
 ```
-
-This command accepts the following arguments:
-
-### `handle`
-**Value type:** @null | email/mobile
-
----write the arg description---
-
-
-## invite
-
-```js filename="Terminal" copy
- invite user argument:"value"
-```
-
-This command accepts the following arguments:
-
-### `handle`
-**Value type:** @null | email/mobile
-
----write the arg description---
-
-
-## activate
-
-```js filename="Terminal" copy
- activate user argument:"value"
-```
-
-This command accepts the following arguments:
-
-### `handle`
-**Value type:** @null | email/mobile
-
----write the arg description---
-
-
-## deActivate
-
-```js filename="Terminal" copy
- deActivate user argument:"value"
-```
-
-This command accepts the following arguments:
-
-### `handle`
-**Value type:** @null | email/mobile
-
----write the arg description---
-
-
-## ensure
-
-```js filename="Terminal" copy
- ensure user argument:"value"
-```
-
-This command accepts the following arguments:
-
-### `roles`
-**Value type:** null | @empty | Role1, Role2, ...
-
----write the arg description---
 
 
 ## print
 
 ```js filename="Terminal" copy
- print user argument:"value"
+ print user handle:"email/mobile"
 ```
 
-This command accepts the following arguments:
 
-### `handle`
-**Value type:** @null | email/mobile
+## invite
 
----write the arg description---
+```js filename="Terminal" copy
+ invite user handle:"email/mobile"
+```
+
+
+## activate
+
+```js filename="Terminal" copy
+ activate user handle:"email/mobile"
+```
+
+
+## deActivate
+
+```js filename="Terminal" copy
+ deActivate user handle:"email/mobile"
+```
+
+
+## ensureSelf
+
+```js filename="Terminal" copy
+ ensureSelf user roles:"null | @empty | Role1, Role2, ..."
+```
 
 

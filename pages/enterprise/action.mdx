@@ -7,15 +7,11 @@ title: Action
 ## ensure
 
 ```js filename="Terminal" copy
- ensure action ActionName argument:"value"
+ ensure action ActionName kind:"..."
 ```
 
-This command accepts the following arguments:
-
-### `kind`
-**Value type:** auditTrailSpreadsheet | report | rowInsert | spreadsheetEditor
-
----write the arg description---
+**`kind`**
+report | rowInsert | spreadsheetEditor | auditTrailSpreadsheet
 
 
 ## remove
@@ -41,216 +37,138 @@ This command accepts the following arguments:
 
 ## update
 
-This command accepts the following arguments:
-
 ### auditTrailSpreadsheet
 ```js filename="Terminal" copy
  update action ActionName argument1:"value1" argument2:"value2"
 ```
 
-#### `name`
-**Value type:** Symbol
+**`name`**
+Symbol
 
----write the arg description---
+**`label`**
+null | @null | @empty | text
 
-#### `label`
-**Value type:** null | @null | @empty | text
+**`description`**
+null | @null | @empty | paragraph
 
----write the arg description---
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
-#### `description`
-**Value type:** null | @null | @empty | paragraph
+**`icon`**
+null | @null | @empty | icon
 
----write the arg description---
+**`tooltip`**
+null | @null | @empty | text
 
-#### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
+**`spreadsheet`**
+null | Symbol
 
----write the arg description---
-
-#### `icon`
-**Value type:** null | @null | @empty | icon
-
----write the arg description---
-
-#### `tooltip`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-#### `spreadsheet`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `trackRowActions`
-**Value type:** null | @empty | forward, insert, read, remove, update
-
----write the arg description---
+**`trackRowActions`**
+null | @empty | read, insert, update, remove, forward
 
 ### report
 ```js filename="Terminal" copy
  update action ActionName argument1:"value1" argument2:"value2"
 ```
 
-#### `name`
-**Value type:** Symbol
+**`name`**
+Symbol
 
----write the arg description---
+**`label`**
+null | @null | @empty | text
 
-#### `label`
-**Value type:** null | @null | @empty | text
+**`description`**
+null | @null | @empty | paragraph
 
----write the arg description---
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
-#### `description`
-**Value type:** null | @null | @empty | paragraph
+**`icon`**
+null | @null | @empty | icon
 
----write the arg description---
+**`tooltip`**
+null | @null | @empty | text
 
-#### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
+**`report`**
+null | Symbol
 
----write the arg description---
+**`outputFormContentLayout`**
+null | Symbol
 
-#### `icon`
-**Value type:** null | @null | @empty | icon
-
----write the arg description---
-
-#### `tooltip`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-#### `report`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `outputFormContentLayout`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `sendMessageToInbox`
-**Value type:** true | false | yes | no
-
----write the arg description---
+**`sendMessageToInbox`**
+true | false | yes | no
 
 ### rowInsert
 ```js filename="Terminal" copy
  update action ActionName argument1:"value1" argument2:"value2"
 ```
 
-#### `name`
-**Value type:** Symbol
+**`name`**
+Symbol
 
----write the arg description---
+**`label`**
+null | @null | @empty | text
 
-#### `label`
-**Value type:** null | @null | @empty | text
+**`description`**
+null | @null | @empty | paragraph
 
----write the arg description---
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
-#### `description`
-**Value type:** null | @null | @empty | paragraph
+**`icon`**
+null | @null | @empty | icon
 
----write the arg description---
+**`tooltip`**
+null | @null | @empty | text
 
-#### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
+**`subTitle`**
+null | @null | @empty | text
 
----write the arg description---
+**`title`**
+null | @null | @empty | text
 
-#### `icon`
-**Value type:** null | @null | @empty | icon
+**`spreadsheet`**
+null | Symbol
 
----write the arg description---
+**`mappingVar`**
+null | Symbol
 
-#### `tooltip`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-#### `subTitle`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-#### `title`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-#### `spreadsheet`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `mappingVar`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `sendMessageToInbox`
-**Value type:** true | false | yes | no
-
----write the arg description---
+**`sendMessageToInbox`**
+true | false | yes | no
 
 ### spreadsheetEditor
 ```js filename="Terminal" copy
  update action ActionName argument1:"value1" argument2:"value2"
 ```
 
-#### `name`
-**Value type:** Symbol
+**`name`**
+Symbol
 
----write the arg description---
+**`label`**
+null | @null | @empty | text
 
-#### `label`
-**Value type:** null | @null | @empty | text
+**`description`**
+null | @null | @empty | paragraph
 
----write the arg description---
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
-#### `description`
-**Value type:** null | @null | @empty | paragraph
+**`icon`**
+null | @null | @empty | icon
 
----write the arg description---
+**`tooltip`**
+null | @null | @empty | text
 
-#### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
+**`spreadsheet`**
+null | Symbol
 
----write the arg description---
+**`readOnly`**
+true | false | yes | no
 
-#### `icon`
-**Value type:** null | @null | @empty | icon
+**`spreadsheetLayout`**
+null | Symbol
 
----write the arg description---
-
-#### `tooltip`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-#### `spreadsheet`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `readOnly`
-**Value type:** true | false | yes | no
-
----write the arg description---
-
-#### `spreadsheetLayout`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `filterCondition`
-**Value type:** null | @null | @empty | condition type variable | condition value
-
----write the arg description---
+**`filterCondition`**
+null | condition type variable | condition value
 
 

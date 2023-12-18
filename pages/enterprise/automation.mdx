@@ -7,15 +7,8 @@ title: Automation
 ## ensure
 
 ```js filename="Terminal" copy
- ensure automation AutomationName argument:"value"
+ ensure automation AutomationName kind:"scheduled | spreadsheet | webhook"
 ```
-
-This command accepts the following arguments:
-
-### `kind`
-**Value type:** scheduled | spreadsheet | webhook
-
----write the arg description---
 
 
 ## remove
@@ -41,81 +34,55 @@ This command accepts the following arguments:
 
 ## update
 
-This command accepts the following arguments:
-
 ### scheduled
 ```js filename="Terminal" copy
  update automation AutomationName argument1:"value1" argument2:"value2"
 ```
 
-#### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
----write the arg description---
+**`name`**
+null | Symbol
 
-#### `name`
-**Value type:** null | Symbol
+**`description`**
+null | @null | @empty | text
 
----write the arg description---
-
-#### `description`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-#### `secondary`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
+**`secondary`**
+null | @null | @empty | text
 
 ### spreadsheet
 ```js filename="Terminal" copy
  update automation AutomationName argument1:"value1" argument2:"value2"
 ```
 
-#### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
----write the arg description---
+**`name`**
+null | Symbol
 
-#### `name`
-**Value type:** null | Symbol
+**`description`**
+null | @null | @empty | text
 
----write the arg description---
-
-#### `description`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-#### `secondary`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
+**`secondary`**
+null | @null | @empty | text
 
 ### webhook
 ```js filename="Terminal" copy
  update automation AutomationName argument1:"value1" argument2:"value2"
 ```
 
-#### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
----write the arg description---
+**`name`**
+null | Symbol
 
-#### `name`
-**Value type:** null | Symbol
+**`description`**
+null | @null | @empty | text
 
----write the arg description---
-
-#### `description`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-#### `secondary`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
+**`secondary`**
+null | @null | @empty | text
 
 

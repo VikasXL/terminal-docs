@@ -7,39 +7,21 @@ title: Permission
 ## ensure
 
 ```js filename="Terminal" copy
- ensure fieldPermission argument1:"value1" argument2:"value2"
+ ensure fieldPermission role:"..." permission:"invisible | read | writeOnce | write" default:"invisible | read | writeOnce | write"
 ```
 
-This command accepts the following arguments:
-
-### `default`
-**Value type:** invisible | read | write | writeOnce
-
----write the arg description---
-
-### `role`
-**Value type:** null | Role | $AllAssistants | $AllManagers | $Assistants | $GrandManager | $Manager | $Public | $Self ...
-
----write the arg description---
-
-### `permission`
-**Value type:** invisible | read | write | writeOnce
-
----write the arg description---
+**`role`**
+Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove fieldPermission argument:"value"
+ remove fieldPermission role:"..."
 ```
 
-This command accepts the following arguments:
-
-### `role`
-**Value type:** null | Role | $AllAssistants | $AllManagers | $Assistants | $GrandManager | $Manager | $Public | $Self ...
-
----write the arg description---
+**`role`**
+Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
 
 
 ## print

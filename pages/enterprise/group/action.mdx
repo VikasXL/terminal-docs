@@ -7,58 +7,28 @@ title: Action
 ## ensure
 
 ```js filename="Terminal" copy
- ensure groupAction argument1:"value1" argument2:"value2"
+ ensure groupAction action:"Symbol" roles:"..." menuGroup:"null | @null | @empty | text" deviceSizes:"..."
 ```
 
-This command accepts the following arguments:
+**`roles`**
+null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
-### `action`
-**Value type:** Symbol
-
----write the arg description---
-
-### `roles`
-**Value type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
-
----write the arg description---
-
-### `menuGroup`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-### `deviceSizes`
-**Value type:** null | @empty | desktop, laptop, mobile, tablet
-
----write the arg description---
+**`deviceSizes`**
+null | @empty | mobile, tablet, laptop, desktop
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove groupAction argument:"value"
+ remove groupAction action:"Symbol"
 ```
-
-This command accepts the following arguments:
-
-### `action`
-**Value type:** null | Symbol
-
----write the arg description---
 
 
 ## print
 
 ```js filename="Terminal" copy
- print groupAction argument:"value"
+ print groupAction action:"Symbol"
 ```
-
-This command accepts the following arguments:
-
-### `action`
-**Value type:** null | Symbol
-
----write the arg description---
 
 
 ## goTo

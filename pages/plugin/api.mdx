@@ -7,54 +7,29 @@ title: Api
 ## ensure
 
 ```js filename="Terminal" copy
- ensure pluginApi PluginApiName argument:"value"
+ ensure pluginApi PluginApiName type:"..."
 ```
 
-This command accepts the following arguments:
-
-### `type`
-**Value type:** delete | get | patch | post | put | webhook
-
----write the arg description---
+**`type`**
+delete | get | patch | post | put | webhook
 
 
 ## update
 
 ```js filename="Terminal" copy
- update pluginApi PluginApiName argument1:"value1" argument2:"value2"
+ update pluginApi PluginApiName name:"Symbol"
+ update pluginApi PluginApiName description:"null | @null | @empty | paragraph"
+ update pluginApi PluginApiName inputForm:"null | Symbol"
+ update pluginApi PluginApiName outputForm:"..."
+ update pluginApi PluginApiName guaranteedInvocation:"true | false | yes | no"
+ update pluginApi PluginApiName filterTags:"..."
 ```
 
-This command accepts the following arguments:
+**`outputForm`**
+null | Form | $FormMapOfOptions | $FormPickTree | $FormSetOfUser | $FormPluginConfig ...
 
-### `name`
-**Value type:** Symbol
-
----write the arg description---
-
-### `description`
-**Value type:** null | @null | @empty | paragraph
-
----write the arg description---
-
-### `inputForm`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `outputForm`
-**Value type:** null | Form | $FormMapOfOptions | $FormPickTree | $FormPluginConfig | $FormSetOfUser ...
-
----write the arg description---
-
-### `guaranteedInvocation`
-**Value type:** true | false | yes | no
-
----write the arg description---
-
-### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
-
----write the arg description---
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
 
 ## remove

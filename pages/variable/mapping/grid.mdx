@@ -7,136 +7,41 @@ title: Grid
 ## update
 
 ```js filename="Terminal" copy
- update variableMappingGrid argument1:"value1" argument2:"value2"
+ update variableMappingGrid fromGrid:"Symbol"
+ update variableMappingGrid toGrid:"Symbol"
+ update variableMappingGrid fromGridKey:"null | Symbol"
+ update variableMappingGrid toGridKey:"null | Symbol"
+ update variableMappingGrid insertVariant:"..."
+ update variableMappingGrid updateVariant:"updateForced | doNotUpdate"
+ update variableMappingGrid removeVariant:"removeForced | doNotRemove"
+ update variableMappingGrid emptyFieldVariant:"ignoreEmptyField | overrideEmptyField"
 ```
 
-This command accepts the following arguments:
-
-### `fromGrid`
-**Value type:** Symbol
-
----write the arg description---
-
-### `toGrid`
-**Value type:** Symbol
-
----write the arg description---
-
-### `fromGridKey`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `toGridKey`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `insertVariant`
-**Value type:** doNotInsert | insertForced | skipEmptyKeyField
-
----write the arg description---
-
-### `updateVariant`
-**Value type:** doNotUpdate | updateForced
-
----write the arg description---
-
-### `removeVariant`
-**Value type:** doNotRemove | removeForced
-
----write the arg description---
-
-### `emptyFieldVariant`
-**Value type:** ignoreEmptyField | overrideEmptyField
-
----write the arg description---
+**`insertVariant`**
+insertForced | skipEmptyKeyField | doNotInsert
 
 
 ## ensure
 
 ```js filename="Terminal" copy
- ensure variableMappingGrid argument1:"value1" argument2:"value2"
+ ensure variableMappingGrid fromGrid:"Symbol" toGrid:"Symbol" fromGridKey:"null | Symbol" toGridKey:"null | Symbol" insertVariant:"..." updateVariant:"updateForced | doNotUpdate" removeVariant:"removeForced | doNotRemove" emptyFieldVariant:"ignoreEmptyField | overrideEmptyField"
 ```
 
-This command accepts the following arguments:
-
-### `fromGrid`
-**Value type:** Symbol
-
----write the arg description---
-
-### `toGrid`
-**Value type:** Symbol
-
----write the arg description---
-
-### `fromGridKey`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `toGridKey`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `insertVariant`
-**Value type:** doNotInsert | insertForced | skipEmptyKeyField
-
----write the arg description---
-
-### `updateVariant`
-**Value type:** doNotUpdate | updateForced
-
----write the arg description---
-
-### `removeVariant`
-**Value type:** doNotRemove | removeForced
-
----write the arg description---
-
-### `emptyFieldVariant`
-**Value type:** ignoreEmptyField | overrideEmptyField
-
----write the arg description---
+**`insertVariant`**
+insertForced | skipEmptyKeyField | doNotInsert
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove variableMappingGrid argument1:"value1" argument2:"value2"
+ remove variableMappingGrid fromGrid:"Symbol" toGrid:"Symbol"
 ```
-
-This command accepts the following arguments:
-
-### `fromGrid`
-**Value type:** Symbol
-
----write the arg description---
-
-### `toGrid`
-**Value type:** Symbol
-
----write the arg description---
 
 
 ## goTo
 
 ```js filename="Terminal" copy
- goTo variableMappingGrid argument1:"value1" argument2:"value2"
+ goTo variableMappingGrid fromGrid:"Symbol" toGrid:"Symbol"
 ```
-
-This command accepts the following arguments:
-
-### `fromGrid`
-**Value type:** Symbol
-
----write the arg description---
-
-### `toGrid`
-**Value type:** Symbol
-
----write the arg description---
 
 

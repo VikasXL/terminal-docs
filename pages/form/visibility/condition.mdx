@@ -14,30 +14,14 @@ title: Condition
 ## update
 
 ```js filename="Terminal" copy
- update formVisibilityCondition FormVisibilityConditionName argument1:"value1" argument2:"value2"
+ update formVisibilityCondition FormVisibilityConditionName name:"Symbol"
+ update formVisibilityCondition FormVisibilityConditionName lhs:"sectionField | grid/field"
+ update formVisibilityCondition FormVisibilityConditionName rhs:"argBinderValue"
+ update formVisibilityCondition FormVisibilityConditionName visibilityOperator:"..."
 ```
 
-This command accepts the following arguments:
-
-### `name`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `lhs`
-**Value type:** null | sectionField | grid/field
-
----write the arg description---
-
-### `rhs`
-**Value type:** null | @null | @empty | argBinderValue
-
----write the arg description---
-
-### `visibilityOperator`
-**Value type:** equalTo | hasNoValue | hasValue | notEqualTo
-
----write the arg description---
+**`visibilityOperator`**
+hasNoValue | hasValue | equalTo | notEqualTo
 
 
 ## remove

@@ -14,50 +14,18 @@ title: Section
 ## update
 
 ```js filename="Terminal" copy
- update section SectionName argument1:"value1" argument2:"value2"
+ update section SectionName name:"Symbol"
+ update section SectionName label:"null | @null | @empty | text"
+ update section SectionName description:"null | @null | @empty | paragraph"
+ update section SectionName filterTags:"..."
+ update section SectionName disabled:"true | false | yes | no"
+ update section SectionName propertyEditorLabel:"null | text type variable | text value"
+ update section SectionName direction:"horizontal | vertical"
+ update section SectionName sectionVariant:"form | propertyEditor"
 ```
 
-This command accepts the following arguments:
-
-### `disabled`
-**Value type:** true | false | yes | no
-
----write the arg description---
-
-### `name`
-**Value type:** Symbol
-
----write the arg description---
-
-### `label`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-### `description`
-**Value type:** null | @null | @empty | paragraph
-
----write the arg description---
-
-### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
-
----write the arg description---
-
-### `propertyEditorLabel`
-**Value type:** null | @null | @empty | text type variable | text value
-
----write the arg description---
-
-### `direction`
-**Value type:** horizontal | vertical
-
----write the arg description---
-
-### `sectionVariant`
-**Value type:** form | propertyEditor
-
----write the arg description---
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
 
 ## remove

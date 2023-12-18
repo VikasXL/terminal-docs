@@ -7,15 +7,11 @@ title: Report
 ## ensure
 
 ```js filename="Terminal" copy
- ensure report ReportName argument:"value"
+ ensure report ReportName kind:"..."
 ```
 
-This command accepts the following arguments:
-
-### `kind`
-**Value type:** composite | mapper | plugin | query | spreadsheet
-
----write the arg description---
+**`kind`**
+composite | mapper | plugin | query | spreadsheet
 
 
 ## remove
@@ -34,251 +30,161 @@ This command accepts the following arguments:
 
 ## update
 
-This command accepts the following arguments:
-
 ### composite
 ```js filename="Terminal" copy
  update report ReportName argument1:"value1" argument2:"value2"
 ```
 
-#### `name`
-**Value type:** Symbol
+**`name`**
+Symbol
 
----write the arg description---
+**`label`**
+null | @null | @empty | text
 
-#### `label`
-**Value type:** null | @null | @empty | text
+**`description`**
+null | @null | @empty | paragraph
 
----write the arg description---
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
-#### `description`
-**Value type:** null | @null | @empty | paragraph
+**`inputForm`**
+null | Symbol
 
----write the arg description---
+**`outputForm`**
+null | Symbol
 
-#### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
-
----write the arg description---
-
-#### `inputForm`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `outputForm`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `mergeReports`
-**Value type:** null | @empty | Report1, Report2, ...
-
----write the arg description---
+**`mergeReports`**
+null | @empty | Report1, Report2, ...
 
 ### mapper
 ```js filename="Terminal" copy
  update report ReportName argument1:"value1" argument2:"value2"
 ```
 
-#### `name`
-**Value type:** Symbol
+**`name`**
+Symbol
 
----write the arg description---
+**`label`**
+null | @null | @empty | text
 
-#### `label`
-**Value type:** null | @null | @empty | text
+**`description`**
+null | @null | @empty | paragraph
 
----write the arg description---
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
-#### `description`
-**Value type:** null | @null | @empty | paragraph
+**`inputForm`**
+null | Symbol
 
----write the arg description---
+**`outputForm`**
+null | Symbol
 
-#### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
+**`mappedReport`**
+null | Symbol
 
----write the arg description---
+**`saveToSpreadsheet`**
+null | Symbol
 
-#### `inputForm`
-**Value type:** null | Symbol
+**`inputFormMapping`**
+null | mapping type variable | mapping value
 
----write the arg description---
-
-#### `outputForm`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `mappedReport`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `saveToSpreadsheet`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `inputFormMapping`
-**Value type:** null | @null | @empty | mapping type variable | mapping value
-
----write the arg description---
-
-#### `outputFormMapping`
-**Value type:** null | @null | @empty | mapping type variable | mapping value
-
----write the arg description---
+**`outputFormMapping`**
+null | mapping type variable | mapping value
 
 ### plugin
 ```js filename="Terminal" copy
  update report ReportName argument1:"value1" argument2:"value2"
 ```
 
-#### `name`
-**Value type:** Symbol
+**`name`**
+Symbol
 
----write the arg description---
+**`label`**
+null | @null | @empty | text
 
-#### `label`
-**Value type:** null | @null | @empty | text
+**`description`**
+null | @null | @empty | paragraph
 
----write the arg description---
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
-#### `description`
-**Value type:** null | @null | @empty | paragraph
+**`inputForm`**
+null | Symbol
 
----write the arg description---
+**`outputForm`**
+null | Symbol
 
-#### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
+**`pluginName`**
+null | @null | @empty | pluginName
 
----write the arg description---
+**`pluginApi`**
+null | Symbol
 
-#### `inputForm`
-**Value type:** null | Symbol
+**`inputFormMapping`**
+null | mapping type variable | mapping value
 
----write the arg description---
-
-#### `outputForm`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `pluginName`
-**Value type:** null | @null | @empty | pluginName
-
----write the arg description---
-
-#### `pluginApi`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `inputFormMapping`
-**Value type:** null | @null | @empty | mapping type variable | mapping value
-
----write the arg description---
-
-#### `outputFormMapping`
-**Value type:** null | @null | @empty | mapping type variable | mapping value
-
----write the arg description---
+**`outputFormMapping`**
+null | mapping type variable | mapping value
 
 ### query
 ```js filename="Terminal" copy
  update report ReportName argument1:"value1" argument2:"value2"
 ```
 
-#### `name`
-**Value type:** Symbol
+**`name`**
+Symbol
 
----write the arg description---
+**`label`**
+null | @null | @empty | text
 
-#### `label`
-**Value type:** null | @null | @empty | text
+**`description`**
+null | @null | @empty | paragraph
 
----write the arg description---
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
-#### `description`
-**Value type:** null | @null | @empty | paragraph
+**`inputForm`**
+null | Symbol
 
----write the arg description---
+**`outputForm`**
+null | Symbol
 
-#### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
+**`fromSpreadsheets`**
+null | @empty | Spreadsheet1, Spreadsheet2, ...
 
----write the arg description---
-
-#### `inputForm`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `outputForm`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `fromSpreadsheets`
-**Value type:** null | @empty | Spreadsheet1, Spreadsheet2, ...
-
----write the arg description---
-
-#### `neoQL`
-**Value type:** null | @null | @empty | neoQL code
-
----write the arg description---
+**`neoQL`**
+null | @null | @empty | neoQL code
 
 ### spreadsheet
 ```js filename="Terminal" copy
  update report ReportName argument1:"value1" argument2:"value2"
 ```
 
-#### `name`
-**Value type:** Symbol
+**`name`**
+Symbol
 
----write the arg description---
+**`label`**
+null | @null | @empty | text
 
-#### `label`
-**Value type:** null | @null | @empty | text
+**`description`**
+null | @null | @empty | paragraph
 
----write the arg description---
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
-#### `description`
-**Value type:** null | @null | @empty | paragraph
+**`inputForm`**
+null | Symbol
 
----write the arg description---
+**`outputForm`**
+null | Symbol
 
-#### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
+**`fromSpreadsheet`**
+null | Symbol
 
----write the arg description---
+**`filterCondition`**
+null | condition type variable | condition value
 
-#### `inputForm`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `outputForm`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `fromSpreadsheet`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `filterCondition`
-**Value type:** null | @null | @empty | condition type variable | condition value
-
----write the arg description---
-
-#### `outputFormMapping`
-**Value type:** null | @null | @empty | mapping type variable | mapping value
-
----write the arg description---
+**`outputFormMapping`**
+null | mapping type variable | mapping value
 
 

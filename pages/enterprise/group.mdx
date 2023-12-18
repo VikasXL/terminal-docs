@@ -14,55 +14,31 @@ title: Group
 ## update
 
 ```js filename="Terminal" copy
- update group GroupName argument1:"value1" argument2:"value2"
+ update group GroupName name:"Symbol"
+ update group GroupName label:"null | @null | @empty | text"
+ update group GroupName description:"null | @null | @empty | paragraph"
+ update group GroupName filterTags:"..."
+ update group GroupName allowPromptAssistant:"true | false | yes | no"
+ update group GroupName pinnedActions:"..."
+ update group GroupName pinnedActionsMobile:"..."
+ update group GroupName groupPermissions:"..."
+ update group GroupName chatPermissions:"..."
 ```
 
-This command accepts the following arguments:
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
-### `name`
-**Value type:** Symbol
+**`pinnedActions`**
+null | @empty | PinnedActions1, PinnedActions2, ...
 
----write the arg description---
+**`pinnedActionsMobile`**
+null | @empty | PinnedActionsMobile1, PinnedActionsMobile2, ...
 
-### `label`
-**Value type:** null | @null | @empty | text
+**`groupPermissions`**
+null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
----write the arg description---
-
-### `description`
-**Value type:** null | @null | @empty | paragraph
-
----write the arg description---
-
-### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
-
----write the arg description---
-
-### `allowPromptAssistant`
-**Value type:** true | false | yes | no
-
----write the arg description---
-
-### `pinnedActions`
-**Value type:** null | @empty | PinnedActions1, PinnedActions2, ...
-
----write the arg description---
-
-### `pinnedActionsMobile`
-**Value type:** null | @empty | PinnedActionsMobile1, PinnedActionsMobile2, ...
-
----write the arg description---
-
-### `groupPermissions`
-**Value type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
-
----write the arg description---
-
-### `chatPermissions`
-**Value type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
-
----write the arg description---
+**`chatPermissions`**
+null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
 
 ## remove

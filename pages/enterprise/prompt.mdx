@@ -14,40 +14,19 @@ title: Prompt
 ## update
 
 ```js filename="Terminal" copy
- update prompt PromptName argument1:"value1" argument2:"value2"
+ update prompt PromptName filterTags:"..."
+ update prompt PromptName name:"Symbol"
+ update prompt PromptName action:"null | Symbol"
+ update prompt PromptName promptText:"null | @null | @empty | text"
+ update prompt PromptName reviewBeforeExecuting:"true | false | yes | no"
+ update prompt PromptName permissionRoles:"..."
 ```
 
-This command accepts the following arguments:
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
-### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
-
----write the arg description---
-
-### `name`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `action`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `promptText`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-### `reviewBeforeExecuting`
-**Value type:** true | false | yes | no
-
----write the arg description---
-
-### `permissionRoles`
-**Value type:** null | @empty | PermissionRoles1, PermissionRoles2, ...
-
----write the arg description---
+**`permissionRoles`**
+null | @empty | PermissionRoles1, PermissionRoles2, ...
 
 
 ## remove

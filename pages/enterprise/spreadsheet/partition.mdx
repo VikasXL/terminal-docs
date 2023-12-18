@@ -14,25 +14,10 @@ title: Partition
 ## update
 
 ```js filename="Terminal" copy
- update spreadsheetPartition SpreadsheetPartitionName argument1:"value1" argument2:"value2"
+ update spreadsheetPartition SpreadsheetPartitionName name:"Symbol"
+ update spreadsheetPartition SpreadsheetPartitionName field:"null | sectionField | grid/field"
+ update spreadsheetPartition SpreadsheetPartitionName formula:"null | @null | @empty | formula"
 ```
-
-This command accepts the following arguments:
-
-### `name`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `field`
-**Value type:** null | sectionField | grid/field
-
----write the arg description---
-
-### `formula`
-**Value type:** null | @null | @empty | formula
-
----write the arg description---
 
 
 ## remove

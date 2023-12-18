@@ -14,25 +14,13 @@ title: Action
 ## update
 
 ```js filename="Terminal" copy
- update formVisibilityAction FormVisibilityActionName argument1:"value1" argument2:"value2"
+ update formVisibilityAction FormVisibilityActionName name:"Symbol"
+ update formVisibilityAction FormVisibilityActionName comp:"sectionField | grid/field"
+ update formVisibilityAction FormVisibilityActionName visibilityAction:"..."
 ```
 
-This command accepts the following arguments:
-
-### `name`
-**Value type:** null | Symbol
-
----write the arg description---
-
-### `comp`
-**Value type:** null | sectionField | grid/field
-
----write the arg description---
-
-### `visibilityAction`
-**Value type:** blink | click | disable | enable | hidden | highlight | invisible | shake | visible
-
----write the arg description---
+**`visibilityAction`**
+blink | click | disable | enable | hidden | highlight | invisible | shake | visible
 
 
 ## remove

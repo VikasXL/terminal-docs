@@ -14,55 +14,25 @@ title: Grid
 ## update
 
 ```js filename="Terminal" copy
- update grid GridName argument1:"value1" argument2:"value2"
+ update grid GridName name:"Symbol"
+ update grid GridName label:"null | @null | @empty | text"
+ update grid GridName description:"null | @null | @empty | paragraph"
+ update grid GridName filterTags:"..."
+ update grid GridName disabled:"true | false | yes | no"
+ update grid GridName indexFieldName:"null | text type variable | text value"
+ update grid GridName minRows:"..."
+ update grid GridName maxRows:"..."
+ update grid GridName asideDefaultLayout:"null | Symbol"
 ```
 
-This command accepts the following arguments:
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
-### `disabled`
-**Value type:** true | false | yes | no
+**`minRows`**
+null | number type variable | number value
 
----write the arg description---
-
-### `name`
-**Value type:** Symbol
-
----write the arg description---
-
-### `label`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-### `description`
-**Value type:** null | @null | @empty | paragraph
-
----write the arg description---
-
-### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
-
----write the arg description---
-
-### `indexFieldName`
-**Value type:** null | @null | @empty | text type variable | text value
-
----write the arg description---
-
-### `minRows`
-**Value type:** null | @null | @empty | number type variable | number value
-
----write the arg description---
-
-### `maxRows`
-**Value type:** null | @null | @empty | number type variable | number value
-
----write the arg description---
-
-### `asideDefaultLayout`
-**Value type:** null | Symbol
-
----write the arg description---
+**`maxRows`**
+null | number type variable | number value
 
 
 ## remove

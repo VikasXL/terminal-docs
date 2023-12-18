@@ -7,62 +7,27 @@ title: Menu
 ## ensure
 
 ```js filename="Terminal" copy
- ensure sectionMenu argument1:"value1" argument2:"value2"
+ ensure sectionMenu action:"Symbol" roles:"..." menuGroup:"null | @null | @empty | text" deviceSizes:"..." showMessageTooltip:"true | false | yes | no"
 ```
 
-This command accepts the following arguments:
+**`roles`**
+null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
-### `action`
-**Value type:** Symbol
-
----write the arg description---
-
-### `roles`
-**Value type:** null | @empty | Role1, Role2, $AllAssistants, $AllManagers, $Assistants, $GrandManager, $Manager, $Public, $Self, ...
-
----write the arg description---
-
-### `menuGroup`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-### `deviceSizes`
-**Value type:** null | @empty | desktop, laptop, mobile, tablet
-
----write the arg description---
-
-### `showMessageTooltip`
-**Value type:** true | false | yes | no
-
----write the arg description---
+**`deviceSizes`**
+null | @empty | mobile, tablet, laptop, desktop
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove sectionMenu argument:"value"
+ remove sectionMenu action:"Symbol"
 ```
-
-This command accepts the following arguments:
-
-### `action`
-**Value type:** null | Symbol
-
----write the arg description---
 
 
 ## print
 
 ```js filename="Terminal" copy
- print sectionMenu argument:"value"
+ print sectionMenu action:"Symbol"
 ```
-
-This command accepts the following arguments:
-
-### `action`
-**Value type:** null | Symbol
-
----write the arg description---
 
 

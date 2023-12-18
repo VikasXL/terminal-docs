@@ -7,15 +7,11 @@ title: Layout
 ## ensure
 
 ```js filename="Terminal" copy
- ensure gridLayout GridLayoutName argument:"value"
+ ensure gridLayout GridLayoutName kind:"..."
 ```
 
-This command accepts the following arguments:
-
-### `kind`
-**Value type:** card | kanban | list | map | table | xyChart
-
----write the arg description---
+**`kind`**
+card | list | map | table | xyChart | kanban
 
 
 ## remove
@@ -41,366 +37,232 @@ This command accepts the following arguments:
 
 ## update
 
-This command accepts the following arguments:
-
 ### card
 ```js filename="Terminal" copy
  update gridLayout GridLayoutName argument1:"value1" argument2:"value2"
 ```
 
-#### `name`
-**Value type:** null | Symbol
+**`name`**
+null | Symbol
 
----write the arg description---
+**`label`**
+null | @null | @empty | text
 
-#### `label`
-**Value type:** null | @null | @empty | text
+**`description`**
+null | @null | @empty | paragraph
 
----write the arg description---
+**`toolTipField`**
+null | Symbol
 
-#### `description`
-**Value type:** null | @null | @empty | paragraph
+**`bkgColorField`**
+null | Symbol
 
----write the arg description---
+**`allowToSwitchLayouts`**
+null | @empty | GridLayout1, GridLayout2, ...
 
-#### `toolTipField`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `bkgColorField`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `allowToSwitchLayouts`
-**Value type:** null | @empty | GridLayout1, GridLayout2, ...
-
----write the arg description---
-
-#### `groupByField`
-**Value type:** null | Symbol
-
----write the arg description---
+**`groupByField`**
+null | Symbol
 
 ### kanban
 ```js filename="Terminal" copy
  update gridLayout GridLayoutName argument1:"value1" argument2:"value2"
 ```
 
-#### `name`
-**Value type:** null | Symbol
+**`name`**
+null | Symbol
 
----write the arg description---
+**`label`**
+null | @null | @empty | text
 
-#### `label`
-**Value type:** null | @null | @empty | text
+**`description`**
+null | @null | @empty | paragraph
 
----write the arg description---
+**`toolTipField`**
+null | Symbol
 
-#### `description`
-**Value type:** null | @null | @empty | paragraph
+**`bkgColorField`**
+null | Symbol
 
----write the arg description---
+**`allowToSwitchLayouts`**
+null | @empty | GridLayout1, GridLayout2, ...
 
-#### `toolTipField`
-**Value type:** null | Symbol
+**`showCommentCount`**
+true | false | yes | no
 
----write the arg description---
+**`showSectionName`**
+true | false | yes | no
 
-#### `bkgColorField`
-**Value type:** null | Symbol
+**`showFooter`**
+true | false | yes | no
 
----write the arg description---
+**`fontSize`**
+body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4
 
-#### `allowToSwitchLayouts`
-**Value type:** null | @empty | GridLayout1, GridLayout2, ...
+**`showFields`**
+null | @empty | Field1, Field2, ...
 
----write the arg description---
+**`sortByFields`**
+null | @empty | Field1, Field2, ...
 
-#### `showCommentCount`
-**Value type:** true | false | yes | no
+**`kanbanField`**
+null | Symbol
 
----write the arg description---
+**`swimLaneLabels`**
+null | @null | @empty | label1 \n label2 \n ...
 
-#### `showSectionName`
-**Value type:** true | false | yes | no
-
----write the arg description---
-
-#### `showFooter`
-**Value type:** true | false | yes | no
-
----write the arg description---
-
-#### `fontSize`
-**Value type:** body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4
-
----write the arg description---
-
-#### `showFields`
-**Value type:** null | @empty | Field1, Field2, ...
-
----write the arg description---
-
-#### `sortByFields`
-**Value type:** null | @empty | Field1, Field2, ...
-
----write the arg description---
-
-#### `kanbanField`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `swimLaneLabels`
-**Value type:** null | @null | @empty | label1 \n label2 \n ...
-
----write the arg description---
-
-#### `swimLaneColors`
-**Value type:** null | @empty | ColorVar1, ColorVar2, ...
-
----write the arg description---
+**`swimLaneColors`**
+null | @empty | ColorVar1, ColorVar2, ...
 
 ### list
 ```js filename="Terminal" copy
  update gridLayout GridLayoutName argument1:"value1" argument2:"value2"
 ```
 
-#### `name`
-**Value type:** null | Symbol
+**`name`**
+null | Symbol
 
----write the arg description---
+**`label`**
+null | @null | @empty | text
 
-#### `label`
-**Value type:** null | @null | @empty | text
+**`description`**
+null | @null | @empty | paragraph
 
----write the arg description---
+**`toolTipField`**
+null | Symbol
 
-#### `description`
-**Value type:** null | @null | @empty | paragraph
+**`bkgColorField`**
+null | Symbol
 
----write the arg description---
+**`allowToSwitchLayouts`**
+null | @empty | GridLayout1, GridLayout2, ...
 
-#### `toolTipField`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `bkgColorField`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `allowToSwitchLayouts`
-**Value type:** null | @empty | GridLayout1, GridLayout2, ...
-
----write the arg description---
-
-#### `groupByField`
-**Value type:** null | Symbol
-
----write the arg description---
+**`groupByField`**
+null | Symbol
 
 ### map
 ```js filename="Terminal" copy
  update gridLayout GridLayoutName argument1:"value1" argument2:"value2"
 ```
 
-#### `name`
-**Value type:** null | Symbol
+**`name`**
+null | Symbol
 
----write the arg description---
+**`label`**
+null | @null | @empty | text
 
-#### `label`
-**Value type:** null | @null | @empty | text
+**`description`**
+null | @null | @empty | paragraph
 
----write the arg description---
+**`toolTipField`**
+null | Symbol
 
-#### `description`
-**Value type:** null | @null | @empty | paragraph
+**`bkgColorField`**
+null | Symbol
 
----write the arg description---
+**`allowToSwitchLayouts`**
+null | @empty | GridLayout1, GridLayout2, ...
 
-#### `toolTipField`
-**Value type:** null | Symbol
+**`locationField`**
+null | Symbol
 
----write the arg description---
+**`toolTipFieldId`**
+null | Symbol
 
-#### `bkgColorField`
-**Value type:** null | Symbol
+**`colorField`**
+null | Symbol
 
----write the arg description---
+**`shapeField`**
+null | Symbol
 
-#### `allowToSwitchLayouts`
-**Value type:** null | @empty | GridLayout1, GridLayout2, ...
+**`groupByField`**
+null | Field | $CreatedBy | $CreatedOn | $RowId | $RowOrder | $UpdatedBy | $UpdatedOn ...
 
----write the arg description---
-
-#### `locationField`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `toolTipFieldId`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `colorField`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `shapeField`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `groupByField`
-**Value type:** null | Field | $CreatedBy | $CreatedOn | $RowId | $RowOrder | $UpdatedBy | $UpdatedOn ...
-
----write the arg description---
-
-#### `strokeField`
-**Value type:** null | Symbol
-
----write the arg description---
+**`strokeField`**
+null | Symbol
 
 ### table
 ```js filename="Terminal" copy
  update gridLayout GridLayoutName argument1:"value1" argument2:"value2"
 ```
 
-#### `name`
-**Value type:** null | Symbol
+**`name`**
+null | Symbol
 
----write the arg description---
+**`label`**
+null | @null | @empty | text
 
-#### `label`
-**Value type:** null | @null | @empty | text
+**`description`**
+null | @null | @empty | paragraph
 
----write the arg description---
+**`toolTipField`**
+null | Symbol
 
-#### `description`
-**Value type:** null | @null | @empty | paragraph
+**`bkgColorField`**
+null | Symbol
 
----write the arg description---
+**`allowToSwitchLayouts`**
+null | @empty | GridLayout1, GridLayout2, ...
 
-#### `toolTipField`
-**Value type:** null | Symbol
+**`groupByField`**
+null | Symbol
 
----write the arg description---
+**`hideRowSeparator`**
+true | false | yes | no
 
-#### `bkgColorField`
-**Value type:** null | Symbol
+**`pageSize`**
+null | number type variable | number value
 
----write the arg description---
+**`showFields`**
+null | @empty | Field1, Field2, ...
 
-#### `allowToSwitchLayouts`
-**Value type:** null | @empty | GridLayout1, GridLayout2, ...
+**`columnSizes`**
+null | @null | @empty | AutoSize, Flex, [number]px, [number]em, ...
 
----write the arg description---
+**`sortByFields`**
+null | @empty | Field1, Field2, ...
 
-#### `groupByField`
-**Value type:** null | Symbol
+**`columnAlignments`**
+null | @empty | top, bottom, start, end, center, diagonal, overlayTop, flexCenter, spaceBetween, justify
 
----write the arg description---
-
-#### `hideRowSeparator`
-**Value type:** true | false | yes | no
-
----write the arg description---
-
-#### `pageSize`
-**Value type:** null | @null | @empty | number type variable | number value
-
----write the arg description---
-
-#### `showFields`
-**Value type:** null | @empty | Field1, Field2, ...
-
----write the arg description---
-
-#### `columnSizes`
-**Value type:** null | @null | @empty | AutoSize, Flex, [number]px, [number]em, ...
-
----write the arg description---
-
-#### `sortByFields`
-**Value type:** null | @empty | Field1, Field2, ...
-
----write the arg description---
-
-#### `columnAlignments`
-**Value type:** null | @empty | bottom, center, diagonal, end, flexCenter, justify, overlayTop, spaceBetween, start, top
-
----write the arg description---
-
-#### `style`
-**Value type:** defaultStyle
-
----write the arg description---
+**`style`**
+defaultStyle
 
 ### xyChart
 ```js filename="Terminal" copy
  update gridLayout GridLayoutName argument1:"value1" argument2:"value2"
 ```
 
-#### `name`
-**Value type:** null | Symbol
+**`name`**
+null | Symbol
 
----write the arg description---
+**`label`**
+null | @null | @empty | text
 
-#### `label`
-**Value type:** null | @null | @empty | text
+**`description`**
+null | @null | @empty | paragraph
 
----write the arg description---
+**`toolTipField`**
+null | Symbol
 
-#### `description`
-**Value type:** null | @null | @empty | paragraph
+**`bkgColorField`**
+null | Symbol
 
----write the arg description---
+**`allowToSwitchLayouts`**
+null | @empty | GridLayout1, GridLayout2, ...
 
-#### `toolTipField`
-**Value type:** null | Symbol
+**`xField`**
+null | Symbol
 
----write the arg description---
+**`xFieldColor`**
+null | color type variable | color value
 
-#### `bkgColorField`
-**Value type:** null | Symbol
+**`chartType`**
+barGraph | lineChart | pieChart | doughnut | scatterPlot
 
----write the arg description---
+**`yFields`**
+null | @empty | YField1, YField2, ...
 
-#### `allowToSwitchLayouts`
-**Value type:** null | @empty | GridLayout1, GridLayout2, ...
-
----write the arg description---
-
-#### `xField`
-**Value type:** null | Symbol
-
----write the arg description---
-
-#### `xFieldColor`
-**Value type:** null | @null | @empty | color type variable | color value
-
----write the arg description---
-
-#### `chartType`
-**Value type:** barGraph | doughnut | lineChart | pieChart | scatterPlot
-
----write the arg description---
-
-#### `yFields`
-**Value type:** null | @empty | YField1, YField2, ...
-
----write the arg description---
-
-#### `yFieldColors`
-**Value type:** null | @empty | YFieldColor1, YFieldColor2, ...
-
----write the arg description---
+**`yFieldColors`**
+null | @empty | YFieldColor1, YFieldColor2, ...
 
 

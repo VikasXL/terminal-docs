@@ -7,54 +7,29 @@ title: Spreadsheet
 ## ensure
 
 ```js filename="Terminal" copy
- ensure spreadsheet SpreadsheetName argument:"value"
+ ensure spreadsheet SpreadsheetName form:"Symbol"
 ```
-
-This command accepts the following arguments:
-
-### `form`
-**Value type:** null | Symbol
-
----write the arg description---
 
 
 ## update
 
 ```js filename="Terminal" copy
- update spreadsheet SpreadsheetName argument1:"value1" argument2:"value2"
+ update spreadsheet SpreadsheetName name:"Symbol"
+ update spreadsheet SpreadsheetName label:"null | @null | @empty | text"
+ update spreadsheet SpreadsheetName description:"null | @null | @empty | paragraph"
+ update spreadsheet SpreadsheetName filterTags:"..."
+ update spreadsheet SpreadsheetName searchableFields:"..."
+ update spreadsheet SpreadsheetName queryableFields:"..."
 ```
 
-This command accepts the following arguments:
+**`filterTags`**
+null | @null | @empty | text1, text2, ...
 
-### `name`
-**Value type:** Symbol
+**`searchableFields`**
+null | @empty | sectionField, grid/field ...
 
----write the arg description---
-
-### `label`
-**Value type:** null | @null | @empty | text
-
----write the arg description---
-
-### `description`
-**Value type:** null | @null | @empty | paragraph
-
----write the arg description---
-
-### `filterTags`
-**Value type:** null | @null | @empty | text1, text2, ...
-
----write the arg description---
-
-### `searchableFields`
-**Value type:** null | @empty | sectionField, grid/field ...
-
----write the arg description---
-
-### `queryableFields`
-**Value type:** null | @empty | sectionField, grid/field ...
-
----write the arg description---
+**`queryableFields`**
+null | @empty | sectionField, grid/field ...
 
 
 ## remove
