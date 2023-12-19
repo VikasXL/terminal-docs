@@ -7,24 +7,24 @@ title: Action
 ## ensure
 
 ```js filename="Terminal" copy
- ensure action ActionName kind:"..."
+ensure action ActionName kind:"..."
 ```
 
 **`kind`**
-report | rowInsert | spreadsheetEditor | auditTrailSpreadsheet
+ : report | rowInsert | spreadsheetEditor | auditTrailSpreadsheet
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove action ActionName
+remove action ActionName
 ```
 
 
 ## print
 
 ```js filename="Terminal" copy
- print action ActionName
+print action ActionName
 ```
 
 
@@ -32,81 +32,69 @@ report | rowInsert | spreadsheetEditor | auditTrailSpreadsheet
 
 
 ```js filename="Terminal" copy
- goto action ActionName
+goto action ActionName
 ```
 
 ## update
 
 ### auditTrailSpreadsheet
 ```js filename="Terminal" copy
- update action ActionName name:"Symbol"
- update action ActionName label:"null | @null | @empty | text"
- update action ActionName description:"null | @null | @empty | paragraph"
- update action ActionName filterTags:"..."
- update action ActionName icon:"null | @null | @empty | icon"
- update action ActionName tooltip:"null | @null | @empty | text"
- update action ActionName spreadsheet:"null | Symbol"
- update action ActionName trackRowActions:"..."
+update action ActionName name:"Symbol"
+update action ActionName label:"null | @null | @empty | text"
+update action ActionName description:"null | @null | @empty | paragraph"
+update action ActionName filterTags:"null | @empty | text1, text2, ..."
+update action ActionName icon:"null | @null | @empty | icon"
+update action ActionName tooltip:"null | @null | @empty | text"
+update action ActionName spreadsheet:"null | Symbol"
+update action ActionName trackRowActions:"..."
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`trackRowActions`**
-null | @empty | read, insert, update, remove, forward
+ : null | @empty | read, insert, update, remove, forward
 
 ### report
 ```js filename="Terminal" copy
- update action ActionName name:"Symbol"
- update action ActionName label:"null | @null | @empty | text"
- update action ActionName description:"null | @null | @empty | paragraph"
- update action ActionName filterTags:"..."
- update action ActionName icon:"null | @null | @empty | icon"
- update action ActionName tooltip:"null | @null | @empty | text"
- update action ActionName report:"null | Symbol"
- update action ActionName outputFormContentLayout:"null | Symbol"
- update action ActionName sendMessageToInbox:"true | false | yes | no"
+update action ActionName name:"Symbol"
+update action ActionName label:"null | @null | @empty | text"
+update action ActionName description:"null | @null | @empty | paragraph"
+update action ActionName filterTags:"null | @empty | text1, text2, ..."
+update action ActionName icon:"null | @null | @empty | icon"
+update action ActionName tooltip:"null | @null | @empty | text"
+update action ActionName report:"null | Symbol"
+update action ActionName outputFormContentLayout:"null | Symbol"
+update action ActionName sendMessageToInbox:"true | false | yes | no"
 ```
-
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
 
 ### rowInsert
 ```js filename="Terminal" copy
- update action ActionName name:"Symbol"
- update action ActionName label:"null | @null | @empty | text"
- update action ActionName description:"null | @null | @empty | paragraph"
- update action ActionName filterTags:"..."
- update action ActionName icon:"null | @null | @empty | icon"
- update action ActionName tooltip:"null | @null | @empty | text"
- update action ActionName subTitle:"null | @null | @empty | text"
- update action ActionName title:"null | @null | @empty | text"
- update action ActionName spreadsheet:"null | Symbol"
- update action ActionName mappingVar:"null | Symbol"
- update action ActionName sendMessageToInbox:"true | false | yes | no"
+update action ActionName name:"Symbol"
+update action ActionName label:"null | @null | @empty | text"
+update action ActionName description:"null | @null | @empty | paragraph"
+update action ActionName filterTags:"null | @empty | text1, text2, ..."
+update action ActionName icon:"null | @null | @empty | icon"
+update action ActionName tooltip:"null | @null | @empty | text"
+update action ActionName subTitle:"null | @null | @empty | text"
+update action ActionName title:"null | @null | @empty | text"
+update action ActionName spreadsheet:"null | Symbol"
+update action ActionName mappingVar:"null | Symbol"
+update action ActionName sendMessageToInbox:"true | false | yes | no"
 ```
-
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
 
 ### spreadsheetEditor
 ```js filename="Terminal" copy
- update action ActionName name:"Symbol"
- update action ActionName label:"null | @null | @empty | text"
- update action ActionName description:"null | @null | @empty | paragraph"
- update action ActionName filterTags:"..."
- update action ActionName icon:"null | @null | @empty | icon"
- update action ActionName tooltip:"null | @null | @empty | text"
- update action ActionName spreadsheet:"null | Symbol"
- update action ActionName readOnly:"true | false | yes | no"
- update action ActionName spreadsheetLayout:"null | Symbol"
- update action ActionName filterCondition:"..."
+update action ActionName name:"Symbol"
+update action ActionName label:"null | @null | @empty | text"
+update action ActionName description:"null | @null | @empty | paragraph"
+update action ActionName filterTags:"null | @empty | text1, text2, ..."
+update action ActionName icon:"null | @null | @empty | icon"
+update action ActionName tooltip:"null | @null | @empty | text"
+update action ActionName spreadsheet:"null | Symbol"
+update action ActionName readOnly:"true | false | yes | no"
+update action ActionName spreadsheetLayout:"null | Symbol"
+update action ActionName filterCondition:"..."
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`filterCondition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 

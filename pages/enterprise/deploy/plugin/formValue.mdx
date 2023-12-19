@@ -7,21 +7,23 @@ title: Form value
 ## ensure
 
 ```js filename="Terminal" copy
- ensure deployEntPluginConfigFormValue pluginName:"null | @null | @empty | pluginName" field:"null | Symbol" value:"null | @null | @empty | fieldValue"
+ensure deployEntPluginConfigFormValue pluginName:"null | @null | @empty | pluginName"
+ensure deployEntPluginConfigFormValue field:"null | Symbol"
+ensure deployEntPluginConfigFormValue value:"null | @null | @empty | fieldValue"
 ```
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove deployEntPluginConfigFormValue field:"Symbol"
+remove deployEntPluginConfigFormValue field:"Symbol"
 ```
 
 
 ## print
 
 ```js filename="Terminal" copy
- print deployEntPluginConfigFormValue field:"Symbol"
+print deployEntPluginConfigFormValue field:"Symbol"
 ```
 
 

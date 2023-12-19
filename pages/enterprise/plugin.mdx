@@ -7,35 +7,33 @@ title: Plugin
 ## ensure
 
 ```js filename="Terminal" copy
- ensure entPlugin name:"pluginName" version:"pluginVersion"
+ensure entPlugin name:"pluginName"
+ensure entPlugin version:"pluginVersion"
 ```
 
 
 ## update
 
 ```js filename="Terminal" copy
- update entPlugin name:"pluginName"
- update entPlugin version:"version"
- update entPlugin singleton:"true | false | yes | no"
- update entPlugin description:"null | @null | @empty | paragraph"
- update entPlugin filterTags:"..."
+update entPlugin name:"pluginName"
+update entPlugin version:"version"
+update entPlugin singleton:"true | false | yes | no"
+update entPlugin description:"null | @null | @empty | paragraph"
+update entPlugin filterTags:"null | @empty | text1, text2, ..."
 ```
-
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove entPlugin name:"pluginName"
+remove entPlugin name:"pluginName"
 ```
 
 
 ## print
 
 ```js filename="Terminal" copy
- print entPlugin name:"pluginName"
+print entPlugin name:"pluginName"
 ```
 
 

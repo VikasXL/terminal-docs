@@ -7,30 +7,33 @@ title: Permission
 ## ensure
 
 ```js filename="Terminal" copy
- ensure formPermission role:"..." permission:"invisible | read | writeOnce | write" default:"invisible | read | writeOnce | write" allowToPrintForm:"true | false | yes | no" commentRoles:"..."
+ensure formPermission default:"invisible | read | writeOnce | write"
+ensure formPermission allowToPrintForm:"true | false | yes | no"
+ensure formPermission commentRoles:"..."
+ensure formPermission role:"..." permission:"invisible | read | writeOnce | write"
 ```
 
-**`role`**
-Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
-
 **`commentRoles`**
-null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+
+**`role`**
+ : Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove formPermission role:"..."
+remove formPermission role:"..."
 ```
 
 **`role`**
-Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
+ : Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
 
 
 ## print
 
 ```js filename="Terminal" copy
- print formPermission
+print formPermission
 ```
 
 

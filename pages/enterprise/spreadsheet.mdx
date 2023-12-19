@@ -7,42 +7,39 @@ title: Spreadsheet
 ## ensure
 
 ```js filename="Terminal" copy
- ensure spreadsheet SpreadsheetName form:"Symbol"
+ensure spreadsheet SpreadsheetName form:"Symbol"
 ```
 
 
 ## update
 
 ```js filename="Terminal" copy
- update spreadsheet SpreadsheetName name:"Symbol"
- update spreadsheet SpreadsheetName label:"null | @null | @empty | text"
- update spreadsheet SpreadsheetName description:"null | @null | @empty | paragraph"
- update spreadsheet SpreadsheetName filterTags:"..."
- update spreadsheet SpreadsheetName searchableFields:"..."
- update spreadsheet SpreadsheetName queryableFields:"..."
+update spreadsheet SpreadsheetName name:"Symbol"
+update spreadsheet SpreadsheetName label:"null | @null | @empty | text"
+update spreadsheet SpreadsheetName description:"null | @null | @empty | paragraph"
+update spreadsheet SpreadsheetName filterTags:"null | @empty | text1, text2, ..."
+update spreadsheet SpreadsheetName searchableFields:"..."
+update spreadsheet SpreadsheetName queryableFields:"..."
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`searchableFields`**
-null | @empty | sectionField, grid/field ...
+ : null | @empty | sectionField, grid/field ...
 
 **`queryableFields`**
-null | @empty | sectionField, grid/field ...
+ : null | @empty | sectionField, grid/field ...
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove spreadsheet SpreadsheetName
+remove spreadsheet SpreadsheetName
 ```
 
 
 ## print
 
 ```js filename="Terminal" copy
- print spreadsheet SpreadsheetName
+print spreadsheet SpreadsheetName
 ```
 
 
@@ -50,6 +47,6 @@ null | @empty | sectionField, grid/field ...
 
 
 ```js filename="Terminal" copy
- goto spreadsheet SpreadsheetName
+goto spreadsheet SpreadsheetName
 ```
 

@@ -7,39 +7,36 @@ title: Prompt
 ## ensure
 
 ```js filename="Terminal" copy
- ensure prompt PromptName
+ensure prompt PromptName
 ```
 
 
 ## update
 
 ```js filename="Terminal" copy
- update prompt PromptName filterTags:"..."
- update prompt PromptName name:"Symbol"
- update prompt PromptName action:"null | Symbol"
- update prompt PromptName promptText:"null | @null | @empty | text"
- update prompt PromptName reviewBeforeExecuting:"true | false | yes | no"
- update prompt PromptName permissionRoles:"..."
+update prompt PromptName filterTags:"null | @empty | text1, text2, ..."
+update prompt PromptName name:"Symbol"
+update prompt PromptName action:"null | Symbol"
+update prompt PromptName promptText:"null | @null | @empty | text"
+update prompt PromptName reviewBeforeExecuting:"true | false | yes | no"
+update prompt PromptName permissionRoles:"..."
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`permissionRoles`**
-null | @empty | PermissionRoles1, PermissionRoles2, ...
+ : null | @empty | PermissionRoles1, PermissionRoles2, ...
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove prompt PromptName
+remove prompt PromptName
 ```
 
 
 ## print
 
 ```js filename="Terminal" copy
- print prompt PromptName
+print prompt PromptName
 ```
 
 

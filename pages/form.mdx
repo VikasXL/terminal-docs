@@ -7,42 +7,39 @@ title: Form
 ## ensure
 
 ```js filename="Terminal" copy
- ensure form FormName
+ensure form FormName
 ```
 
 
 ## update
 
 ```js filename="Terminal" copy
- update form FormName name:"Symbol"
- update form FormName label:"null | @null | @empty | text"
- update form FormName description:"null | @null | @empty | paragraph"
- update form FormName filterTags:"..."
- update form FormName chatLabelField:"null | Symbol"
- update form FormName textPattern:"null | text type variable | text value"
- update form FormName chatPattern:"..."
- update form FormName tabVariant:"standard | scrollable | fullWidth"
- update form FormName chatBubbleFields:"null | @empty | Field1, Field2, ..."
+update form FormName name:"Symbol"
+update form FormName label:"null | @null | @empty | text"
+update form FormName description:"null | @null | @empty | paragraph"
+update form FormName filterTags:"null | @empty | text1, text2, ..."
+update form FormName chatLabelField:"null | Symbol"
+update form FormName textPattern:"null | text type variable | text value"
+update form FormName chatPattern:"..."
+update form FormName tabVariant:"standard | scrollable | fullWidth"
+update form FormName chatBubbleFields:"null | @empty | Field1, Field2, ..."
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`chatPattern`**
-null | paragraph type variable | paragraph value
+ : null | paragraph type variable | paragraph value
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove form FormName
+remove form FormName
 ```
 
 
 ## print
 
 ```js filename="Terminal" copy
- print form FormName
+print form FormName
 ```
 
 
@@ -50,6 +47,6 @@ null | paragraph type variable | paragraph value
 
 
 ```js filename="Terminal" copy
- goto form FormName
+goto form FormName
 ```
 

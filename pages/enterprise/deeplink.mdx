@@ -7,24 +7,24 @@ title: Deeplink
 ## ensure
 
 ```js filename="Terminal" copy
- ensure deeplink DeeplinkName kind:"..."
+ensure deeplink DeeplinkName kind:"..."
 ```
 
 **`kind`**
-report | spreadsheetEditor | spreadsheetInsert | spreadsheetRow
+ : report | spreadsheetEditor | spreadsheetInsert | spreadsheetRow
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove deeplink DeeplinkName
+remove deeplink DeeplinkName
 ```
 
 
 ## print
 
 ```js filename="Terminal" copy
- print deeplink DeeplinkName
+print deeplink DeeplinkName
 ```
 
 
@@ -32,144 +32,132 @@ report | spreadsheetEditor | spreadsheetInsert | spreadsheetRow
 
 
 ```js filename="Terminal" copy
- goto deeplink DeeplinkName
+goto deeplink DeeplinkName
 ```
 
 ## update
 
 ### report
 ```js filename="Terminal" copy
- update deeplink DeeplinkName name:"Symbol"
- update deeplink DeeplinkName description:"null | @null | @empty | paragraph"
- update deeplink DeeplinkName visibilityConstraint:"..."
- update deeplink DeeplinkName creationRoles:"..."
- update deeplink DeeplinkName showHeader:"true | false | yes | no"
- update deeplink DeeplinkName showEnterprise:"true | false | yes | no"
- update deeplink DeeplinkName showSeparator:"true | false | yes | no"
- update deeplink DeeplinkName passImageInDeeplink:"true | false | yes | no"
- update deeplink DeeplinkName expiry:"..."
- update deeplink DeeplinkName hyperlinkVars:"..."
- update deeplink DeeplinkName filterTags:"..."
- update deeplink DeeplinkName report:"null | Symbol"
- update deeplink DeeplinkName outputFormContentLayout:"null | Symbol"
+update deeplink DeeplinkName name:"Symbol"
+update deeplink DeeplinkName description:"null | @null | @empty | paragraph"
+update deeplink DeeplinkName visibilityConstraint:"..."
+update deeplink DeeplinkName creationRoles:"..."
+update deeplink DeeplinkName showHeader:"true | false | yes | no"
+update deeplink DeeplinkName showEnterprise:"true | false | yes | no"
+update deeplink DeeplinkName showSeparator:"true | false | yes | no"
+update deeplink DeeplinkName passImageInDeeplink:"true | false | yes | no"
+update deeplink DeeplinkName expiry:"..."
+update deeplink DeeplinkName hyperlinkVars:"..."
+update deeplink DeeplinkName filterTags:"null | @empty | text1, text2, ..."
+update deeplink DeeplinkName report:"null | Symbol"
+update deeplink DeeplinkName outputFormContentLayout:"null | Symbol"
 ```
 
 **`visibilityConstraint`**
-enforceUserSignIn | enforceFollowerSignIn | makeFollower | allowPublicSharing
+ : enforceUserSignIn | enforceFollowerSignIn | makeFollower | allowPublicSharing
 
 **`creationRoles`**
-null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
 **`expiry`**
-onFirstClick | withinOneWeek | withinOneMonth | noExpiry
+ : onFirstClick | withinOneWeek | withinOneMonth | noExpiry
 
 **`hyperlinkVars`**
-null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
-
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
+ : null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
 
 ### spreadsheetEditor
 ```js filename="Terminal" copy
- update deeplink DeeplinkName name:"Symbol"
- update deeplink DeeplinkName description:"null | @null | @empty | paragraph"
- update deeplink DeeplinkName visibilityConstraint:"..."
- update deeplink DeeplinkName creationRoles:"..."
- update deeplink DeeplinkName showHeader:"true | false | yes | no"
- update deeplink DeeplinkName showEnterprise:"true | false | yes | no"
- update deeplink DeeplinkName showSeparator:"true | false | yes | no"
- update deeplink DeeplinkName passImageInDeeplink:"true | false | yes | no"
- update deeplink DeeplinkName expiry:"..."
- update deeplink DeeplinkName hyperlinkVars:"..."
- update deeplink DeeplinkName filterTags:"..."
- update deeplink DeeplinkName spreadsheet:"null | Symbol"
- update deeplink DeeplinkName spreadsheetLayout:"null | Symbol"
+update deeplink DeeplinkName name:"Symbol"
+update deeplink DeeplinkName description:"null | @null | @empty | paragraph"
+update deeplink DeeplinkName visibilityConstraint:"..."
+update deeplink DeeplinkName creationRoles:"..."
+update deeplink DeeplinkName showHeader:"true | false | yes | no"
+update deeplink DeeplinkName showEnterprise:"true | false | yes | no"
+update deeplink DeeplinkName showSeparator:"true | false | yes | no"
+update deeplink DeeplinkName passImageInDeeplink:"true | false | yes | no"
+update deeplink DeeplinkName expiry:"..."
+update deeplink DeeplinkName hyperlinkVars:"..."
+update deeplink DeeplinkName filterTags:"null | @empty | text1, text2, ..."
+update deeplink DeeplinkName spreadsheet:"null | Symbol"
+update deeplink DeeplinkName spreadsheetLayout:"null | Symbol"
 ```
 
 **`visibilityConstraint`**
-enforceUserSignIn | enforceFollowerSignIn | makeFollower | allowPublicSharing
+ : enforceUserSignIn | enforceFollowerSignIn | makeFollower | allowPublicSharing
 
 **`creationRoles`**
-null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
 **`expiry`**
-onFirstClick | withinOneWeek | withinOneMonth | noExpiry
+ : onFirstClick | withinOneWeek | withinOneMonth | noExpiry
 
 **`hyperlinkVars`**
-null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
-
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
+ : null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
 
 ### spreadsheetInsert
 ```js filename="Terminal" copy
- update deeplink DeeplinkName name:"Symbol"
- update deeplink DeeplinkName description:"null | @null | @empty | paragraph"
- update deeplink DeeplinkName visibilityConstraint:"..."
- update deeplink DeeplinkName creationRoles:"..."
- update deeplink DeeplinkName showHeader:"true | false | yes | no"
- update deeplink DeeplinkName showEnterprise:"true | false | yes | no"
- update deeplink DeeplinkName showSeparator:"true | false | yes | no"
- update deeplink DeeplinkName passImageInDeeplink:"true | false | yes | no"
- update deeplink DeeplinkName expiry:"..."
- update deeplink DeeplinkName hyperlinkVars:"..."
- update deeplink DeeplinkName filterTags:"..."
- update deeplink DeeplinkName spreadsheet:"null | Symbol"
- update deeplink DeeplinkName successMessage:"..."
- update deeplink DeeplinkName successMessageFontVar:"null | font type variable | font value"
- update deeplink DeeplinkName successMessageBgColorVar:"null | color type variable | color value"
- update deeplink DeeplinkName showRepeatButton:"true | false | yes | no"
- update deeplink DeeplinkName repeatButtonLabel:"null | @null | @empty | text"
+update deeplink DeeplinkName name:"Symbol"
+update deeplink DeeplinkName description:"null | @null | @empty | paragraph"
+update deeplink DeeplinkName visibilityConstraint:"..."
+update deeplink DeeplinkName creationRoles:"..."
+update deeplink DeeplinkName showHeader:"true | false | yes | no"
+update deeplink DeeplinkName showEnterprise:"true | false | yes | no"
+update deeplink DeeplinkName showSeparator:"true | false | yes | no"
+update deeplink DeeplinkName passImageInDeeplink:"true | false | yes | no"
+update deeplink DeeplinkName expiry:"..."
+update deeplink DeeplinkName hyperlinkVars:"..."
+update deeplink DeeplinkName filterTags:"null | @empty | text1, text2, ..."
+update deeplink DeeplinkName spreadsheet:"null | Symbol"
+update deeplink DeeplinkName successMessage:"..."
+update deeplink DeeplinkName successMessageFontVar:"null | font type variable | font value"
+update deeplink DeeplinkName successMessageBgColorVar:"null | color type variable | color value"
+update deeplink DeeplinkName showRepeatButton:"true | false | yes | no"
+update deeplink DeeplinkName repeatButtonLabel:"null | @null | @empty | text"
 ```
 
 **`visibilityConstraint`**
-enforceUserSignIn | enforceFollowerSignIn | makeFollower | allowPublicSharing
+ : enforceUserSignIn | enforceFollowerSignIn | makeFollower | allowPublicSharing
 
 **`creationRoles`**
-null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
 **`expiry`**
-onFirstClick | withinOneWeek | withinOneMonth | noExpiry
+ : onFirstClick | withinOneWeek | withinOneMonth | noExpiry
 
 **`hyperlinkVars`**
-null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
-
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
+ : null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
 
 **`successMessage`**
-null | paragraph type variable | paragraph value
+ : null | paragraph type variable | paragraph value
 
 ### spreadsheetRow
 ```js filename="Terminal" copy
- update deeplink DeeplinkName name:"Symbol"
- update deeplink DeeplinkName description:"null | @null | @empty | paragraph"
- update deeplink DeeplinkName visibilityConstraint:"..."
- update deeplink DeeplinkName creationRoles:"..."
- update deeplink DeeplinkName showHeader:"true | false | yes | no"
- update deeplink DeeplinkName showEnterprise:"true | false | yes | no"
- update deeplink DeeplinkName showSeparator:"true | false | yes | no"
- update deeplink DeeplinkName passImageInDeeplink:"true | false | yes | no"
- update deeplink DeeplinkName expiry:"..."
- update deeplink DeeplinkName hyperlinkVars:"..."
- update deeplink DeeplinkName filterTags:"..."
- update deeplink DeeplinkName spreadsheet:"null | Symbol"
- update deeplink DeeplinkName formContentLayout:"null | Symbol"
+update deeplink DeeplinkName name:"Symbol"
+update deeplink DeeplinkName description:"null | @null | @empty | paragraph"
+update deeplink DeeplinkName visibilityConstraint:"..."
+update deeplink DeeplinkName creationRoles:"..."
+update deeplink DeeplinkName showHeader:"true | false | yes | no"
+update deeplink DeeplinkName showEnterprise:"true | false | yes | no"
+update deeplink DeeplinkName showSeparator:"true | false | yes | no"
+update deeplink DeeplinkName passImageInDeeplink:"true | false | yes | no"
+update deeplink DeeplinkName expiry:"..."
+update deeplink DeeplinkName hyperlinkVars:"..."
+update deeplink DeeplinkName filterTags:"null | @empty | text1, text2, ..."
+update deeplink DeeplinkName spreadsheet:"null | Symbol"
+update deeplink DeeplinkName formContentLayout:"null | Symbol"
 ```
 
 **`visibilityConstraint`**
-enforceUserSignIn | enforceFollowerSignIn | makeFollower | allowPublicSharing
+ : enforceUserSignIn | enforceFollowerSignIn | makeFollower | allowPublicSharing
 
 **`creationRoles`**
-null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
 **`expiry`**
-onFirstClick | withinOneWeek | withinOneMonth | noExpiry
+ : onFirstClick | withinOneWeek | withinOneMonth | noExpiry
 
 **`hyperlinkVars`**
-null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
-
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
+ : null | @empty | HyperlinkVariable1, HyperlinkVariable2, ...
 
 

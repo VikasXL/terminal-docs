@@ -7,51 +7,48 @@ title: Group
 ## ensure
 
 ```js filename="Terminal" copy
- ensure group GroupName
+ensure group GroupName
 ```
 
 
 ## update
 
 ```js filename="Terminal" copy
- update group GroupName name:"Symbol"
- update group GroupName label:"null | @null | @empty | text"
- update group GroupName description:"null | @null | @empty | paragraph"
- update group GroupName filterTags:"..."
- update group GroupName allowPromptAssistant:"true | false | yes | no"
- update group GroupName pinnedActions:"..."
- update group GroupName pinnedActionsMobile:"..."
- update group GroupName groupPermissions:"..."
- update group GroupName chatPermissions:"..."
+update group GroupName name:"Symbol"
+update group GroupName label:"null | @null | @empty | text"
+update group GroupName description:"null | @null | @empty | paragraph"
+update group GroupName filterTags:"null | @empty | text1, text2, ..."
+update group GroupName allowPromptAssistant:"true | false | yes | no"
+update group GroupName pinnedActions:"..."
+update group GroupName pinnedActionsMobile:"..."
+update group GroupName groupPermissions:"..."
+update group GroupName chatPermissions:"..."
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`pinnedActions`**
-null | @empty | PinnedActions1, PinnedActions2, ...
+ : null | @empty | PinnedActions1, PinnedActions2, ...
 
 **`pinnedActionsMobile`**
-null | @empty | PinnedActionsMobile1, PinnedActionsMobile2, ...
+ : null | @empty | PinnedActionsMobile1, PinnedActionsMobile2, ...
 
 **`groupPermissions`**
-null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
 **`chatPermissions`**
-null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove group GroupName
+remove group GroupName
 ```
 
 
 ## print
 
 ```js filename="Terminal" copy
- print group GroupName
+print group GroupName
 ```
 
 

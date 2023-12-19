@@ -7,24 +7,24 @@ title: Report
 ## ensure
 
 ```js filename="Terminal" copy
- ensure report ReportName kind:"..."
+ensure report ReportName kind:"..."
 ```
 
 **`kind`**
-composite | mapper | plugin | query | spreadsheet
+ : composite | mapper | plugin | query | spreadsheet
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove report ReportName
+remove report ReportName
 ```
 
 
 ## print
 
 ```js filename="Terminal" copy
- print report ReportName
+print report ReportName
 ```
 
 
@@ -32,102 +32,87 @@ composite | mapper | plugin | query | spreadsheet
 
 ### composite
 ```js filename="Terminal" copy
- update report ReportName name:"Symbol"
- update report ReportName label:"null | @null | @empty | text"
- update report ReportName description:"null | @null | @empty | paragraph"
- update report ReportName filterTags:"..."
- update report ReportName inputForm:"null | Symbol"
- update report ReportName outputForm:"null | Symbol"
- update report ReportName mergeReports:"null | @empty | Report1, Report2, ..."
+update report ReportName name:"Symbol"
+update report ReportName label:"null | @null | @empty | text"
+update report ReportName description:"null | @null | @empty | paragraph"
+update report ReportName filterTags:"null | @empty | text1, text2, ..."
+update report ReportName inputForm:"null | Symbol"
+update report ReportName outputForm:"null | Symbol"
+update report ReportName mergeReports:"null | @empty | Report1, Report2, ..."
 ```
-
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
 
 ### mapper
 ```js filename="Terminal" copy
- update report ReportName name:"Symbol"
- update report ReportName label:"null | @null | @empty | text"
- update report ReportName description:"null | @null | @empty | paragraph"
- update report ReportName filterTags:"..."
- update report ReportName inputForm:"null | Symbol"
- update report ReportName outputForm:"null | Symbol"
- update report ReportName mappedReport:"null | Symbol"
- update report ReportName saveToSpreadsheet:"null | Symbol"
- update report ReportName inputFormMapping:"..."
- update report ReportName outputFormMapping:"..."
+update report ReportName name:"Symbol"
+update report ReportName label:"null | @null | @empty | text"
+update report ReportName description:"null | @null | @empty | paragraph"
+update report ReportName filterTags:"null | @empty | text1, text2, ..."
+update report ReportName inputForm:"null | Symbol"
+update report ReportName outputForm:"null | Symbol"
+update report ReportName mappedReport:"null | Symbol"
+update report ReportName saveToSpreadsheet:"null | Symbol"
+update report ReportName inputFormMapping:"..."
+update report ReportName outputFormMapping:"..."
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`inputFormMapping`**
-null | mapping type variable | mapping value
+ : null | mapping type variable | mapping value
 
 **`outputFormMapping`**
-null | mapping type variable | mapping value
+ : null | mapping type variable | mapping value
 
 ### plugin
 ```js filename="Terminal" copy
- update report ReportName name:"Symbol"
- update report ReportName label:"null | @null | @empty | text"
- update report ReportName description:"null | @null | @empty | paragraph"
- update report ReportName filterTags:"..."
- update report ReportName inputForm:"null | Symbol"
- update report ReportName outputForm:"null | Symbol"
- update report ReportName pluginName:"null | @null | @empty | pluginName"
- update report ReportName pluginApi:"null | Symbol"
- update report ReportName inputFormMapping:"..."
- update report ReportName outputFormMapping:"..."
+update report ReportName name:"Symbol"
+update report ReportName label:"null | @null | @empty | text"
+update report ReportName description:"null | @null | @empty | paragraph"
+update report ReportName filterTags:"null | @empty | text1, text2, ..."
+update report ReportName inputForm:"null | Symbol"
+update report ReportName outputForm:"null | Symbol"
+update report ReportName pluginName:"null | @null | @empty | pluginName"
+update report ReportName pluginApi:"null | Symbol"
+update report ReportName inputFormMapping:"..."
+update report ReportName outputFormMapping:"..."
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`inputFormMapping`**
-null | mapping type variable | mapping value
+ : null | mapping type variable | mapping value
 
 **`outputFormMapping`**
-null | mapping type variable | mapping value
+ : null | mapping type variable | mapping value
 
 ### query
 ```js filename="Terminal" copy
- update report ReportName name:"Symbol"
- update report ReportName label:"null | @null | @empty | text"
- update report ReportName description:"null | @null | @empty | paragraph"
- update report ReportName filterTags:"..."
- update report ReportName inputForm:"null | Symbol"
- update report ReportName outputForm:"null | Symbol"
- update report ReportName fromSpreadsheets:"..."
- update report ReportName neoQL:"null | @null | @empty | neoQL code"
+update report ReportName name:"Symbol"
+update report ReportName label:"null | @null | @empty | text"
+update report ReportName description:"null | @null | @empty | paragraph"
+update report ReportName filterTags:"null | @empty | text1, text2, ..."
+update report ReportName inputForm:"null | Symbol"
+update report ReportName outputForm:"null | Symbol"
+update report ReportName fromSpreadsheets:"..."
+update report ReportName neoQL:"null | @null | @empty | neoQL code"
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`fromSpreadsheets`**
-null | @empty | Spreadsheet1, Spreadsheet2, ...
+ : null | @empty | Spreadsheet1, Spreadsheet2, ...
 
 ### spreadsheet
 ```js filename="Terminal" copy
- update report ReportName name:"Symbol"
- update report ReportName label:"null | @null | @empty | text"
- update report ReportName description:"null | @null | @empty | paragraph"
- update report ReportName filterTags:"..."
- update report ReportName inputForm:"null | Symbol"
- update report ReportName outputForm:"null | Symbol"
- update report ReportName fromSpreadsheet:"null | Symbol"
- update report ReportName filterCondition:"..."
- update report ReportName outputFormMapping:"..."
+update report ReportName name:"Symbol"
+update report ReportName label:"null | @null | @empty | text"
+update report ReportName description:"null | @null | @empty | paragraph"
+update report ReportName filterTags:"null | @empty | text1, text2, ..."
+update report ReportName inputForm:"null | Symbol"
+update report ReportName outputForm:"null | Symbol"
+update report ReportName fromSpreadsheet:"null | Symbol"
+update report ReportName filterCondition:"..."
+update report ReportName outputFormMapping:"..."
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`filterCondition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`outputFormMapping`**
-null | mapping type variable | mapping value
+ : null | mapping type variable | mapping value
 
 

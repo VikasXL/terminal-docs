@@ -7,21 +7,21 @@ title: Automation
 ## ensure
 
 ```js filename="Terminal" copy
- ensure automation AutomationName kind:"scheduled | spreadsheet | webhook"
+ensure automation AutomationName kind:"scheduled | spreadsheet | webhook"
 ```
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove automation AutomationName
+remove automation AutomationName
 ```
 
 
 ## print
 
 ```js filename="Terminal" copy
- print automation AutomationName
+print automation AutomationName
 ```
 
 
@@ -29,42 +29,33 @@ title: Automation
 
 
 ```js filename="Terminal" copy
- goto automation AutomationName
+goto automation AutomationName
 ```
 
 ## update
 
 ### scheduled
 ```js filename="Terminal" copy
- update automation AutomationName name:"Symbol"
- update automation AutomationName description:"null | @null | @empty | text"
- update automation AutomationName secondary:"null | @null | @empty | text"
- update automation AutomationName filterTags:"..."
+update automation AutomationName name:"Symbol"
+update automation AutomationName description:"null | @null | @empty | text"
+update automation AutomationName secondary:"null | @null | @empty | text"
+update automation AutomationName filterTags:"null | @empty | text1, text2, ..."
 ```
-
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
 
 ### spreadsheet
 ```js filename="Terminal" copy
- update automation AutomationName name:"Symbol"
- update automation AutomationName description:"null | @null | @empty | text"
- update automation AutomationName secondary:"null | @null | @empty | text"
- update automation AutomationName filterTags:"..."
+update automation AutomationName name:"Symbol"
+update automation AutomationName description:"null | @null | @empty | text"
+update automation AutomationName secondary:"null | @null | @empty | text"
+update automation AutomationName filterTags:"null | @empty | text1, text2, ..."
 ```
-
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
 
 ### webhook
 ```js filename="Terminal" copy
- update automation AutomationName name:"Symbol"
- update automation AutomationName description:"null | @null | @empty | text"
- update automation AutomationName secondary:"null | @null | @empty | text"
- update automation AutomationName filterTags:"..."
+update automation AutomationName name:"Symbol"
+update automation AutomationName description:"null | @null | @empty | text"
+update automation AutomationName secondary:"null | @null | @empty | text"
+update automation AutomationName filterTags:"null | @empty | text1, text2, ..."
 ```
-
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
 
 

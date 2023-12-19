@@ -7,27 +7,30 @@ title: Action
 ## ensure
 
 ```js filename="Terminal" copy
- ensure groupAction action:"Symbol" roles:"..." menuGroup:"null | @null | @empty | text" deviceSizes:"..."
+ensure groupAction action:"Symbol"
+ensure groupAction roles:"..."
+ensure groupAction menuGroup:"null | @null | @empty | text"
+ensure groupAction deviceSizes:"..."
 ```
 
 **`roles`**
-null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
 **`deviceSizes`**
-null | @empty | mobile, tablet, laptop, desktop
+ : null | @empty | mobile, tablet, laptop, desktop
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove groupAction action:"Symbol"
+remove groupAction action:"Symbol"
 ```
 
 
 ## print
 
 ```js filename="Terminal" copy
- print groupAction action:"Symbol"
+print groupAction action:"Symbol"
 ```
 
 
@@ -35,6 +38,6 @@ null | @empty | mobile, tablet, laptop, desktop
 
 
 ```js filename="Terminal" copy
- goto groupAction argument:"value"
+goto groupAction argument:"value"
 ```
 

@@ -7,42 +7,39 @@ title: Api
 ## ensure
 
 ```js filename="Terminal" copy
- ensure pluginApi PluginApiName type:"..."
+ensure pluginApi PluginApiName type:"..."
 ```
 
 **`type`**
-delete | get | patch | post | put | webhook
+ : delete | get | patch | post | put | webhook
 
 
 ## update
 
 ```js filename="Terminal" copy
- update pluginApi PluginApiName name:"Symbol"
- update pluginApi PluginApiName description:"null | @null | @empty | paragraph"
- update pluginApi PluginApiName inputForm:"null | Symbol"
- update pluginApi PluginApiName outputForm:"..."
- update pluginApi PluginApiName guaranteedInvocation:"true | false | yes | no"
- update pluginApi PluginApiName filterTags:"..."
+update pluginApi PluginApiName name:"Symbol"
+update pluginApi PluginApiName description:"null | @null | @empty | paragraph"
+update pluginApi PluginApiName inputForm:"null | Symbol"
+update pluginApi PluginApiName outputForm:"..."
+update pluginApi PluginApiName guaranteedInvocation:"true | false | yes | no"
+update pluginApi PluginApiName filterTags:"null | @empty | text1, text2, ..."
 ```
 
 **`outputForm`**
-null | Form | $FormMapOfOptions | $FormPickTree | $FormSetOfUser | $FormPluginConfig ...
-
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
+ : null | Form | $FormMapOfOptions | $FormPickTree | $FormSetOfUser | $FormPluginConfig ...
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove pluginApi PluginApiName
+remove pluginApi PluginApiName
 ```
 
 
 ## print
 
 ```js filename="Terminal" copy
- print pluginApi PluginApiName
+print pluginApi PluginApiName
 ```
 
 

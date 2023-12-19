@@ -7,14 +7,14 @@ title: Event
 ## remove
 
 ```js filename="Terminal" copy
- remove automationEvent AutomationEventName
+remove automationEvent AutomationEventName
 ```
 
 
 ## print
 
 ```js filename="Terminal" copy
- print automationEvent AutomationEventName
+print automationEvent AutomationEventName
 ```
 
 
@@ -22,27 +22,27 @@ title: Event
 
 
 ```js filename="Terminal" copy
- goto automationEvent AutomationEventName
+goto automationEvent AutomationEventName
 ```
 
 ## ensure
 
 ### scheduled
 ```js filename="Terminal" copy
- ensure automationEvent AutomationEventName type:"onFire"
+ensure automationEvent AutomationEventName type:"onFire"
 ```
 
 ### spreadsheet
 ```js filename="Terminal" copy
- ensure automationEvent AutomationEventName type:"..."
+ensure automationEvent AutomationEventName type:"..."
 ```
 
 **`type`**
-afterInsert | afterRemove | afterUpdate | beforeInsert | beforeRemove | beforeUpdate
+ : afterInsert | afterRemove | afterUpdate | beforeInsert | beforeRemove | beforeUpdate
 
 ### webhook
 ```js filename="Terminal" copy
- ensure automationEvent AutomationEventName type:"onFire"
+ensure automationEvent AutomationEventName type:"onFire"
 ```
 
 
@@ -50,35 +50,35 @@ afterInsert | afterRemove | afterUpdate | beforeInsert | beforeRemove | beforeUp
 
 ### scheduled
 ```js filename="Terminal" copy
- update automationEvent AutomationEventName name:"Symbol"
- update automationEvent AutomationEventName description:"null | @null | @empty | text"
- update automationEvent AutomationEventName secondary:"null | @null | @empty | text"
- update automationEvent AutomationEventName condition:"..."
+update automationEvent AutomationEventName name:"Symbol"
+update automationEvent AutomationEventName description:"null | @null | @empty | text"
+update automationEvent AutomationEventName secondary:"null | @null | @empty | text"
+update automationEvent AutomationEventName condition:"..."
 ```
 
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 ### spreadsheet
 ```js filename="Terminal" copy
- update automationEvent AutomationEventName name:"Symbol"
- update automationEvent AutomationEventName description:"null | @null | @empty | text"
- update automationEvent AutomationEventName secondary:"null | @null | @empty | text"
- update automationEvent AutomationEventName condition:"..."
+update automationEvent AutomationEventName name:"Symbol"
+update automationEvent AutomationEventName description:"null | @null | @empty | text"
+update automationEvent AutomationEventName secondary:"null | @null | @empty | text"
+update automationEvent AutomationEventName condition:"..."
 ```
 
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 ### webhook
 ```js filename="Terminal" copy
- update automationEvent AutomationEventName name:"Symbol"
- update automationEvent AutomationEventName description:"null | @null | @empty | text"
- update automationEvent AutomationEventName secondary:"null | @null | @empty | text"
- update automationEvent AutomationEventName condition:"..."
+update automationEvent AutomationEventName name:"Symbol"
+update automationEvent AutomationEventName description:"null | @null | @empty | text"
+update automationEvent AutomationEventName secondary:"null | @null | @empty | text"
+update automationEvent AutomationEventName condition:"..."
 ```
 
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 

@@ -7,27 +7,28 @@ title: Permission
 ## ensure
 
 ```js filename="Terminal" copy
- ensure gridPermission role:"..." permission:"invisible | read | writeOnce | write" default:"invisible | read | writeOnce | write"
+ensure gridPermission default:"invisible | read | writeOnce | write"
+ensure gridPermission role:"..." permission:"invisible | read | writeOnce | write"
 ```
 
 **`role`**
-Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
+ : Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove gridPermission role:"..."
+remove gridPermission role:"..."
 ```
 
 **`role`**
-Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
+ : Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
 
 
 ## print
 
 ```js filename="Terminal" copy
- print gridPermission
+print gridPermission
 ```
 
 

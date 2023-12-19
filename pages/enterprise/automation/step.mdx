@@ -7,14 +7,14 @@ title: Step
 ## remove
 
 ```js filename="Terminal" copy
- remove automationStep AutomationStepName
+remove automationStep AutomationStepName
 ```
 
 
 ## print
 
 ```js filename="Terminal" copy
- print automationStep AutomationStepName
+print automationStep AutomationStepName
 ```
 
 
@@ -22,27 +22,27 @@ title: Step
 
 
 ```js filename="Terminal" copy
- goto automationStep AutomationStepName
+goto automationStep AutomationStepName
 ```
 
 ## ensure
 
 ### scheduled
 ```js filename="Terminal" copy
- ensure automationStep AutomationStepName kind:"callPlugin | insertIntoSpreadsheet"
+ensure automationStep AutomationStepName kind:"callPlugin | insertIntoSpreadsheet"
 ```
 
 ### spreadsheet
 ```js filename="Terminal" copy
- ensure automationStep AutomationStepName kind:"..."
+ensure automationStep AutomationStepName kind:"..."
 ```
 
 **`kind`**
-callPlugin | callReport | insertIntoSpreadsheet | removeFromSpreadsheet | updateSpreadsheet | calculateFormulas | forwardToGroups | forwardToUsers | partitionSend | removeRow | updateField | updateLogNumber | removeField | returnEvent | terminate | generateDeeplink
+ : callPlugin | callReport | insertIntoSpreadsheet | removeFromSpreadsheet | updateSpreadsheet | calculateFormulas | forwardToGroups | forwardToUsers | partitionSend | removeRow | updateField | updateLogNumber | removeField | returnEvent | terminate | generateDeeplink
 
 ### webhook
 ```js filename="Terminal" copy
- ensure automationStep AutomationStepName kind:"insertIntoSpreadsheet"
+ensure automationStep AutomationStepName kind:"insertIntoSpreadsheet"
 ```
 
 
@@ -51,470 +51,413 @@ callPlugin | callReport | insertIntoSpreadsheet | removeFromSpreadsheet | update
 ### scheduled
 #### callPlugin
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName plugin:"null | @null | @empty | pluginName"
- update automationStep AutomationStepName pluginApi:"null | Symbol"
- update automationStep AutomationStepName pluginInputMapping:"..."
- update automationStep AutomationStepName errorRetryCount:"..."
- update automationStep AutomationStepName errorRetryDuration:"..."
- update automationStep AutomationStepName errorSpreadsheet:"null | Symbol"
- update automationStep AutomationStepName errorField:"null | sectionField | grid/field"
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName plugin:"null | @null | @empty | pluginName"
+update automationStep AutomationStepName pluginApi:"null | Symbol"
+update automationStep AutomationStepName pluginInputMapping:"..."
+update automationStep AutomationStepName errorRetryCount:"..."
+update automationStep AutomationStepName errorRetryDuration:"..."
+update automationStep AutomationStepName errorSpreadsheet:"null | Symbol"
+update automationStep AutomationStepName errorField:"null | sectionField | grid/field"
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`pluginInputMapping`**
-null | mapping type variable | mapping value
+ : null | mapping type variable | mapping value
 
 **`errorRetryCount`**
-null | number type variable | number value
+ : null | number type variable | number value
 
 **`errorRetryDuration`**
-null | duration type variable | duration value
+ : null | duration type variable | duration value
 
 #### insertIntoSpreadsheet
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName target:"null | Symbol"
- update automationStep AutomationStepName targetFormMapping:"..."
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName target:"null | Symbol"
+update automationStep AutomationStepName targetFormMapping:"..."
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`targetFormMapping`**
-null | mapping type variable | mapping value
+ : null | mapping type variable | mapping value
 
 ### spreadsheet
 #### calculateFormulas
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
- update automationStep AutomationStepName field:"null | sectionField | grid/field"
- update automationStep AutomationStepName newCondition:"..."
- update automationStep AutomationStepName newFormula:"null | @null | @empty | formula"
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName field:"null | sectionField | grid/field"
+update automationStep AutomationStepName newCondition:"..."
+update automationStep AutomationStepName newFormula:"null | @null | @empty | formula"
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`newCondition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 #### callPlugin
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
- update automationStep AutomationStepName pluginName:"null | @null | @empty | pluginName"
- update automationStep AutomationStepName pluginApi:"null | Symbol"
- update automationStep AutomationStepName sourceGrid:"null | Symbol"
- update automationStep AutomationStepName sourceGridFilter:"..."
- update automationStep AutomationStepName pluginInputMapping:"..."
- update automationStep AutomationStepName pluginOutputMapping:"..."
- update automationStep AutomationStepName errorRetryCount:"..."
- update automationStep AutomationStepName errorRetryDuration:"..."
- update automationStep AutomationStepName errorField:"null | sectionField | grid/field"
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName pluginName:"null | @null | @empty | pluginName"
+update automationStep AutomationStepName pluginApi:"null | Symbol"
+update automationStep AutomationStepName sourceGrid:"null | Symbol"
+update automationStep AutomationStepName sourceGridFilter:"..."
+update automationStep AutomationStepName pluginInputMapping:"..."
+update automationStep AutomationStepName pluginOutputMapping:"..."
+update automationStep AutomationStepName errorRetryCount:"..."
+update automationStep AutomationStepName errorRetryDuration:"..."
+update automationStep AutomationStepName errorField:"null | sectionField | grid/field"
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`sourceGridFilter`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`pluginInputMapping`**
-null | mapping type variable | mapping value
+ : null | mapping type variable | mapping value
 
 **`pluginOutputMapping`**
-null | mapping type variable | mapping value
+ : null | mapping type variable | mapping value
 
 **`errorRetryCount`**
-null | number type variable | number value
+ : null | number type variable | number value
 
 **`errorRetryDuration`**
-null | duration type variable | duration value
+ : null | duration type variable | duration value
 
 #### callReport
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
- update automationStep AutomationStepName scheduler:"..."
- update automationStep AutomationStepName report:"null | Symbol"
- update automationStep AutomationStepName sourceGrid:"null | Symbol"
- update automationStep AutomationStepName sourceGridFilter:"..."
- update automationStep AutomationStepName reportInputMappingVar:"..."
- update automationStep AutomationStepName reportOutputMapping:"..."
- update automationStep AutomationStepName errorRetryCountVar:"..."
- update automationStep AutomationStepName errorRetryDuration:"..."
- update automationStep AutomationStepName errorField:"null | sectionField | grid/field"
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName scheduler:"..."
+update automationStep AutomationStepName report:"null | Symbol"
+update automationStep AutomationStepName sourceGrid:"null | Symbol"
+update automationStep AutomationStepName sourceGridFilter:"..."
+update automationStep AutomationStepName reportInputMappingVar:"..."
+update automationStep AutomationStepName reportOutputMapping:"..."
+update automationStep AutomationStepName errorRetryCountVar:"..."
+update automationStep AutomationStepName errorRetryDuration:"..."
+update automationStep AutomationStepName errorField:"null | sectionField | grid/field"
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`scheduler`**
-null | scheduler type variable | scheduler value
+ : null | scheduler type variable | scheduler value
 
 **`sourceGridFilter`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`reportInputMappingVar`**
-null | mapping type variable | mapping value
+ : null | mapping type variable | mapping value
 
 **`reportOutputMapping`**
-null | mapping type variable | mapping value
+ : null | mapping type variable | mapping value
 
 **`errorRetryCountVar`**
-null | number type variable | number value
+ : null | number type variable | number value
 
 **`errorRetryDuration`**
-null | duration type variable | duration value
+ : null | duration type variable | duration value
 
 #### forwardToGroups
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
- update automationStep AutomationStepName groups:"null | @empty | Group1, Group2, ..."
- update automationStep AutomationStepName senderField:"null | Symbol"
- update automationStep AutomationStepName senderRole:"..."
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName groups:"null | @empty | Group1, Group2, ..."
+update automationStep AutomationStepName senderField:"null | Symbol"
+update automationStep AutomationStepName senderRole:"..."
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`senderRole`**
-null | Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
+ : null | Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
 
 #### forwardToUsers
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
- update automationStep AutomationStepName senderField:"null | Symbol"
- update automationStep AutomationStepName senderRole:"null | Symbol"
- update automationStep AutomationStepName conjunction:"or | and"
- update automationStep AutomationStepName roles:"..."
- update automationStep AutomationStepName userField:"null | Symbol"
- update automationStep AutomationStepName grid:"null | Symbol"
- update automationStep AutomationStepName gridUserField:"null | Symbol"
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName senderField:"null | Symbol"
+update automationStep AutomationStepName senderRole:"null | Symbol"
+update automationStep AutomationStepName conjunction:"or | and"
+update automationStep AutomationStepName roles:"..."
+update automationStep AutomationStepName userField:"null | Symbol"
+update automationStep AutomationStepName grid:"null | Symbol"
+update automationStep AutomationStepName gridUserField:"null | Symbol"
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`roles`**
-null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
 #### generateDeeplink
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
- update automationStep AutomationStepName deeplink:"null | Symbol"
- update automationStep AutomationStepName deeplinkField:"null | Symbol"
- update automationStep AutomationStepName reportInputFormMappingVar:"null | Symbol"
- update automationStep AutomationStepName spreadsheetEditorAction:"null | Symbol"
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName deeplink:"null | Symbol"
+update automationStep AutomationStepName deeplinkField:"null | Symbol"
+update automationStep AutomationStepName reportInputFormMappingVar:"null | Symbol"
+update automationStep AutomationStepName spreadsheetEditorAction:"null | Symbol"
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 #### insertIntoSpreadsheet
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
- update automationStep AutomationStepName target:"null | Symbol"
- update automationStep AutomationStepName sourceGrid:"null | Symbol"
- update automationStep AutomationStepName sourceGridFilter:"..."
- update automationStep AutomationStepName sourceToTargetMapping:"..."
- update automationStep AutomationStepName targetToSourceMapping:"..."
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName target:"null | Symbol"
+update automationStep AutomationStepName sourceGrid:"null | Symbol"
+update automationStep AutomationStepName sourceGridFilter:"..."
+update automationStep AutomationStepName sourceToTargetMapping:"..."
+update automationStep AutomationStepName targetToSourceMapping:"..."
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`sourceGridFilter`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`sourceToTargetMapping`**
-null | mapping type variable | mapping value
+ : null | mapping type variable | mapping value
 
 **`targetToSourceMapping`**
-null | mapping type variable | mapping value
+ : null | mapping type variable | mapping value
 
 #### partitionSend
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
- update automationStep AutomationStepName target:"null | Symbol"
- update automationStep AutomationStepName groups:"null | @empty | Group1, Group2, ..."
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName target:"null | Symbol"
+update automationStep AutomationStepName groups:"null | @empty | Group1, Group2, ..."
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 #### removeField
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
- update automationStep AutomationStepName removeField:"null | Symbol"
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName removeField:"null | Symbol"
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 #### removeFromSpreadsheet
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
- update automationStep AutomationStepName target:"null | Symbol"
- update automationStep AutomationStepName sourceGrid:"null | Symbol"
- update automationStep AutomationStepName sourceGridFilter:"..."
- update automationStep AutomationStepName rowIdField:"null | sectionField | grid/field"
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName target:"null | Symbol"
+update automationStep AutomationStepName sourceGrid:"null | Symbol"
+update automationStep AutomationStepName sourceGridFilter:"..."
+update automationStep AutomationStepName rowIdField:"null | sectionField | grid/field"
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`sourceGridFilter`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 #### removeRow
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 #### returnEvent
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 #### terminate
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 #### updateField
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
- update automationStep AutomationStepName assignValueField:"null | Symbol"
- update automationStep AutomationStepName value:"null | @null | @empty | argBinderValue"
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName assignValueField:"null | Symbol"
+update automationStep AutomationStepName value:"null | @null | @empty | argBinderValue"
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 #### updateLogNumber
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
- update automationStep AutomationStepName target:"null | Symbol"
- update automationStep AutomationStepName rowField:"null | Symbol"
- update automationStep AutomationStepName targetField:"null | Symbol"
- update automationStep AutomationStepName operation:"add | remove | set"
- update automationStep AutomationStepName value:"null | @null | @empty | value"
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName target:"null | Symbol"
+update automationStep AutomationStepName rowField:"null | Symbol"
+update automationStep AutomationStepName targetField:"null | Symbol"
+update automationStep AutomationStepName operation:"add | remove | set"
+update automationStep AutomationStepName value:"null | @null | @empty | value"
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 #### updateSpreadsheet
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
- update automationStep AutomationStepName target:"null | Symbol"
- update automationStep AutomationStepName sourceGrid:"null | Symbol"
- update automationStep AutomationStepName sourceGridFilter:"..."
- update automationStep AutomationStepName rowIdField:"null | sectionField | grid/field"
- update automationStep AutomationStepName sourceToTargetMapping:"..."
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName target:"null | Symbol"
+update automationStep AutomationStepName sourceGrid:"null | Symbol"
+update automationStep AutomationStepName sourceGridFilter:"..."
+update automationStep AutomationStepName rowIdField:"null | sectionField | grid/field"
+update automationStep AutomationStepName sourceToTargetMapping:"..."
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`sourceGridFilter`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`sourceToTargetMapping`**
-null | mapping type variable | mapping value
+ : null | mapping type variable | mapping value
 
 ### webhook
 #### insertIntoSpreadsheet
 ```js filename="Terminal" copy
- update automationStep AutomationStepName filterTags:"..."
- update automationStep AutomationStepName name:"null | Symbol"
- update automationStep AutomationStepName description:"null | @null | @empty | text"
- update automationStep AutomationStepName secondary:"null | @null | @empty | text"
- update automationStep AutomationStepName condition:"..."
- update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
- update automationStep AutomationStepName terminateField:"null | Symbol"
- update automationStep AutomationStepName target:"null | Symbol"
- update automationStep AutomationStepName targetFormMapping:"..."
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName target:"null | Symbol"
+update automationStep AutomationStepName targetFormMapping:"..."
 ```
 
-**`filterTags`**
-null | @null | @empty | text1, text2, ...
-
 **`condition`**
-null | condition type variable | condition value
+ : null | condition type variable | condition value
 
 **`targetFormMapping`**
-null | mapping type variable | mapping value
+ : null | mapping type variable | mapping value
 
 

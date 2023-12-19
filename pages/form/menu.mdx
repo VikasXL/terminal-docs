@@ -7,27 +7,30 @@ title: Menu
 ## ensure
 
 ```js filename="Terminal" copy
- ensure formMenu action:"Symbol" roles:"..." menuGroup:"null | @null | @empty | text" deviceSizes:"..." showMessageTooltip:"true | false | yes | no"
+ensure formMenu action:"Symbol" roles:"..."
+ensure formMenu action:"Symbol" menuGroup:"null | @null | @empty | text"
+ensure formMenu action:"Symbol" deviceSizes:"..."
+ensure formMenu action:"Symbol" showMessageTooltip:"true | false | yes | no"
 ```
 
 **`roles`**
-null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
 **`deviceSizes`**
-null | @empty | mobile, tablet, laptop, desktop
+ : null | @empty | mobile, tablet, laptop, desktop
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove formMenu action:"Symbol"
+remove formMenu action:"Symbol"
 ```
 
 
 ## print
 
 ```js filename="Terminal" copy
- print formMenu action:"Symbol"
+print formMenu action:"Symbol"
 ```
 
 

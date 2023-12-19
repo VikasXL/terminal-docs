@@ -7,27 +7,28 @@ title: Permission
 ## ensure
 
 ```js filename="Terminal" copy
- ensure fieldPermission role:"..." permission:"invisible | read | writeOnce | write" default:"invisible | read | writeOnce | write"
+ensure fieldPermission default:"invisible | read | writeOnce | write"
+ensure fieldPermission role:"..." permission:"invisible | read | writeOnce | write"
 ```
 
 **`role`**
-Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
+ : Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
 
 
 ## remove
 
 ```js filename="Terminal" copy
- remove fieldPermission role:"..."
+remove fieldPermission role:"..."
 ```
 
 **`role`**
-Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
+ : Role | $Public | $Manager | $GrandManager | $AllManagers | $Assistants | $AllAssistants | $Self ...
 
 
 ## print
 
 ```js filename="Terminal" copy
- print fieldPermission
+print fieldPermission
 ```
 
 
