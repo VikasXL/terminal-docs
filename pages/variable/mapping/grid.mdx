@@ -4,34 +4,16 @@ title: Grid
 
 # variableMappingGrid
 
-## update
-
-```js filename="Terminal" copy
-update variableMappingGrid fromGrid:"Symbol"
-update variableMappingGrid toGrid:"Symbol"
-update variableMappingGrid fromGridKey:"null | Symbol"
-update variableMappingGrid toGridKey:"null | Symbol"
-update variableMappingGrid insertVariant:"..."
-update variableMappingGrid updateVariant:"updateForced | doNotUpdate"
-update variableMappingGrid removeVariant:"removeForced | doNotRemove"
-update variableMappingGrid emptyFieldVariant:"ignoreEmptyField | overrideEmptyField"
-```
-
-**`insertVariant`**
- : insertForced | skipEmptyKeyField | doNotInsert
-
-
 ## ensure
 
 ```js filename="Terminal" copy
-ensure variableMappingGrid fromGrid:"Symbol"
-ensure variableMappingGrid toGrid:"Symbol"
 ensure variableMappingGrid fromGridKey:"null | Symbol"
 ensure variableMappingGrid toGridKey:"null | Symbol"
 ensure variableMappingGrid insertVariant:"..."
 ensure variableMappingGrid updateVariant:"updateForced | doNotUpdate"
 ensure variableMappingGrid removeVariant:"removeForced | doNotRemove"
 ensure variableMappingGrid emptyFieldVariant:"ignoreEmptyField | overrideEmptyField"
+ensure variableMappingGrid toGrid:"Symbol" fromGrid:"Symbol"
 ```
 
 **`insertVariant`**
@@ -41,16 +23,30 @@ ensure variableMappingGrid emptyFieldVariant:"ignoreEmptyField | overrideEmptyFi
 ## remove
 
 ```js filename="Terminal" copy
-remove variableMappingGrid fromGrid:"Symbol"
-remove variableMappingGrid toGrid:"Symbol"
+remove variableMappingGrid fromGrid:"Symbol" toGrid:"Symbol"
 ```
+
+
+## update
+
+```js filename="Terminal" copy
+update variableMappingGrid fromGridKey:"null | Symbol"
+update variableMappingGrid toGridKey:"null | Symbol"
+update variableMappingGrid insertVariant:"..."
+update variableMappingGrid updateVariant:"updateForced | doNotUpdate"
+update variableMappingGrid removeVariant:"removeForced | doNotRemove"
+update variableMappingGrid emptyFieldVariant:"ignoreEmptyField | overrideEmptyField"
+update variableMappingGrid toGrid:"Symbol" fromGrid:"Symbol"
+```
+
+**`insertVariant`**
+ : insertForced | skipEmptyKeyField | doNotInsert
 
 
 ## goTo
 
 ```js filename="Terminal" copy
-goTo variableMappingGrid fromGrid:"Symbol"
-goTo variableMappingGrid toGrid:"Symbol"
+goTo variableMappingGrid fromGrid:"Symbol" toGrid:"Symbol"
 ```
 
 

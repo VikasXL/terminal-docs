@@ -7,8 +7,16 @@ title: Enterprise
 ## add
 
 ```js filename="Terminal" copy
-add enterprise name:"text"
-add enterprise about:"null | @null | @empty | paragraph"
+add enterprise name:"text" about:"null | @null | @empty | paragraph"
+```
+
+
+## remove
+
+```js filename="Terminal" copy
+remove enterprise
+remove enterprise name:"entName"
+remove enterprise entId:"entId"
 ```
 
 
@@ -33,15 +41,6 @@ update enterprise allFilterTags:"null | @empty | text1, text2, ..."
 
 **`displayDateFormat`**
  : null | @null | @empty | displayDateFormat
-
-
-## remove
-
-```js filename="Terminal" copy
-remove enterprise
-remove enterprise name:"entName"
-remove enterprise entId:"entId"
-```
 
 
 ## print

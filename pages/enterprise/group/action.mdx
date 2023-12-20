@@ -7,10 +7,9 @@ title: Action
 ## ensure
 
 ```js filename="Terminal" copy
-ensure groupAction action:"Symbol"
-ensure groupAction roles:"..."
-ensure groupAction menuGroup:"null | @null | @empty | text"
-ensure groupAction deviceSizes:"..."
+ensure groupAction action:"Symbol" roles:"..."
+ensure groupAction action:"Symbol" menuGroup:"null | @null | @empty | text"
+ensure groupAction action:"Symbol" deviceSizes:"..."
 ```
 
 **`roles`**
@@ -33,11 +32,4 @@ remove groupAction action:"Symbol"
 print groupAction action:"Symbol"
 ```
 
-
-## goTo
-
-
-```js filename="Terminal" copy
-goto groupAction argument:"value"
-```
 

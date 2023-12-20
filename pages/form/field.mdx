@@ -21,20 +21,6 @@ remove field FieldName
 ```
 
 
-## print
-
-```js filename="Terminal" copy
-print field FieldName
-```
-
-
-## goTo
-
-
-```js filename="Terminal" copy
-goto field FieldName
-```
-
 ## update
 
 ### audio
@@ -511,6 +497,8 @@ update field FieldName max:"null | date type variable | date value"
 update field FieldName displayDateFormat:"..."
 update field FieldName minDefaultDate:"null | date type variable | date value"
 update field FieldName maxDefaultDate:"null | date type variable | date value"
+update field FieldName fromDefaultVarId:"null | date type variable | date value"
+update field FieldName toDefaultVarId:"null | date type variable | date value"
 ```
 
 **`condition`**
@@ -582,6 +570,8 @@ update field FieldName max:"null | date type variable | date value"
 update field FieldName displayDateFormat:"..."
 update field FieldName minDefaultDateTime:"..."
 update field FieldName maxDefaultDateTime:"..."
+update field FieldName fromDefaultVarId:"..."
+update field FieldName toDefaultVarId:"..."
 ```
 
 **`condition`**
@@ -594,6 +584,12 @@ update field FieldName maxDefaultDateTime:"..."
  : null | dateTime type variable | dateTime value
 
 **`maxDefaultDateTime`**
+ : null | dateTime type variable | dateTime value
+
+**`fromDefaultVarId`**
+ : null | dateTime type variable | dateTime value
+
+**`toDefaultVarId`**
  : null | dateTime type variable | dateTime value
 
 ### decimal
@@ -2164,4 +2160,18 @@ update field FieldName showCapturedValuesOnAside:"..."
 **`showCapturedValuesOnAside`**
  : null | @empty | captureLocation, captureTime, captureUser
 
+
+## print
+
+```js filename="Terminal" copy
+print field FieldName
+```
+
+
+## goTo
+
+
+```js filename="Terminal" copy
+goto field FieldName
+```
 

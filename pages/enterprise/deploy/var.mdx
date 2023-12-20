@@ -150,7 +150,7 @@ update deployVar DeployVarName value:"..."
 ```
 
 **`value`**
- : null | dd/MM/yyyy | lastQuarter | lastWeek | lastYear | nextQuarter | nextWeek | nextYear | now | tomorrow | yesterday
+ : null | dd/MM/yyyy | lastQuarter | lastWeek | lastMonth | lastYear | nextQuarter | nextWeek | nextMonth | nextYear | now | tomorrow | yesterday | startOfWeek | startOfMonth | startOfYear | endOfWeek | endOfMonth | endOfYear
 
 ### dateTime
 ```js filename="Terminal" copy
@@ -163,7 +163,7 @@ update deployVar DeployVarName value:"..."
 ```
 
 **`value`**
- : null | lastQuarter | lastWeek | lastYear | nextQuarter | nextWeek | nextYear | now | tomorrow | yesterday
+ : null | dd/MM/yyyy hh:mm:ss am/pm | lastQuarter | lastWeek | lastMonth | lastYear | nextQuarter | nextWeek | nextMonth | nextYear | now | tomorrow | yesterday | startOfWeek | startOfMonth | startOfYear | endOfWeek | endOfMonth | endOfYear
 
 ### day
 ```js filename="Terminal" copy
@@ -302,7 +302,7 @@ update deployVar DeployVarName inputArgs:"..."
 ```
 
 **`inputArgs`**
- : A1:ArgType, A2?:ArgType ArgType: number | text | numberArray | textArray
+ : A1: ArgType, A2?: ArgType (ArgType: number | text | numberArray | textArray)
 
 ### html
 ```js filename="Terminal" copy
@@ -410,12 +410,12 @@ update deployVar DeployVarName label:"null | @null | @empty | text"
 update deployVar DeployVarName description:"null | @null | @empty | paragraph"
 update deployVar DeployVarName filterTags:"null | @empty | text1, text2, ..."
 update deployVar DeployVarName deploy:"requiredOnDeploy | fixedOnDeploy"
+update deployVar DeployVarName fromPlugin:"null | @null | @empty | fromPlugin"
 update deployVar DeployVarName fromForm:"null | Symbol"
 update deployVar DeployVarName fromGrid:"null | Symbol"
-update deployVar DeployVarName fromPlugin:"null | @null | @empty | fromPlugin"
+update deployVar DeployVarName toPlugin:"null | @null | @empty | toPlugin"
 update deployVar DeployVarName toForm:"null | Symbol"
 update deployVar DeployVarName toGrid:"null | Symbol"
-update deployVar DeployVarName toPlugin:"null | @null | @empty | toPlugin"
 ```
 
 ### mobileNumber

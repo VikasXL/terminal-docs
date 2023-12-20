@@ -4,30 +4,28 @@ title: Field
 
 # variableMappingField
 
-## update
+## ensure
 
 ```js filename="Terminal" copy
-update variableMappingField fromContext:"..."
-update variableMappingField fromField:"sectionField | grid/field"
-update variableMappingField fromVar:"Symbol"
-update variableMappingField fromDerived:"Symbol"
-update variableMappingField to:"sectionField | grid/field"
-update variableMappingField primary:"true | false | yes | no"
+ensure variableMappingField primary:"true | false | yes | no"
+ensure variableMappingField to:"sectionField | grid/field" fromContext:"..."
+ensure variableMappingField to:"sectionField | grid/field" fromField:"sectionField | grid/field"
+ensure variableMappingField to:"sectionField | grid/field" fromVar:"Symbol"
+ensure variableMappingField to:"sectionField | grid/field" fromDerived:"Symbol"
 ```
 
 **`fromContext`**
  : caller.handle | caller.entUserId | ent.name | row.CreatedBy | ...
 
 
-## ensure
+## update
 
 ```js filename="Terminal" copy
-ensure variableMappingField fromContext:"..."
-ensure variableMappingField fromField:"sectionField | grid/field"
-ensure variableMappingField fromVar:"Symbol"
-ensure variableMappingField fromDerived:"Symbol"
-ensure variableMappingField to:"sectionField | grid/field"
-ensure variableMappingField primary:"true | false | yes | no"
+update variableMappingField primary:"true | false | yes | no"
+update variableMappingField to:"sectionField | grid/field" fromContext:"..."
+update variableMappingField to:"sectionField | grid/field" fromField:"sectionField | grid/field"
+update variableMappingField to:"sectionField | grid/field" fromVar:"Symbol"
+update variableMappingField to:"sectionField | grid/field" fromDerived:"Symbol"
 ```
 
 **`fromContext`**

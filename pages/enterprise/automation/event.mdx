@@ -4,27 +4,6 @@ title: Event
 
 # automationEvent
 
-## remove
-
-```js filename="Terminal" copy
-remove automationEvent AutomationEventName
-```
-
-
-## print
-
-```js filename="Terminal" copy
-print automationEvent AutomationEventName
-```
-
-
-## goTo
-
-
-```js filename="Terminal" copy
-goto automationEvent AutomationEventName
-```
-
 ## ensure
 
 ### scheduled
@@ -43,6 +22,13 @@ ensure automationEvent AutomationEventName type:"..."
 ### webhook
 ```js filename="Terminal" copy
 ensure automationEvent AutomationEventName type:"onFire"
+```
+
+
+## remove
+
+```js filename="Terminal" copy
+remove automationEvent AutomationEventName
 ```
 
 
@@ -81,4 +67,18 @@ update automationEvent AutomationEventName condition:"..."
 **`condition`**
  : null | condition type variable | condition value
 
+
+## print
+
+```js filename="Terminal" copy
+print automationEvent AutomationEventName
+```
+
+
+## goTo
+
+
+```js filename="Terminal" copy
+goto automationEvent AutomationEventName
+```
 

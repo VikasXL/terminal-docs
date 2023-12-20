@@ -21,31 +21,7 @@ remove variable VariableName
 ```
 
 
-## print
-
-```js filename="Terminal" copy
-print variable VariableName
-```
-
-
-## goTo
-
-
-```js filename="Terminal" copy
-goto variable VariableName
-```
-
 ## update
-
-### any
-```js filename="Terminal" copy
-update variable VariableName name:"Symbol"
-update variable VariableName label:"null | @null | @empty | text"
-update variable VariableName description:"null | @null | @empty | paragraph"
-update variable VariableName filterTags:"null | @empty | text1, text2, ..."
-update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
-update variable VariableName value:"true | false | yes | no"
-```
 
 ### bool
 ```js filename="Terminal" copy
@@ -181,7 +157,7 @@ update variable VariableName value:"..."
 ```
 
 **`value`**
- : null | dd/MM/yyyy | lastQuarter | lastWeek | lastYear | nextQuarter | nextWeek | nextYear | now | tomorrow | yesterday
+ : null | dd/MM/yyyy | lastQuarter | lastWeek | lastMonth | lastYear | nextQuarter | nextWeek | nextMonth | nextYear | now | tomorrow | yesterday | startOfWeek | startOfMonth | startOfYear | endOfWeek | endOfMonth | endOfYear
 
 ### dateTime
 ```js filename="Terminal" copy
@@ -194,7 +170,7 @@ update variable VariableName value:"..."
 ```
 
 **`value`**
- : null | lastQuarter | lastWeek | lastYear | nextQuarter | nextWeek | nextYear | now | tomorrow | yesterday
+ : null | dd/MM/yyyy hh:mm:ss am/pm | lastQuarter | lastWeek | lastMonth | lastYear | nextQuarter | nextWeek | nextMonth | nextYear | now | tomorrow | yesterday | startOfWeek | startOfMonth | startOfYear | endOfWeek | endOfMonth | endOfYear
 
 ### day
 ```js filename="Terminal" copy
@@ -333,7 +309,7 @@ update variable VariableName inputArgs:"..."
 ```
 
 **`inputArgs`**
- : A1:ArgType, A2?:ArgType ArgType: number | text | numberArray | textArray
+ : A1: ArgType, A2?: ArgType (ArgType: number | text | numberArray | textArray)
 
 ### html
 ```js filename="Terminal" copy
@@ -441,12 +417,12 @@ update variable VariableName label:"null | @null | @empty | text"
 update variable VariableName description:"null | @null | @empty | paragraph"
 update variable VariableName filterTags:"null | @empty | text1, text2, ..."
 update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+update variable VariableName fromPlugin:"null | @null | @empty | fromPlugin"
 update variable VariableName fromForm:"null | Symbol"
 update variable VariableName fromGrid:"null | Symbol"
-update variable VariableName fromPlugin:"null | @null | @empty | fromPlugin"
+update variable VariableName toPlugin:"null | @null | @empty | toPlugin"
 update variable VariableName toForm:"null | Symbol"
 update variable VariableName toGrid:"null | Symbol"
-update variable VariableName toPlugin:"null | @null | @empty | toPlugin"
 ```
 
 ### mobileNumber
@@ -515,21 +491,6 @@ update variable VariableName filterTags:"null | @empty | text1, text2, ..."
 update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
 update variable VariableName value:"null | star | heart | thumbs"
 ```
-
-### scheduler
-```js filename="Terminal" copy
-update variable VariableName name:"Symbol"
-update variable VariableName label:"null | @null | @empty | text"
-update variable VariableName description:"null | @null | @empty | paragraph"
-update variable VariableName filterTags:"null | @empty | text1, text2, ..."
-update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
-update variable VariableName startDateTime:"null | dd/MM/yyyy hh:mm:ss am/pm"
-update variable VariableName timeZone:"null | @null | @empty | Timezone"
-update variable VariableName repeatFrequencyKind:"..."
-```
-
-**`repeatFrequencyKind`**
- : minutes | hours | days | weeks | months | years
 
 ### sequence
 ```js filename="Terminal" copy
@@ -662,4 +623,150 @@ update variable VariableName doNotShowValueToAdmin:"true | false | yes | no"
 **`dataSource`**
  : null | setOfText type variable | setOfText value
 
+
+### scheduler
+#### days
+```js filename="Terminal" copy
+update variable VariableName name:"Symbol"
+update variable VariableName label:"null | @null | @empty | text"
+update variable VariableName description:"null | @null | @empty | paragraph"
+update variable VariableName filterTags:"null | @empty | text1, text2, ..."
+update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+update variable VariableName startDateTime:"null | dd/MM/yyyy hh:mm:ss am/pm"
+update variable VariableName timeZone:"null | @null | @empty | Timezone"
+update variable VariableName repeatFrequencyKind:"..."
+update variable VariableName frequency:"null | long1, long2, ..."
+update variable VariableName excludeCalendarVars:"..."
+update variable VariableName endDateTime:"null | dd/MM/yyyy hh:mm:ss am/pm"
+update variable VariableName setOfTime:"null | @empty | HH:MM:SS, HH:MM:SS, ..."
+```
+
+**`repeatFrequencyKind`**
+ : minutes | hours | days | weeks | months | years
+
+**`excludeCalendarVars`**
+ : null | @empty | CalendarVariable1, CalendarVariable2, ...
+
+#### hours
+```js filename="Terminal" copy
+update variable VariableName name:"Symbol"
+update variable VariableName label:"null | @null | @empty | text"
+update variable VariableName description:"null | @null | @empty | paragraph"
+update variable VariableName filterTags:"null | @empty | text1, text2, ..."
+update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+update variable VariableName startDateTime:"null | dd/MM/yyyy hh:mm:ss am/pm"
+update variable VariableName timeZone:"null | @null | @empty | Timezone"
+update variable VariableName repeatFrequencyKind:"..."
+```
+
+**`repeatFrequencyKind`**
+ : minutes | hours | days | weeks | months | years
+
+#### minutes
+```js filename="Terminal" copy
+update variable VariableName name:"Symbol"
+update variable VariableName label:"null | @null | @empty | text"
+update variable VariableName description:"null | @null | @empty | paragraph"
+update variable VariableName filterTags:"null | @empty | text1, text2, ..."
+update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+update variable VariableName startDateTime:"null | dd/MM/yyyy hh:mm:ss am/pm"
+update variable VariableName timeZone:"null | @null | @empty | Timezone"
+update variable VariableName repeatFrequencyKind:"..."
+```
+
+**`repeatFrequencyKind`**
+ : minutes | hours | days | weeks | months | years
+
+#### months
+```js filename="Terminal" copy
+update variable VariableName name:"Symbol"
+update variable VariableName label:"null | @null | @empty | text"
+update variable VariableName description:"null | @null | @empty | paragraph"
+update variable VariableName filterTags:"null | @empty | text1, text2, ..."
+update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+update variable VariableName startDateTime:"null | dd/MM/yyyy hh:mm:ss am/pm"
+update variable VariableName timeZone:"null | @null | @empty | Timezone"
+update variable VariableName repeatFrequencyKind:"..."
+update variable VariableName frequency:"null | long1, long2, ..."
+update variable VariableName excludeCalendarVars:"..."
+update variable VariableName endDateTime:"null | dd/MM/yyyy hh:mm:ss am/pm"
+update variable VariableName dateOccurrence:"custom | first | last"
+update variable VariableName customDates:"null | @empty | integer1, integer2, ..."
+update variable VariableName setOfTime:"null | @empty | HH:MM:SS, HH:MM:SS, ..."
+```
+
+**`repeatFrequencyKind`**
+ : minutes | hours | days | weeks | months | years
+
+**`excludeCalendarVars`**
+ : null | @empty | CalendarVariable1, CalendarVariable2, ...
+
+#### weeks
+```js filename="Terminal" copy
+update variable VariableName name:"Symbol"
+update variable VariableName label:"null | @null | @empty | text"
+update variable VariableName description:"null | @null | @empty | paragraph"
+update variable VariableName filterTags:"null | @empty | text1, text2, ..."
+update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+update variable VariableName startDateTime:"null | dd/MM/yyyy hh:mm:ss am/pm"
+update variable VariableName timeZone:"null | @null | @empty | Timezone"
+update variable VariableName repeatFrequencyKind:"..."
+update variable VariableName frequency:"null | long1, long2, ..."
+update variable VariableName excludeCalendarVars:"..."
+update variable VariableName endDateTime:"null | dd/MM/yyyy hh:mm:ss am/pm"
+update variable VariableName setOfTime:"null | @empty | HH:MM:SS, HH:MM:SS, ..."
+update variable VariableName setOfRepeatDay:"..."
+```
+
+**`repeatFrequencyKind`**
+ : minutes | hours | days | weeks | months | years
+
+**`excludeCalendarVars`**
+ : null | @empty | CalendarVariable1, CalendarVariable2, ...
+
+**`setOfRepeatDay`**
+ : null | @empty | sunday, monday, tuesday, wednesday, thursday, friday, saturday
+
+#### years
+```js filename="Terminal" copy
+update variable VariableName name:"Symbol"
+update variable VariableName label:"null | @null | @empty | text"
+update variable VariableName description:"null | @null | @empty | paragraph"
+update variable VariableName filterTags:"null | @empty | text1, text2, ..."
+update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
+update variable VariableName startDateTime:"null | dd/MM/yyyy hh:mm:ss am/pm"
+update variable VariableName timeZone:"null | @null | @empty | Timezone"
+update variable VariableName repeatFrequencyKind:"..."
+update variable VariableName frequency:"null | long1, long2, ..."
+update variable VariableName excludeCalendarVars:"..."
+update variable VariableName endDateTime:"null | dd/MM/yyyy hh:mm:ss am/pm"
+update variable VariableName setOfMonth:"..."
+update variable VariableName dateOccurrence:"custom | first | last"
+update variable VariableName customDates:"null | @empty | integer1, integer2, ..."
+update variable VariableName setOfTime:"null | @empty | HH:MM:SS, HH:MM:SS, ..."
+```
+
+**`repeatFrequencyKind`**
+ : minutes | hours | days | weeks | months | years
+
+**`excludeCalendarVars`**
+ : null | @empty | CalendarVariable1, CalendarVariable2, ...
+
+**`setOfMonth`**
+ : null | @empty | January, February, March, April, May, June, July, August, September, October, November, December
+
+
+## print
+
+```js filename="Terminal" copy
+print variable VariableName
+```
+
+
+## goTo
+
+
+```js filename="Terminal" copy
+goto variable VariableName
+```
 
