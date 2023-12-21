@@ -17,7 +17,7 @@ ensure automationStep AutomationStepName kind:"..."
 ```
 
 **`kind`**
- : callPlugin | callReport | insertIntoSpreadsheet | removeFromSpreadsheet | updateSpreadsheet | calculateFormulas | forwardToGroups | forwardToUsers | partitionSend | removeRow | updateField | updateLogNumber | removeField | returnEvent | terminate | generateDeeplink
+ : callPlugin | callReport | insertIntoSpreadsheet | removeFromSpreadsheet | updateSpreadsheet | calculateFormulas | forwardToGroups | forwardToUsers | messageSend | partitionSend | removeRow | updateField | updateLogNumber | removeField | returnEvent | terminate | generateDeeplink
 
 ### webhook
 ```js filename="Terminal" copy
@@ -271,6 +271,35 @@ update automationStep AutomationStepName targetToSourceMapping:"..."
 
 **`targetToSourceMapping`**
  : null | mapping type variable | mapping value
+
+#### messageSend
+```js filename="Terminal" copy
+update automationStep AutomationStepName name:"Symbol"
+update automationStep AutomationStepName description:"null | @null | @empty | text"
+update automationStep AutomationStepName secondary:"null | @null | @empty | text"
+update automationStep AutomationStepName condition:"..."
+update automationStep AutomationStepName terminateKind:"terminate | resume | setField"
+update automationStep AutomationStepName filterTags:"null | @empty | text1, text2, ..."
+update automationStep AutomationStepName terminateField:"null | Symbol"
+update automationStep AutomationStepName senderField:"null | Symbol"
+update automationStep AutomationStepName senderRole:"null | Symbol"
+update automationStep AutomationStepName conjunction:"or | and"
+update automationStep AutomationStepName roles:"..."
+update automationStep AutomationStepName userField:"null | Symbol"
+update automationStep AutomationStepName grid:"null | Symbol"
+update automationStep AutomationStepName gridUserField:"null | Symbol"
+update automationStep AutomationStepName sendAsComment:"true | false | yes | no"
+update automationStep AutomationStepName message:"..."
+```
+
+**`condition`**
+ : null | condition type variable | condition value
+
+**`roles`**
+ : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+
+**`message`**
+ : null | paragraph type variable | paragraph value
 
 #### partitionSend
 ```js filename="Terminal" copy
