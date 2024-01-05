@@ -8,12 +8,16 @@ title: Action
 
 ```js filename="Terminal" copy
 ensure groupAction action:"Symbol" roles:"..."
+ensure groupAction action:"Symbol" notAllowedRoles:"..."
 ensure groupAction action:"Symbol" menuGroup:"null | @null | @empty | text"
 ensure groupAction action:"Symbol" deviceSizes:"..."
 ```
 
 **`roles`**
  : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+
+**`notAllowedRoles`**
+ : null | @empty | Roles1, Roles2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
 **`deviceSizes`**
  : null | @empty | mobile, tablet, laptop, desktop

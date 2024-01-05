@@ -43,6 +43,14 @@ update enterprise allFilterTags:"null | @empty | text1, text2, ..."
  : null | @null | @empty | displayDateFormat
 
 
+## goTo
+
+```js filename="Terminal" copy
+goTo enterprise name:"text"
+goTo enterprise entId:"entId"
+```
+
+
 ## print
 
 ```js filename="Terminal" copy
@@ -63,18 +71,4 @@ deploy enterprise
 revertToDeploy enterprise
 ```
 
-
-## goTo
-
-
-```js filename="Terminal" copy
-goto enterprise name:"entName"
-goto enterprise entId:"entId"
-```
-
-**`name`**
- : entName
-
-**`entId`**
- : entId
 

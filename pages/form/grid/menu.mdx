@@ -8,6 +8,7 @@ title: Menu
 
 ```js filename="Terminal" copy
 ensure gridMenu action:"Symbol" roles:"..."
+ensure gridMenu action:"Symbol" notAllowedRoles:"..."
 ensure gridMenu action:"Symbol" menuGroup:"null | @null | @empty | text"
 ensure gridMenu action:"Symbol" deviceSizes:"..."
 ensure gridMenu action:"Symbol" showMessageTooltip:"true | false | yes | no"
@@ -15,6 +16,9 @@ ensure gridMenu action:"Symbol" showMessageTooltip:"true | false | yes | no"
 
 **`roles`**
  : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+
+**`notAllowedRoles`**
+ : null | @empty | Roles1, Roles2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
 **`deviceSizes`**
  : null | @empty | mobile, tablet, laptop, desktop

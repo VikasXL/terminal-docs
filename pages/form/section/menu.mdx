@@ -8,6 +8,7 @@ title: Menu
 
 ```js filename="Terminal" copy
 ensure sectionMenu action:"Symbol" roles:"..."
+ensure sectionMenu action:"Symbol" notAllowedRoles:"..."
 ensure sectionMenu action:"Symbol" menuGroup:"null | @null | @empty | text"
 ensure sectionMenu action:"Symbol" deviceSizes:"..."
 ensure sectionMenu action:"Symbol" showMessageTooltip:"true | false | yes | no"
@@ -15,6 +16,9 @@ ensure sectionMenu action:"Symbol" showMessageTooltip:"true | false | yes | no"
 
 **`roles`**
  : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+
+**`notAllowedRoles`**
+ : null | @empty | Roles1, Roles2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
 
 **`deviceSizes`**
  : null | @empty | mobile, tablet, laptop, desktop
