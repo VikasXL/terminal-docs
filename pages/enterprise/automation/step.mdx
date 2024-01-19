@@ -53,19 +53,19 @@ update automationStep AutomationStepName errorField:"null | SectionField | Grid/
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
 
 **`pluginInputMapping`**
- : null | Variable of type: mapping | mapping value
+ : null | Variable of type: mapping | Variable value of type: mapping
 
 **`errorRetryCount`**
- : null | Variable of type: number | number value
+ : null | Variable of type: number | Variable value of type: number
 
 **`errorRetryDuration`**
- : null | Variable of type: duration | duration value
+ : null | Variable of type: duration | Variable value of type: duration
 
 #### insertIntoSpreadsheet
 ```js filename="Terminal" copy
@@ -80,13 +80,13 @@ update automationStep AutomationStepName targetFormMapping:"..."
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
 
 **`targetFormMapping`**
- : null | Variable of type: mapping | mapping value
+ : null | Variable of type: mapping | Variable value of type: mapping
 
 ### spreadsheet
 #### calculateFormulas
@@ -104,13 +104,13 @@ update automationStep AutomationStepName newFormula:"null | @null | @empty | for
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
 
 **`newCondition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 #### callPlugin
 ```js filename="Terminal" copy
@@ -133,25 +133,25 @@ update automationStep AutomationStepName errorField:"null | SectionField | Grid/
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
 
 **`sourceGridFilter`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`pluginInputMapping`**
- : null | Variable of type: mapping | mapping value
+ : null | Variable of type: mapping | Variable value of type: mapping
 
 **`pluginOutputMapping`**
- : null | Variable of type: mapping | mapping value
+ : null | Variable of type: mapping | Variable value of type: mapping
 
 **`errorRetryCount`**
- : null | Variable of type: number | number value
+ : null | Variable of type: number | Variable value of type: number
 
 **`errorRetryDuration`**
- : null | Variable of type: duration | duration value
+ : null | Variable of type: duration | Variable value of type: duration
 
 #### callReport
 ```js filename="Terminal" copy
@@ -174,28 +174,28 @@ update automationStep AutomationStepName errorField:"null | SectionField | Grid/
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
 
 **`scheduler`**
- : null | Variable of type: scheduler | scheduler value
+ : null | Variable of type: scheduler | Variable value of type: scheduler
 
 **`sourceGridFilter`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`reportInputMappingVar`**
- : null | Variable of type: mapping | mapping value
+ : null | Variable of type: mapping | Variable value of type: mapping
 
 **`reportOutputMapping`**
- : null | Variable of type: mapping | mapping value
+ : null | Variable of type: mapping | Variable value of type: mapping
 
 **`errorRetryCountVar`**
- : null | Variable of type: number | number value
+ : null | Variable of type: number | Variable value of type: number
 
 **`errorRetryDuration`**
- : null | Variable of type: duration | duration value
+ : null | Variable of type: duration | Variable value of type: duration
 
 #### forwardToGroups
 ```js filename="Terminal" copy
@@ -212,7 +212,7 @@ update automationStep AutomationStepName senderRole:"..."
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
@@ -239,7 +239,7 @@ update automationStep AutomationStepName gridUserField:"null | SectionField | Gr
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
@@ -263,7 +263,7 @@ update automationStep AutomationStepName spreadsheetEditorAction:"null | Action"
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
@@ -285,19 +285,19 @@ update automationStep AutomationStepName targetToSourceMapping:"..."
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
 
 **`sourceGridFilter`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`sourceToTargetMapping`**
- : null | Variable of type: mapping | mapping value
+ : null | Variable of type: mapping | Variable value of type: mapping
 
 **`targetToSourceMapping`**
- : null | Variable of type: mapping | mapping value
+ : null | Variable of type: mapping | Variable value of type: mapping
 
 #### messageSend
 ```js filename="Terminal" copy
@@ -320,7 +320,7 @@ update automationStep AutomationStepName message:"..."
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
@@ -329,7 +329,7 @@ update automationStep AutomationStepName message:"..."
  : null | @empty | $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, Role1, Role2, ...
 
 **`message`**
- : null | Variable of type: paragraph | paragraph value
+ : null | Variable of type: paragraph | Variable value of type: paragraph
 
 #### partitionSend
 ```js filename="Terminal" copy
@@ -345,7 +345,7 @@ update automationStep AutomationStepName groups:"null | @empty | Group1, Group2,
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
@@ -363,7 +363,7 @@ update automationStep AutomationStepName removeField:"null | SectionField | Grid
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
@@ -384,13 +384,13 @@ update automationStep AutomationStepName rowIdField:"null | SectionField | Grid/
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
 
 **`sourceGridFilter`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 #### removeRow
 ```js filename="Terminal" copy
@@ -404,7 +404,7 @@ update automationStep AutomationStepName terminateField:"null | SectionField | G
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
@@ -421,7 +421,7 @@ update automationStep AutomationStepName terminateField:"null | SectionField | G
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
@@ -438,7 +438,7 @@ update automationStep AutomationStepName terminateField:"null | SectionField | G
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
@@ -457,7 +457,7 @@ update automationStep AutomationStepName value:"null | @null | @empty | argBinde
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
@@ -479,7 +479,7 @@ update automationStep AutomationStepName value:"null | @null | @empty | value"
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
@@ -501,16 +501,16 @@ update automationStep AutomationStepName sourceToTargetMapping:"..."
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
 
 **`sourceGridFilter`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`sourceToTargetMapping`**
- : null | Variable of type: mapping | mapping value
+ : null | Variable of type: mapping | Variable value of type: mapping
 
 ### webhook
 #### insertIntoSpreadsheet
@@ -527,13 +527,13 @@ update automationStep AutomationStepName targetFormMapping:"..."
 ```
 
 **`condition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`filterTags`**
  : null | @empty | FilterTag1, FilterTag2, ...
 
 **`targetFormMapping`**
- : null | Variable of type: mapping | mapping value
+ : null | Variable of type: mapping | Variable value of type: mapping
 
 
 ## goTo

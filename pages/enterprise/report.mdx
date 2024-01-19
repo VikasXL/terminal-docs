@@ -55,10 +55,10 @@ update report ReportName outputFormMapping:"..."
  : null | @empty | FilterTag1, FilterTag2, ...
 
 **`inputFormMapping`**
- : null | Variable of type: mapping | mapping value
+ : null | Variable of type: mapping | Variable value of type: mapping
 
 **`outputFormMapping`**
- : null | Variable of type: mapping | mapping value
+ : null | Variable of type: mapping | Variable value of type: mapping
 
 ### plugin
 ```js filename="Terminal" copy
@@ -68,8 +68,8 @@ update report ReportName description:"null | @null | @empty | paragraph"
 update report ReportName filterTags:"..."
 update report ReportName inputForm:"null | Form"
 update report ReportName outputForm:"null | Form"
-update report ReportName pluginName:"null | @null | @empty | pluginName"
-update report ReportName pluginApi:"null | pluginApi"
+update report ReportName pluginName:"entPlugin"
+update report ReportName pluginApi:"pluginApi"
 update report ReportName inputFormMapping:"..."
 update report ReportName outputFormMapping:"..."
 ```
@@ -78,10 +78,10 @@ update report ReportName outputFormMapping:"..."
  : null | @empty | FilterTag1, FilterTag2, ...
 
 **`inputFormMapping`**
- : null | Variable of type: mapping | mapping value
+ : null | Variable of type: mapping | Variable value of type: mapping
 
 **`outputFormMapping`**
- : null | Variable of type: mapping | mapping value
+ : null | Variable of type: mapping | Variable value of type: mapping
 
 ### query
 ```js filename="Terminal" copy
@@ -118,10 +118,10 @@ update report ReportName outputFormMapping:"..."
  : null | @empty | FilterTag1, FilterTag2, ...
 
 **`filterCondition`**
- : null | Variable of type: condition | condition value
+ : null | Variable of type: condition | Variable value of type: condition
 
 **`outputFormMapping`**
- : null | Variable of type: mapping | mapping value
+ : null | Variable of type: mapping | Variable value of type: mapping
 
 
 ## print

@@ -7,7 +7,7 @@ title: Layout
 ## ensure
 
 ```js filename="Terminal" copy
-ensure spreadsheetLayout SpreadsheetLayoutName kind:"card | kanban | list | table"
+ensure spreadsheetLayout SpreadsheetLayoutName kind:"card | kanban | list | table | calendar"
 ```
 
 
@@ -19,6 +19,27 @@ remove spreadsheetLayout SpreadsheetLayoutName
 
 
 ## update
+
+### calendar
+```js filename="Terminal" copy
+update spreadsheetLayout SpreadsheetLayoutName name:"null | Symbol"
+update spreadsheetLayout SpreadsheetLayoutName label:"null | @null | @empty | text"
+update spreadsheetLayout SpreadsheetLayoutName description:"null | @null | @empty | paragraph"
+update spreadsheetLayout SpreadsheetLayoutName toolTipField:"null | SectionField | Grid/Field"
+update spreadsheetLayout SpreadsheetLayoutName bkgColorField:"null | SectionField | Grid/Field"
+update spreadsheetLayout SpreadsheetLayoutName allowToSwitchLayouts:"..."
+update spreadsheetLayout SpreadsheetLayoutName toolTipFieldId:"null | SectionField | Grid/Field"
+update spreadsheetLayout SpreadsheetLayoutName dateFieldId:"null | SectionField | Grid/Field"
+update spreadsheetLayout SpreadsheetLayoutName colorFieldId:"null | SectionField | Grid/Field"
+update spreadsheetLayout SpreadsheetLayoutName showFields:"..."
+update spreadsheetLayout SpreadsheetLayoutName titleField:"null | SectionField | Grid/Field"
+```
+
+**`allowToSwitchLayouts`**
+ : null | @empty | SpreadsheetLayout1, SpreadsheetLayout2, ...
+
+**`showFields`**
+ : null | @empty | SectionField, Grid/Field, ...
 
 ### card
 ```js filename="Terminal" copy

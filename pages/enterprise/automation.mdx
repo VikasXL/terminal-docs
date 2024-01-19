@@ -11,6 +11,22 @@ ensure automation AutomationName kind:"scheduled | spreadsheet | webhook"
 ```
 
 
+### scheduled
+```js filename="Terminal" copy
+ensure automation AutomationName kind:"scheduled | spreadsheet | webhook" scheduler:"Variable of type: scheduler"
+```
+
+### spreadsheet
+```js filename="Terminal" copy
+ensure automation AutomationName kind:"scheduled | spreadsheet | webhook" spreadsheet:"Spreadsheet"
+```
+
+### webhook
+```js filename="Terminal" copy
+ensure automation AutomationName kind:"scheduled | spreadsheet | webhook" pluginName:"entPlugin" pluginApi:"pluginApi"
+```
+
+
 ## remove
 
 ```js filename="Terminal" copy

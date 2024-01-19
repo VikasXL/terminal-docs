@@ -412,7 +412,7 @@ update variable VariableName kind:"general | youtube"
  : null | @empty | FilterTag1, FilterTag2, ...
 
 **`color`**
- : null | Variable of type: color | color value
+ : null | Variable of type: color | Variable value of type: color
 
 ### icon
 ```js filename="Terminal" copy
@@ -519,10 +519,10 @@ update variable VariableName label:"null | @null | @empty | text"
 update variable VariableName description:"null | @null | @empty | paragraph"
 update variable VariableName filterTags:"..."
 update variable VariableName deploy:"requiredOnDeploy | fixedOnDeploy"
-update variable VariableName fromPlugin:"null | @null | @empty | fromPlugin"
+update variable VariableName fromPlugin:"null | entPlugin"
 update variable VariableName fromForm:"null | Form"
 update variable VariableName fromGrid:"null | Grid"
-update variable VariableName toPlugin:"null | @null | @empty | toPlugin"
+update variable VariableName toPlugin:"null | entPlugin"
 update variable VariableName toForm:"null | Form"
 update variable VariableName toGrid:"null | Grid"
 ```
@@ -775,7 +775,7 @@ update variable VariableName doNotShowValueToAdmin:"true | false | yes | no"
  : null | @empty | FilterTag1, FilterTag2, ...
 
 **`dataSource`**
- : null | Variable of type: setOfText | setOfText value
+ : null | Variable of type: setOfText | Variable value of type: setOfText
 
 
 ### scheduler

@@ -11,7 +11,7 @@ ensure gridLayout GridLayoutName kind:"..."
 ```
 
 **`kind`**
- : card | list | map | table | xyChart | kanban
+ : card | list | map | table | xyChart | kanban | calendar
 
 
 ## remove
@@ -22,6 +22,27 @@ remove gridLayout GridLayoutName
 
 
 ## update
+
+### calendar
+```js filename="Terminal" copy
+update gridLayout GridLayoutName name:"null | Symbol"
+update gridLayout GridLayoutName label:"null | @null | @empty | text"
+update gridLayout GridLayoutName description:"null | @null | @empty | paragraph"
+update gridLayout GridLayoutName toolTipField:"null | SectionField | Grid/Field"
+update gridLayout GridLayoutName bkgColorField:"null | SectionField | Grid/Field"
+update gridLayout GridLayoutName allowToSwitchLayouts:"..."
+update gridLayout GridLayoutName toolTipFieldId:"null | SectionField | Grid/Field"
+update gridLayout GridLayoutName dateFieldId:"null | SectionField | Grid/Field"
+update gridLayout GridLayoutName colorFieldId:"null | SectionField | Grid/Field"
+update gridLayout GridLayoutName showFields:"..."
+update gridLayout GridLayoutName titleField:"null | SectionField | Grid/Field"
+```
+
+**`allowToSwitchLayouts`**
+ : null | @empty | Grid1Layout1, Grid2Layout2, ...
+
+**`showFields`**
+ : null | @empty | SectionField, Grid/Field, ...
 
 ### card
 ```js filename="Terminal" copy
@@ -35,7 +56,7 @@ update gridLayout GridLayoutName groupByField:"null | SectionField | Grid/Field"
 ```
 
 **`allowToSwitchLayouts`**
- : null | @empty | GridLayout1, GridLayout2, ...
+ : null | @empty | Grid1Layout1, Grid2Layout2, ...
 
 ### kanban
 ```js filename="Terminal" copy
@@ -57,7 +78,7 @@ update gridLayout GridLayoutName swimLaneColors:"..."
 ```
 
 **`allowToSwitchLayouts`**
- : null | @empty | GridLayout1, GridLayout2, ...
+ : null | @empty | Grid1Layout1, Grid2Layout2, ...
 
 **`fontSize`**
  : body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4
@@ -83,7 +104,7 @@ update gridLayout GridLayoutName groupByField:"null | SectionField | Grid/Field"
 ```
 
 **`allowToSwitchLayouts`**
- : null | @empty | GridLayout1, GridLayout2, ...
+ : null | @empty | Grid1Layout1, Grid2Layout2, ...
 
 ### map
 ```js filename="Terminal" copy
@@ -102,7 +123,7 @@ update gridLayout GridLayoutName strokeField:"null | Symbol"
 ```
 
 **`allowToSwitchLayouts`**
- : null | @empty | GridLayout1, GridLayout2, ...
+ : null | @empty | Grid1Layout1, Grid2Layout2, ...
 
 **`groupByField`**
  : null | SectionField | Grid/Field | $CreatedBy | $CreatedOn | $RowId | $RowOrder | $UpdatedBy | $UpdatedOn
@@ -126,10 +147,10 @@ update gridLayout GridLayoutName style:"defaultStyle"
 ```
 
 **`allowToSwitchLayouts`**
- : null | @empty | GridLayout1, GridLayout2, ...
+ : null | @empty | Grid1Layout1, Grid2Layout2, ...
 
 **`pageSize`**
- : null | Variable of type: number | number value
+ : null | Variable of type: number | Variable value of type: number
 
 **`showFields`**
  : null | @empty | SectionField, Grid/Field, ...
@@ -159,10 +180,10 @@ update gridLayout GridLayoutName yFieldColors:"..."
 ```
 
 **`allowToSwitchLayouts`**
- : null | @empty | GridLayout1, GridLayout2, ...
+ : null | @empty | Grid1Layout1, Grid2Layout2, ...
 
 **`xFieldColor`**
- : null | Variable of type: color | color value
+ : null | Variable of type: color | Variable value of type: color
 
 **`chartType`**
  : barGraph | lineChart | pieChart | doughnut | scatterPlot

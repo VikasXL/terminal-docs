@@ -189,7 +189,7 @@ update deployVar DeployVarName kind:"general | youtube"
 ```
 
 **`color`**
- : null | Variable of type: color | color value
+ : null | Variable of type: color | Variable value of type: color
 
 ### icon
 ```js filename="Terminal" copy
@@ -237,10 +237,10 @@ update deployVar DeployVarName value:"..."
 
 ### mapping
 ```js filename="Terminal" copy
-update deployVar DeployVarName fromPlugin:"null | @null | @empty | fromPlugin"
+update deployVar DeployVarName fromPlugin:"null | entPlugin"
 update deployVar DeployVarName fromForm:"null | Form"
 update deployVar DeployVarName fromGrid:"null | Grid"
-update deployVar DeployVarName toPlugin:"null | @null | @empty | toPlugin"
+update deployVar DeployVarName toPlugin:"null | entPlugin"
 update deployVar DeployVarName toForm:"null | Form"
 update deployVar DeployVarName toGrid:"null | Grid"
 ```
@@ -354,7 +354,7 @@ update deployVar DeployVarName doNotShowValueToAdmin:"true | false | yes | no"
 ```
 
 **`dataSource`**
- : null | Variable of type: setOfText | setOfText value
+ : null | Variable of type: setOfText | Variable value of type: setOfText
 
 
 ### scheduler
