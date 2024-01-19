@@ -10,10 +10,14 @@ title: Permission
 ensure formPermission default:"invisible | read | writeOnce | write"
 ensure formPermission allowToPrintForm:"true | false | yes | no"
 ensure formPermission commentRoles:"..."
+ensure formPermission commentReadOnlyRoles:"..."
 ensure formPermission role:"..." permission:"invisible | read | writeOnce | write"
 ```
 
 **`commentRoles`**
+ : null | @empty | $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, Role1, Role2, ...
+
+**`commentReadOnlyRoles`**
  : null | @empty | $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, Role1, Role2, ...
 
 **`role`**
