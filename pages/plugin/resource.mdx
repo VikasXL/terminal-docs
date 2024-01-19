@@ -24,21 +24,27 @@ remove pluginResource type:"jar | rpc | dev"
 ```js filename="Terminal" copy
 update pluginResource type:"jar | rpc | dev"
 update pluginResource pluginConfigForm:"..."
-update pluginResource packageNameVar:"null | text type variable | text value"
+update pluginResource packageNameVar:"..."
 ```
 
 **`pluginConfigForm`**
- : null | Form | $FormMapOfOptions | $FormPickTree | $FormSetOfUser | $FormPluginConfig ...
+ : null | Form | $FormMapOfOptions | $FormPickTree | $FormSetOfUser | $FormPluginConfig
+
+**`packageNameVar`**
+ : null | Variable of type: text | text value
 
 ### jar
 ```js filename="Terminal" copy
 update pluginResource type:"jar | rpc | dev"
 update pluginResource pluginConfigForm:"..."
-update pluginResource packageNameVar:"null | text type variable | text value"
+update pluginResource packageNameVar:"..."
 ```
 
 **`pluginConfigForm`**
- : null | Form | $FormMapOfOptions | $FormPickTree | $FormSetOfUser | $FormPluginConfig ...
+ : null | Form | $FormMapOfOptions | $FormPickTree | $FormSetOfUser | $FormPluginConfig
+
+**`packageNameVar`**
+ : null | Variable of type: text | text value
 
 ### rpc
 ```js filename="Terminal" copy
@@ -47,7 +53,7 @@ update pluginResource pluginConfigForm:"..."
 ```
 
 **`pluginConfigForm`**
- : null | Form | $FormMapOfOptions | $FormPickTree | $FormSetOfUser | $FormPluginConfig ...
+ : null | Form | $FormMapOfOptions | $FormPickTree | $FormSetOfUser | $FormPluginConfig
 
 
 ## print

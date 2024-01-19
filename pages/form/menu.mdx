@@ -7,18 +7,19 @@ title: Menu
 ## ensure
 
 ```js filename="Terminal" copy
-ensure formMenu action:"Symbol" roles:"..."
-ensure formMenu action:"Symbol" notAllowedRoles:"..."
-ensure formMenu action:"Symbol" menuGroup:"null | @null | @empty | text"
-ensure formMenu action:"Symbol" deviceSizes:"..."
-ensure formMenu action:"Symbol" showMessageTooltip:"true | false | yes | no"
+ensure formMenu action:"Action" roles:"..."
+ensure formMenu action:"Action" notAllowedRoles:"..."
+ensure formMenu action:"Action" menuGroup:"null | @null | @empty | text"
+ensure formMenu action:"Action" deviceSizes:"..."
+ensure formMenu action:"Action" showMessageTooltip:"true | false | yes | no"
+ensure formMenu action:"Action" mappingVar:"null | Variable of type: mapping"
 ```
 
 **`roles`**
- : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, Role1, Role2, ...
 
 **`notAllowedRoles`**
- : null | @empty | Roles1, Roles2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, Role1, Role2, ...
 
 **`deviceSizes`**
  : null | @empty | mobile, tablet, laptop, desktop

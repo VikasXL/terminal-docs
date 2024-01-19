@@ -23,27 +23,24 @@ remove driveSheet DriveSheetName
 ```js filename="Terminal" copy
 update driveSheet DriveSheetName driveType:"master | partitioned"
 update driveSheet DriveSheetName roles:"null | @empty | Role1, Role2, ..."
-update driveSheet DriveSheetName mediaRoles:"..."
+update driveSheet DriveSheetName mediaRoles:"null | @empty | Role1, Role2, ..."
 update driveSheet DriveSheetName dataPartitionPeriod:"..."
 update driveSheet DriveSheetName dataRetentionDuration:"..."
 update driveSheet DriveSheetName dataUpdateDuration:"..."
 update driveSheet DriveSheetName dataPriority:"..."
 ```
 
-**`mediaRoles`**
- : null | @empty | MediaRole1, MediaRole2, ...
-
 **`dataPartitionPeriod`**
- : null | dataPartitionPeriod type variable | dataPartitionPeriod value
+ : null | Variable of type: dataPartitionPeriod | dataPartitionPeriod value
 
 **`dataRetentionDuration`**
- : null | duration type variable | duration value
+ : null | Variable of type: duration | duration value
 
 **`dataUpdateDuration`**
- : null | duration type variable | duration value
+ : null | Variable of type: duration | duration value
 
 **`dataPriority`**
- : null | dataPriority type variable | dataPriority value
+ : null | Variable of type: dataPriority | dataPriority value
 
 
 ## print

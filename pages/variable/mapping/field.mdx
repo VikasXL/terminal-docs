@@ -8,20 +8,17 @@ title: Field
 
 ```js filename="Terminal" copy
 ensure variableMappingField primary:"true | false | yes | no"
-ensure variableMappingField to:"sectionField | grid/field" fromContext:"..."
-ensure variableMappingField to:"sectionField | grid/field" fromField:"sectionField | grid/field"
-ensure variableMappingField to:"sectionField | grid/field" fromVar:"Symbol"
-ensure variableMappingField to:"sectionField | grid/field" fromDerived:"Symbol"
+ensure variableMappingField to:"SectionField | Grid/Field" fromContext:"argBinder"
+ensure variableMappingField to:"SectionField | Grid/Field" fromField:"SectionField | Grid/Field"
+ensure variableMappingField to:"SectionField | Grid/Field" fromVar:"Symbol"
+ensure variableMappingField to:"SectionField | Grid/Field" fromDerived:"Symbol"
 ```
-
-**`fromContext`**
- : caller.handle | caller.entUserId | ent.name | row.CreatedBy | ...
 
 
 ## remove
 
 ```js filename="Terminal" copy
-remove variableMappingField to:"sectionField | grid/field"
+remove variableMappingField to:"SectionField | Grid/Field"
 ```
 
 
@@ -29,13 +26,10 @@ remove variableMappingField to:"sectionField | grid/field"
 
 ```js filename="Terminal" copy
 update variableMappingField primary:"true | false | yes | no"
-update variableMappingField to:"sectionField | grid/field" fromContext:"..."
-update variableMappingField to:"sectionField | grid/field" fromField:"sectionField | grid/field"
-update variableMappingField to:"sectionField | grid/field" fromVar:"Symbol"
-update variableMappingField to:"sectionField | grid/field" fromDerived:"Symbol"
+update variableMappingField to:"SectionField | Grid/Field" fromContext:"argBinder"
+update variableMappingField to:"SectionField | Grid/Field" fromField:"SectionField | Grid/Field"
+update variableMappingField to:"SectionField | Grid/Field" fromVar:"Symbol"
+update variableMappingField to:"SectionField | Grid/Field" fromDerived:"Symbol"
 ```
-
-**`fromContext`**
- : caller.handle | caller.entUserId | ent.name | row.CreatedBy | ...
 
 

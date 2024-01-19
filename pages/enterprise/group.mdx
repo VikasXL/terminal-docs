@@ -24,25 +24,22 @@ remove group GroupName
 update group GroupName name:"Symbol"
 update group GroupName label:"null | @null | @empty | text"
 update group GroupName description:"null | @null | @empty | paragraph"
-update group GroupName filterTags:"null | @empty | text1, text2, ..."
+update group GroupName filterTags:"..."
 update group GroupName allowPromptAssistant:"true | false | yes | no"
-update group GroupName pinnedActions:"..."
-update group GroupName pinnedActionsMobile:"..."
+update group GroupName pinnedActions:"null | @empty | Action1, Action2, ..."
+update group GroupName pinnedActionsMobile:"null | @empty | Action1, Action2, ..."
 update group GroupName groupPermissions:"..."
 update group GroupName chatPermissions:"..."
 ```
 
-**`pinnedActions`**
- : null | @empty | PinnedActions1, PinnedActions2, ...
-
-**`pinnedActionsMobile`**
- : null | @empty | PinnedActionsMobile1, PinnedActionsMobile2, ...
+**`filterTags`**
+ : null | @empty | FilterTag1, FilterTag2, ...
 
 **`groupPermissions`**
- : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, Role1, Role2, ...
 
 **`chatPermissions`**
- : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, Role1, Role2, ...
 
 
 ## print

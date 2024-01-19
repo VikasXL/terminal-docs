@@ -26,14 +26,17 @@ remove pluginApi PluginApiName
 ```js filename="Terminal" copy
 update pluginApi PluginApiName name:"Symbol"
 update pluginApi PluginApiName description:"null | @null | @empty | paragraph"
-update pluginApi PluginApiName inputForm:"null | Symbol"
+update pluginApi PluginApiName inputForm:"null | Form"
 update pluginApi PluginApiName outputForm:"..."
 update pluginApi PluginApiName guaranteedInvocation:"true | false | yes | no"
-update pluginApi PluginApiName filterTags:"null | @empty | text1, text2, ..."
+update pluginApi PluginApiName filterTags:"..."
 ```
 
 **`outputForm`**
- : null | Form | $FormMapOfOptions | $FormPickTree | $FormSetOfUser | $FormPluginConfig ...
+ : null | Form | $FormMapOfOptions | $FormPickTree | $FormSetOfUser | $FormPluginConfig
+
+**`filterTags`**
+ : null | @empty | FilterTag1, FilterTag2, ...
 
 
 ## print

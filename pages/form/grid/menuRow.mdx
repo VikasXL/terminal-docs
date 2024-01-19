@@ -7,18 +7,19 @@ title: Menu row
 ## ensure
 
 ```js filename="Terminal" copy
-ensure gridMenuRow action:"Symbol" roles:"..."
-ensure gridMenuRow action:"Symbol" notAllowedRoles:"..."
-ensure gridMenuRow action:"Symbol" menuGroup:"null | @null | @empty | text"
-ensure gridMenuRow action:"Symbol" deviceSizes:"..."
-ensure gridMenuRow action:"Symbol" showMessageTooltip:"true | false | yes | no"
+ensure gridMenuRow action:"Action" roles:"..."
+ensure gridMenuRow action:"Action" notAllowedRoles:"..."
+ensure gridMenuRow action:"Action" menuGroup:"null | @null | @empty | text"
+ensure gridMenuRow action:"Action" deviceSizes:"..."
+ensure gridMenuRow action:"Action" showMessageTooltip:"true | false | yes | no"
+ensure gridMenuRow action:"Action" mappingVar:"null | Variable of type: mapping"
 ```
 
 **`roles`**
- : null | @empty | Role1, Role2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, Role1, Role2, ...
 
 **`notAllowedRoles`**
- : null | @empty | Roles1, Roles2, $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, ...
+ : null | @empty | $Public, $Manager, $GrandManager, $AllManagers, $Assistants, $AllAssistants, $Self, Role1, Role2, ...
 
 **`deviceSizes`**
  : null | @empty | mobile, tablet, laptop, desktop

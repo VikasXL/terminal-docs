@@ -24,20 +24,26 @@ remove grid GridName
 update grid GridName name:"Symbol"
 update grid GridName label:"null | @null | @empty | text"
 update grid GridName description:"null | @null | @empty | paragraph"
-update grid GridName filterTags:"null | @empty | text1, text2, ..."
+update grid GridName filterTags:"..."
 update grid GridName disabled:"true | false | yes | no"
-update grid GridName indexFieldName:"null | text type variable | text value"
+update grid GridName indexFieldName:"..."
 update grid GridName minRows:"..."
 update grid GridName maxRows:"..."
-update grid GridName asideDefaultLayout:"null | Symbol"
+update grid GridName asideDefaultLayout:"null | GridLayout"
 update grid GridName showBorders:"null | @empty | top, bottom, left, right"
 ```
 
+**`filterTags`**
+ : null | @empty | FilterTag1, FilterTag2, ...
+
+**`indexFieldName`**
+ : null | Variable of type: text | text value
+
 **`minRows`**
- : null | number type variable | number value
+ : null | Variable of type: number | number value
 
 **`maxRows`**
- : null | number type variable | number value
+ : null | Variable of type: number | number value
 
 
 ## goTo

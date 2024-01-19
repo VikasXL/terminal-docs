@@ -7,8 +7,8 @@ title: Grid
 ## ensure
 
 ```js filename="Terminal" copy
-ensure variableMappingGrid fromGridKey:"null | Symbol"
-ensure variableMappingGrid toGridKey:"null | Symbol"
+ensure variableMappingGrid fromGridKey:"null | SectionField | Grid/Field"
+ensure variableMappingGrid toGridKey:"null | SectionField | Grid/Field"
 ensure variableMappingGrid insertVariant:"..."
 ensure variableMappingGrid updateVariant:"updateForced | doNotUpdate"
 ensure variableMappingGrid removeVariant:"removeForced | doNotRemove"
@@ -30,8 +30,8 @@ remove variableMappingGrid fromGrid:"Symbol" toGrid:"Symbol"
 ## update
 
 ```js filename="Terminal" copy
-update variableMappingGrid fromGridKey:"null | Symbol"
-update variableMappingGrid toGridKey:"null | Symbol"
+update variableMappingGrid fromGridKey:"null | SectionField | Grid/Field"
+update variableMappingGrid toGridKey:"null | SectionField | Grid/Field"
 update variableMappingGrid insertVariant:"..."
 update variableMappingGrid updateVariant:"updateForced | doNotUpdate"
 update variableMappingGrid removeVariant:"removeForced | doNotRemove"

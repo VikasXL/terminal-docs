@@ -22,9 +22,9 @@ remove formLayoutContent FormLayoutContentName
 
 ```js filename="Terminal" copy
 update formLayoutContent FormLayoutContentName name:"null | Symbol"
-update formLayoutContent FormLayoutContentName label:"null | text type variable | text value"
+update formLayoutContent FormLayoutContentName label:"..."
 update formLayoutContent FormLayoutContentName description:"null | @null | @empty | paragraph"
-update formLayoutContent FormLayoutContentName displayLabel:"null | text type variable | text value"
+update formLayoutContent FormLayoutContentName displayLabel:"..."
 update formLayoutContent FormLayoutContentName direction:"horizontal | vertical"
 update formLayoutContent FormLayoutContentName allowToSwitchLayouts:"..."
 update formLayoutContent FormLayoutContentName defaultLayout:"true | false | yes | no"
@@ -32,7 +32,7 @@ update formLayoutContent FormLayoutContentName showBorders:"null | @empty | top,
 update formLayoutContent FormLayoutContentName showPaddings:"null | @empty | top, bottom, left, right"
 update formLayoutContent FormLayoutContentName contentPadding:"thick | thin"
 update formLayoutContent FormLayoutContentName renderingMode:"a4Size | fullScreen"
-update formLayoutContent FormLayoutContentName position:"start | flexCenter | end" fields:"null | @empty | Field1, Field2, ..."
+update formLayoutContent FormLayoutContentName position:"start | flexCenter | end" fields:"..."
 update formLayoutContent FormLayoutContentName position:"start | flexCenter | end" contentLayouts:"..."
 update formLayoutContent FormLayoutContentName position:"start | flexCenter | end" gridLayouts:"..."
 update formLayoutContent FormLayoutContentName position:"start | flexCenter | end" gridSwitchers:"null | @empty | Grid1, Grid2, ..."
@@ -41,11 +41,20 @@ update formLayoutContent FormLayoutContentName position:"start | flexCenter | en
 update formLayoutContent FormLayoutContentName position:"start | flexCenter | end" padding:"thick | thin"
 ```
 
+**`label`**
+ : null | Variable of type: text | text value
+
+**`displayLabel`**
+ : null | Variable of type: text | text value
+
 **`allowToSwitchLayouts`**
- : null | @empty | FormContentLayout1, FormContentLayout2, ...
+ : null | @empty | FormLayoutContent1, FormLayoutContent2, ...
+
+**`fields`**
+ : null | @empty | SectionField, Grid/Field, ...
 
 **`contentLayouts`**
- : null | @empty | ContentLayout1, ContentLayout2, ...
+ : null | @empty | FormLayoutContent1, FormLayoutContent2, ...
 
 **`gridLayouts`**
  : null | @empty | Grid1/Layout1, Grid2/Layout2, ...

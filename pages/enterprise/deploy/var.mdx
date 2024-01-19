@@ -35,7 +35,7 @@ update deployVar DeployVarName value:"..."
 
 ### chipSetTime
 ```js filename="Terminal" copy
-update deployVar DeployVarName value:"null | @empty | HH:MM:SS, HH:MM:SS, ..."
+update deployVar DeployVarName value:"null | @empty | HH:MM:SS, HH:MM:SS"
 ```
 
 ### color
@@ -49,9 +49,9 @@ update deployVar DeployVarName value:"..."
 ### condition
 ```js filename="Terminal" copy
 update deployVar DeployVarName fromSourcePlugin:"null | @null | @empty | fromSourcePlugin"
-update deployVar DeployVarName inputForm:"null | Symbol"
-update deployVar DeployVarName sourceForm:"null | Symbol"
-update deployVar DeployVarName sourceGrid:"null | Symbol"
+update deployVar DeployVarName inputForm:"null | Form"
+update deployVar DeployVarName sourceForm:"null | Form"
+update deployVar DeployVarName sourceGrid:"null | Grid"
 update deployVar DeployVarName condition:"..."
 ```
 
@@ -184,9 +184,12 @@ update deployVar DeployVarName
 ```js filename="Terminal" copy
 update deployVar DeployVarName value:"null | @null | @empty | text"
 update deployVar DeployVarName displayText:"null | @null | @empty | text"
-update deployVar DeployVarName color:"null | color type variable | color value"
+update deployVar DeployVarName color:"..."
 update deployVar DeployVarName kind:"general | youtube"
 ```
+
+**`color`**
+ : null | Variable of type: color | color value
 
 ### icon
 ```js filename="Terminal" copy
@@ -221,7 +224,7 @@ update deployVar DeployVarName
 
 ### mapOfText
 ```js filename="Terminal" copy
-update deployVar DeployVarName form:"null | Symbol"
+update deployVar DeployVarName form:"null | Form"
 ```
 
 ### mapPinShape
@@ -235,11 +238,11 @@ update deployVar DeployVarName value:"..."
 ### mapping
 ```js filename="Terminal" copy
 update deployVar DeployVarName fromPlugin:"null | @null | @empty | fromPlugin"
-update deployVar DeployVarName fromForm:"null | Symbol"
-update deployVar DeployVarName fromGrid:"null | Symbol"
+update deployVar DeployVarName fromForm:"null | Form"
+update deployVar DeployVarName fromGrid:"null | Grid"
 update deployVar DeployVarName toPlugin:"null | @null | @empty | toPlugin"
-update deployVar DeployVarName toForm:"null | Symbol"
-update deployVar DeployVarName toGrid:"null | Symbol"
+update deployVar DeployVarName toForm:"null | Form"
+update deployVar DeployVarName toGrid:"null | Grid"
 ```
 
 ### mobileNumber
@@ -285,12 +288,12 @@ update deployVar DeployVarName value:"null | integer"
 
 ### setOfNumber
 ```js filename="Terminal" copy
-update deployVar DeployVarName value:"null | @empty | number1, number2, ..."
+update deployVar DeployVarName value:"null | @empty | number1, number2"
 ```
 
 ### setOfText
 ```js filename="Terminal" copy
-update deployVar DeployVarName value:"null | @empty | text1, text2, ..."
+update deployVar DeployVarName value:"null | @empty | text1, text2"
 update deployVar DeployVarName colors:"..."
 update deployVar DeployVarName shades:"null | @empty | s50, s100, s200, s500"
 ```
@@ -340,7 +343,7 @@ update deployVar DeployVarName paths:"..."
 ```
 
 **`paths`**
- : null | @empty | a1/b1/c1, a1/b1/c2, a1/b2/c3, ...
+ : null | @empty | a1/b1/c1, a1/b1/c2, a1/b2/c3
 
 ### userSetting
 ```js filename="Terminal" copy
@@ -351,7 +354,7 @@ update deployVar DeployVarName doNotShowValueToAdmin:"true | false | yes | no"
 ```
 
 **`dataSource`**
- : null | setOfText type variable | setOfText value
+ : null | Variable of type: setOfText | setOfText value
 
 
 ### scheduler
@@ -370,7 +373,7 @@ update deployVar DeployVarName setOfTime:"null | @empty | HH:MM:SS, HH:MM:SS, ..
  : minutes | hours | days | weeks | months | years
 
 **`excludeCalendarVars`**
- : null | @empty | CalendarVariable1, CalendarVariable2, ...
+ : null | @empty | Variable1, Variable2, ...
 
 #### hours
 ```js filename="Terminal" copy
@@ -409,7 +412,7 @@ update deployVar DeployVarName setOfTime:"null | @empty | HH:MM:SS, HH:MM:SS, ..
  : minutes | hours | days | weeks | months | years
 
 **`excludeCalendarVars`**
- : null | @empty | CalendarVariable1, CalendarVariable2, ...
+ : null | @empty | Variable1, Variable2, ...
 
 #### weeks
 ```js filename="Terminal" copy
@@ -427,7 +430,7 @@ update deployVar DeployVarName setOfRepeatDay:"..."
  : minutes | hours | days | weeks | months | years
 
 **`excludeCalendarVars`**
- : null | @empty | CalendarVariable1, CalendarVariable2, ...
+ : null | @empty | Variable1, Variable2, ...
 
 **`setOfRepeatDay`**
  : null | @empty | sunday, monday, tuesday, wednesday, thursday, friday, saturday
@@ -450,7 +453,7 @@ update deployVar DeployVarName setOfTime:"null | @empty | HH:MM:SS, HH:MM:SS, ..
  : minutes | hours | days | weeks | months | years
 
 **`excludeCalendarVars`**
- : null | @empty | CalendarVariable1, CalendarVariable2, ...
+ : null | @empty | Variable1, Variable2, ...
 
 **`setOfMonth`**
  : null | @empty | January, February, March, April, May, June, July, August, September, October, November, December

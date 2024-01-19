@@ -24,16 +24,25 @@ remove form FormName
 update form FormName name:"Symbol"
 update form FormName label:"null | @null | @empty | text"
 update form FormName description:"null | @null | @empty | paragraph"
-update form FormName filterTags:"null | @empty | text1, text2, ..."
-update form FormName chatLabelField:"null | Symbol"
-update form FormName textPattern:"null | text type variable | text value"
+update form FormName filterTags:"..."
+update form FormName chatLabelField:"null | SectionField | Grid/Field"
+update form FormName textPattern:"..."
 update form FormName chatPattern:"..."
 update form FormName tabVariant:"standard | scrollable | fullWidth"
-update form FormName chatBubbleFields:"null | @empty | Field1, Field2, ..."
+update form FormName chatBubbleFields:"..."
 ```
 
+**`filterTags`**
+ : null | @empty | FilterTag1, FilterTag2, ...
+
+**`textPattern`**
+ : null | Variable of type: text | text value
+
 **`chatPattern`**
- : null | paragraph type variable | paragraph value
+ : null | Variable of type: paragraph | paragraph value
+
+**`chatBubbleFields`**
+ : null | @empty | SectionField, Grid/Field, ...
 
 
 ## goTo

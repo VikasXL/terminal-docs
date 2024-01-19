@@ -21,16 +21,16 @@ remove prompt PromptName
 ## update
 
 ```js filename="Terminal" copy
-update prompt PromptName filterTags:"null | @empty | text1, text2, ..."
+update prompt PromptName filterTags:"..."
 update prompt PromptName name:"Symbol"
-update prompt PromptName action:"null | Symbol"
+update prompt PromptName action:"null | Action"
 update prompt PromptName promptText:"null | @null | @empty | text"
 update prompt PromptName reviewBeforeExecuting:"true | false | yes | no"
-update prompt PromptName permissionRoles:"..."
+update prompt PromptName permissionRoles:"null | @empty | Role1, Role2, ..."
 ```
 
-**`permissionRoles`**
- : null | @empty | PermissionRoles1, PermissionRoles2, ...
+**`filterTags`**
+ : null | @empty | FilterTag1, FilterTag2, ...
 
 
 ## print

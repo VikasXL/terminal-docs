@@ -28,12 +28,15 @@ remove action ActionName
 update action ActionName name:"Symbol"
 update action ActionName label:"null | @null | @empty | text"
 update action ActionName description:"null | @null | @empty | paragraph"
-update action ActionName filterTags:"null | @empty | text1, text2, ..."
+update action ActionName filterTags:"..."
 update action ActionName icon:"null | @null | @empty | icon"
 update action ActionName tooltip:"null | @null | @empty | text"
-update action ActionName spreadsheet:"null | Symbol"
+update action ActionName spreadsheet:"null | Spreadsheet"
 update action ActionName trackRowActions:"..."
 ```
+
+**`filterTags`**
+ : null | @empty | FilterTag1, FilterTag2, ...
 
 **`trackRowActions`**
  : null | @empty | read, insert, update, remove, forward
@@ -43,44 +46,53 @@ update action ActionName trackRowActions:"..."
 update action ActionName name:"Symbol"
 update action ActionName label:"null | @null | @empty | text"
 update action ActionName description:"null | @null | @empty | paragraph"
-update action ActionName filterTags:"null | @empty | text1, text2, ..."
+update action ActionName filterTags:"..."
 update action ActionName icon:"null | @null | @empty | icon"
 update action ActionName tooltip:"null | @null | @empty | text"
-update action ActionName report:"null | Symbol"
-update action ActionName outputFormContentLayout:"null | Symbol"
+update action ActionName report:"null | Report"
+update action ActionName outputFormContentLayout:"null | FormLayoutContent"
 update action ActionName sendMessageToInbox:"true | false | yes | no"
 ```
+
+**`filterTags`**
+ : null | @empty | FilterTag1, FilterTag2, ...
 
 ### rowInsert
 ```js filename="Terminal" copy
 update action ActionName name:"Symbol"
 update action ActionName label:"null | @null | @empty | text"
 update action ActionName description:"null | @null | @empty | paragraph"
-update action ActionName filterTags:"null | @empty | text1, text2, ..."
+update action ActionName filterTags:"..."
 update action ActionName icon:"null | @null | @empty | icon"
 update action ActionName tooltip:"null | @null | @empty | text"
 update action ActionName subTitle:"null | @null | @empty | text"
 update action ActionName title:"null | @null | @empty | text"
-update action ActionName spreadsheet:"null | Symbol"
+update action ActionName spreadsheet:"null | Spreadsheet"
 update action ActionName sendMessageToInbox:"true | false | yes | no"
 ```
+
+**`filterTags`**
+ : null | @empty | FilterTag1, FilterTag2, ...
 
 ### spreadsheetEditor
 ```js filename="Terminal" copy
 update action ActionName name:"Symbol"
 update action ActionName label:"null | @null | @empty | text"
 update action ActionName description:"null | @null | @empty | paragraph"
-update action ActionName filterTags:"null | @empty | text1, text2, ..."
+update action ActionName filterTags:"..."
 update action ActionName icon:"null | @null | @empty | icon"
 update action ActionName tooltip:"null | @null | @empty | text"
-update action ActionName spreadsheet:"null | Symbol"
+update action ActionName spreadsheet:"Spreadsheet"
 update action ActionName readOnly:"true | false | yes | no"
-update action ActionName spreadsheetLayout:"null | Symbol"
+update action ActionName spreadsheetLayout:"null | SpreadsheetLayout"
 update action ActionName filterCondition:"..."
 ```
 
+**`filterTags`**
+ : null | @empty | FilterTag1, FilterTag2, ...
+
 **`filterCondition`**
- : null | condition type variable | condition value
+ : null | Variable of type: condition | condition value
 
 
 ## goTo

@@ -7,7 +7,7 @@ title: Spreadsheet
 ## ensure
 
 ```js filename="Terminal" copy
-ensure spreadsheet SpreadsheetName form:"Symbol"
+ensure spreadsheet SpreadsheetName form:"Form"
 ```
 
 
@@ -24,16 +24,19 @@ remove spreadsheet SpreadsheetName
 update spreadsheet SpreadsheetName name:"Symbol"
 update spreadsheet SpreadsheetName label:"null | @null | @empty | text"
 update spreadsheet SpreadsheetName description:"null | @null | @empty | paragraph"
-update spreadsheet SpreadsheetName filterTags:"null | @empty | text1, text2, ..."
+update spreadsheet SpreadsheetName filterTags:"..."
 update spreadsheet SpreadsheetName searchableFields:"..."
 update spreadsheet SpreadsheetName queryableFields:"..."
 ```
 
+**`filterTags`**
+ : null | @empty | FilterTag1, FilterTag2, ...
+
 **`searchableFields`**
- : null | @empty | sectionField, grid/field ...
+ : null | @empty | SectionField, Grid/Field, ...
 
 **`queryableFields`**
- : null | @empty | sectionField, grid/field ...
+ : null | @empty | SectionField, Grid/Field, ...
 
 
 ## goTo

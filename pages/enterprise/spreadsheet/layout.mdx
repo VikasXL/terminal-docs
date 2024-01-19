@@ -25,36 +25,45 @@ remove spreadsheetLayout SpreadsheetLayoutName
 update spreadsheetLayout SpreadsheetLayoutName name:"null | Symbol"
 update spreadsheetLayout SpreadsheetLayoutName label:"null | @null | @empty | text"
 update spreadsheetLayout SpreadsheetLayoutName description:"null | @null | @empty | paragraph"
-update spreadsheetLayout SpreadsheetLayoutName toolTipField:"null | Symbol"
-update spreadsheetLayout SpreadsheetLayoutName bkgColorField:"null | Symbol"
+update spreadsheetLayout SpreadsheetLayoutName toolTipField:"null | SectionField | Grid/Field"
+update spreadsheetLayout SpreadsheetLayoutName bkgColorField:"null | SectionField | Grid/Field"
 update spreadsheetLayout SpreadsheetLayoutName allowToSwitchLayouts:"..."
-update spreadsheetLayout SpreadsheetLayoutName groupByField:"null | Symbol"
+update spreadsheetLayout SpreadsheetLayoutName groupByField:"null | SectionField | Grid/Field"
 update spreadsheetLayout SpreadsheetLayoutName kind:"tree | tab"
 update spreadsheetLayout SpreadsheetLayoutName showSearchBar:"true | false | yes | no"
-update spreadsheetLayout SpreadsheetLayoutName categoryFields:"null | @empty | Field1, Field2, ..."
-update spreadsheetLayout SpreadsheetLayoutName advanceFilterFields:"null | @empty | Field1, Field2, ..."
-update spreadsheetLayout SpreadsheetLayoutName sortByFields:"null | @empty | Field1, Field2, ..."
+update spreadsheetLayout SpreadsheetLayoutName categoryFields:"..."
+update spreadsheetLayout SpreadsheetLayoutName advanceFilterFields:"..."
+update spreadsheetLayout SpreadsheetLayoutName sortByFields:"..."
 ```
 
 **`allowToSwitchLayouts`**
  : null | @empty | SpreadsheetLayout1, SpreadsheetLayout2, ...
+
+**`categoryFields`**
+ : null | @empty | SectionField, Grid/Field, ...
+
+**`advanceFilterFields`**
+ : null | @empty | SectionField, Grid/Field, ...
+
+**`sortByFields`**
+ : null | @empty | SectionField, Grid/Field, ...
 
 ### kanban
 ```js filename="Terminal" copy
 update spreadsheetLayout SpreadsheetLayoutName name:"null | Symbol"
 update spreadsheetLayout SpreadsheetLayoutName label:"null | @null | @empty | text"
 update spreadsheetLayout SpreadsheetLayoutName description:"null | @null | @empty | paragraph"
-update spreadsheetLayout SpreadsheetLayoutName toolTipField:"null | Symbol"
-update spreadsheetLayout SpreadsheetLayoutName bkgColorField:"null | Symbol"
+update spreadsheetLayout SpreadsheetLayoutName toolTipField:"null | SectionField | Grid/Field"
+update spreadsheetLayout SpreadsheetLayoutName bkgColorField:"null | SectionField | Grid/Field"
 update spreadsheetLayout SpreadsheetLayoutName allowToSwitchLayouts:"..."
 update spreadsheetLayout SpreadsheetLayoutName showCommentCount:"true | false | yes | no"
 update spreadsheetLayout SpreadsheetLayoutName showSectionName:"true | false | yes | no"
 update spreadsheetLayout SpreadsheetLayoutName showFooter:"true | false | yes | no"
 update spreadsheetLayout SpreadsheetLayoutName fontSize:"..."
-update spreadsheetLayout SpreadsheetLayoutName showFields:"null | @empty | Field1, Field2, ..."
-update spreadsheetLayout SpreadsheetLayoutName sortByFields:"null | @empty | Field1, Field2, ..."
-update spreadsheetLayout SpreadsheetLayoutName kanbanField:"null | Symbol"
-update spreadsheetLayout SpreadsheetLayoutName swimLaneLabels:"null | @empty | label1 \n label2 \n ..."
+update spreadsheetLayout SpreadsheetLayoutName showFields:"..."
+update spreadsheetLayout SpreadsheetLayoutName sortByFields:"..."
+update spreadsheetLayout SpreadsheetLayoutName kanbanField:"null | SectionField | Grid/Field"
+update spreadsheetLayout SpreadsheetLayoutName swimLaneLabels:"null | @empty | label1 \n label2 \n"
 update spreadsheetLayout SpreadsheetLayoutName swimLaneColors:"..."
 ```
 
@@ -64,51 +73,76 @@ update spreadsheetLayout SpreadsheetLayoutName swimLaneColors:"..."
 **`fontSize`**
  : body1 | body2 | button | caption | h1 | h2 | h3 | h4 | h5 | h6 | inherit | overline | subtitle1 | subtitle2 | subtitle3 | subtitle4
 
+**`showFields`**
+ : null | @empty | SectionField, Grid/Field, ...
+
+**`sortByFields`**
+ : null | @empty | SectionField, Grid/Field, ...
+
 **`swimLaneColors`**
- : null | @empty | ColorVar1, ColorVar2, ...
+ : null | @empty | Variable1, Variable2, ...
 
 ### list
 ```js filename="Terminal" copy
 update spreadsheetLayout SpreadsheetLayoutName name:"null | Symbol"
 update spreadsheetLayout SpreadsheetLayoutName label:"null | @null | @empty | text"
 update spreadsheetLayout SpreadsheetLayoutName description:"null | @null | @empty | paragraph"
-update spreadsheetLayout SpreadsheetLayoutName toolTipField:"null | Symbol"
-update spreadsheetLayout SpreadsheetLayoutName bkgColorField:"null | Symbol"
+update spreadsheetLayout SpreadsheetLayoutName toolTipField:"null | SectionField | Grid/Field"
+update spreadsheetLayout SpreadsheetLayoutName bkgColorField:"null | SectionField | Grid/Field"
 update spreadsheetLayout SpreadsheetLayoutName allowToSwitchLayouts:"..."
-update spreadsheetLayout SpreadsheetLayoutName groupByField:"null | Symbol"
+update spreadsheetLayout SpreadsheetLayoutName groupByField:"null | SectionField | Grid/Field"
 update spreadsheetLayout SpreadsheetLayoutName kind:"tree | tab"
 update spreadsheetLayout SpreadsheetLayoutName showSearchBar:"true | false | yes | no"
-update spreadsheetLayout SpreadsheetLayoutName categoryFields:"null | @empty | Field1, Field2, ..."
-update spreadsheetLayout SpreadsheetLayoutName advanceFilterFields:"null | @empty | Field1, Field2, ..."
-update spreadsheetLayout SpreadsheetLayoutName sortByFields:"null | @empty | Field1, Field2, ..."
+update spreadsheetLayout SpreadsheetLayoutName categoryFields:"..."
+update spreadsheetLayout SpreadsheetLayoutName advanceFilterFields:"..."
+update spreadsheetLayout SpreadsheetLayoutName sortByFields:"..."
 ```
 
 **`allowToSwitchLayouts`**
  : null | @empty | SpreadsheetLayout1, SpreadsheetLayout2, ...
+
+**`categoryFields`**
+ : null | @empty | SectionField, Grid/Field, ...
+
+**`advanceFilterFields`**
+ : null | @empty | SectionField, Grid/Field, ...
+
+**`sortByFields`**
+ : null | @empty | SectionField, Grid/Field, ...
 
 ### table
 ```js filename="Terminal" copy
 update spreadsheetLayout SpreadsheetLayoutName name:"null | Symbol"
 update spreadsheetLayout SpreadsheetLayoutName label:"null | @null | @empty | text"
 update spreadsheetLayout SpreadsheetLayoutName description:"null | @null | @empty | paragraph"
-update spreadsheetLayout SpreadsheetLayoutName toolTipField:"null | Symbol"
-update spreadsheetLayout SpreadsheetLayoutName bkgColorField:"null | Symbol"
+update spreadsheetLayout SpreadsheetLayoutName toolTipField:"null | SectionField | Grid/Field"
+update spreadsheetLayout SpreadsheetLayoutName bkgColorField:"null | SectionField | Grid/Field"
 update spreadsheetLayout SpreadsheetLayoutName allowToSwitchLayouts:"..."
 update spreadsheetLayout SpreadsheetLayoutName showCommentCount:"true | false | yes | no"
 update spreadsheetLayout SpreadsheetLayoutName pagination:"true | false | yes | no"
 update spreadsheetLayout SpreadsheetLayoutName rowsPerPage:"null | integer"
-update spreadsheetLayout SpreadsheetLayoutName showFields:"null | @empty | Field1, Field2, ..."
+update spreadsheetLayout SpreadsheetLayoutName showFields:"..."
 update spreadsheetLayout SpreadsheetLayoutName masterDetailGrids:"null | @empty | Grid1, Grid2, ..."
 update spreadsheetLayout SpreadsheetLayoutName hideRowSeparator:"true | false | yes | no"
 update spreadsheetLayout SpreadsheetLayoutName columnSizes:"..."
-update spreadsheetLayout SpreadsheetLayoutName sortByFields:"null | @empty | Field1, Field2, ..."
+update spreadsheetLayout SpreadsheetLayoutName sortByFields:"..."
+update spreadsheetLayout SpreadsheetLayoutName columnAlignments:"..."
 ```
 
 **`allowToSwitchLayouts`**
  : null | @empty | SpreadsheetLayout1, SpreadsheetLayout2, ...
 
+**`showFields`**
+ : null | @empty | SectionField, Grid/Field, ...
+
 **`columnSizes`**
- : null | @empty | AutoSize, Flex, [number]px, [number]em, ...
+ : null | @empty | AutoSize, Flex, [number]px, [number]em
+
+**`sortByFields`**
+ : null | @empty | SectionField, Grid/Field, ...
+
+**`columnAlignments`**
+ : null | @empty | start, end, center, spaceBetween
 
 
 ## goTo

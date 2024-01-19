@@ -11,20 +11,23 @@ remove gridLayoutTableFooter GridLayoutTableFooterName
 ```
 
 **`GridLayoutTableFooterName`**
- : one | two | three | four | five | six | seven | eight | nine | ten
+ : One | Two | Three | Four | Five | Six | Seven | Eight | Nine | Ten
 
 
 ## update
 
 ```js filename="Terminal" copy
-update gridLayoutTableFooter GridLayoutTableFooterName displayField:"null | Symbol"
-update gridLayoutTableFooter GridLayoutTableFooterName fields:"null | @empty | Field1, Field2, ..."
+update gridLayoutTableFooter GridLayoutTableFooterName displayField:"null | SectionField | Grid/Field"
+update gridLayoutTableFooter GridLayoutTableFooterName fields:"..."
 update gridLayoutTableFooter GridLayoutTableFooterName showLabel:"true | false | yes | no"
 update gridLayoutTableFooter GridLayoutTableFooterName alignment:"..."
 ```
 
 **`GridLayoutTableFooterName`**
- : one | two | three | four | five | six | seven | eight | nine | ten
+ : One | Two | Three | Four | Five | Six | Seven | Eight | Nine | Ten
+
+**`fields`**
+ : null | @empty | SectionField, Grid/Field, ...
 
 **`alignment`**
  : top | bottom | start | end | center | diagonal | overlayTop | flexCenter | spaceBetween | justify

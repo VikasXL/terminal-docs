@@ -7,8 +7,11 @@ title: Action
 ## ensure
 
 ```js filename="Terminal" copy
-ensure formVisibilityAction FormVisibilityActionName comp:"sectionField | grid/field"
+ensure formVisibilityAction FormVisibilityActionName comp:"..."
 ```
+
+**`comp`**
+ : sectionField | grid/field | grid | section
 
 
 ## remove
@@ -22,9 +25,12 @@ remove formVisibilityAction FormVisibilityActionName
 
 ```js filename="Terminal" copy
 update formVisibilityAction FormVisibilityActionName name:"Symbol"
-update formVisibilityAction FormVisibilityActionName comp:"sectionField | grid/field"
+update formVisibilityAction FormVisibilityActionName comp:"..."
 update formVisibilityAction FormVisibilityActionName visibilityAction:"..."
 ```
+
+**`comp`**
+ : sectionField | grid/field | grid | section
 
 **`visibilityAction`**
  : blink | click | disable | enable | hidden | highlight | invisible | shake | visible
